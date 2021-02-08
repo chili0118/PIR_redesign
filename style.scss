@@ -1,0 +1,16 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+}
+
+
+nav {
+    width: 100%;
+    padding: 10px;
+    background: gold;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}

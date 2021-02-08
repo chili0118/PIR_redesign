@@ -1,1 +1,17 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微軟正黑體;
+}
+
+nav {
+  width: 100%;
+  padding: 10px;
+  background: gold;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+}
+/*# sourceMappingURL=style.css.map */
