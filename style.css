@@ -49,7 +49,7 @@ nav #lang span:hover .lang-box {
 
 nav #lang .lang-box {
   position: absolute;
-  right: 225px;
+  right: 100px;
   display: none;
 }
 
