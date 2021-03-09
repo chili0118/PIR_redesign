@@ -25,17 +25,19 @@ nav #lang {
   margin: 0 20px;
   text-align: center;
   margin: 0 10px 0 auto;
+  position: relative;
 }
 
 nav #lang span {
   display: inline-block;
   padding: 10px 30px;
-  position: relative;
 }
 
 nav #lang .lang-box {
   position: absolute;
   background: #00303a;
+  right: 11px;
+  bottom: -120px;
 }
 
 nav #lang span {
@@ -95,27 +97,27 @@ nav #menu {
 }
 
 #text-info h2 {
-  padding-left: 50px;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 50px;
   font-size: 26px;
   margin-top: 50px;
 }
 
 #text-info p {
+  width: 60%;
   color: #fff;
   line-height: 1.5;
-  padding: 10px 20px;
+  padding: 10px 50px;
 }
 
 #text-info button {
-  margin: 20px 20px;
+  margin: 20px 50px;
 }
 
 #news {
   width: 1280px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 #news h1 {
@@ -148,6 +150,94 @@ nav #menu {
 
 #news .btn {
   width: 100%;
+}
+
+#room {
+  background-image: url(./image/bgblue.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  margin-top: 80px;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#room:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+#room #room-info {
+  width: 35%;
+  border: 0px solid #fff;
+  height: 300px;
+  padding: 80px;
+  position: absolute;
+  right: 100px;
+  bottom: 200px;
+}
+
+#room h2 {
+  color: #fff;
+  padding: 15px 0;
+  font-size: 28px;
+}
+
+#room p {
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 0;
+}
+
+#land {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#land .land-text {
+  width: 200px;
+  height: 200px;
+  padding: 50px 80px;
+  position: absolute;
+  top: 30px;
+  left: 200px;
+}
+
+#land .land-text h2 {
+  color: #be956a;
+  font-size: 28px;
+  padding: 15px 0;
+}
+
+#land .land-text hr {
+  background: #be956a;
+  height: 1px;
+}
+
+#land .land-text p {
+  font-size: 18px;
+  padding: 15px 0;
+}
+
+#land .land-bimg {
+  position: absolute;
+  width: 900px;
+  height: 550px;
+  background-image: url(./image/bg-gold.jpg);
+  background-size: cover;
+  right: 0;
+}
+
+#land .land-simg {
+  background-image: url(./image/bg-gold.jpg);
+  background-size: cover;
+  width: 500px;
+  height: 260px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .btn-book {
@@ -183,5 +273,23 @@ nav #menu {
   color: #00303a;
   background: #fff;
   border: 1px solid #00303a;
+}
+
+.btn-more {
+  padding: 10px 50px;
+  color: #00303a;
+  background: #fff;
+  border-radius: 8px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid #00303a;
+  width: 50px;
+  margin-top: 10px;
+}
+
+.btn-more:hover {
+  color: #fff;
+  background: #00303a;
+  border: 1px solid #fff;
 }
 /*# sourceMappingURL=style.css.map */
