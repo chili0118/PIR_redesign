@@ -1,5 +1,5 @@
 $brandblue: rgb(0, 48, 58);
-$brandgold: rgb(190,149,106);
+$brandgold: rgb(190, 149, 106);
 
 * {
     margin: 0;
@@ -30,7 +30,6 @@ nav {
         span {
             display: inline-block;
             padding: 10px 30px;
-            
         }
 
         .lang-box {
@@ -59,7 +58,7 @@ nav {
                 color: #fff;
                 display: block;
                 padding: 10px 30px;
-                transition: .5s;
+                transition: 0.5s;
 
                 &:hover {
                     color: $brandblue;
@@ -97,7 +96,6 @@ nav {
         color: #fff;
         padding-top: 50px;
         font-size: 40px;
-        
     }
 
     h2 {
@@ -157,7 +155,7 @@ nav {
 }
 
 // 客房/婚宴
-#room  {
+#room {
     background-image: url(./image/bgblue.jpg);
     height: 100vh;
     width: 100%;
@@ -167,9 +165,8 @@ nav {
     transition: 1s;
 
     &:hover {
-        filter:grayscale(80%);
+        filter: grayscale(80%);
     }
-    
 
     #room-info {
         width: 35%;
@@ -192,7 +189,6 @@ nav {
         color: #fff;
         padding: 15px 0;
     }
-    
 }
 
 // 飯店設施
@@ -206,7 +202,7 @@ nav {
         height: 200px;
         padding: 50px 80px;
         position: absolute;
-        top:30px;
+        top: 30px;
         left: 200px;
 
         h2 {
@@ -233,7 +229,6 @@ nav {
         background-image: url(./image/bg-gold.jpg);
         background-size: cover;
         right: 0;
-
     }
 
     .land-simg {
@@ -244,13 +239,8 @@ nav {
         position: absolute;
         left: 0;
         bottom: 0;
-
     }
-
 }
-
-
-
 
 // 相同樣式
 .btn-book {
@@ -278,15 +268,12 @@ nav {
     border-radius: 8px;
     transition: 0.5s;
     border: 1px solid $brandblue;
-    
 
     &:hover {
         color: $brandblue;
         background: #fff;
         border: 1px solid $brandblue;
-        
     }
-
 }
 
 .btn-more {
@@ -305,5 +292,3 @@ nav {
         border: 1px solid #fff;
     }
 }
-
-
