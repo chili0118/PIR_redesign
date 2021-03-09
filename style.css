@@ -60,8 +60,8 @@ nav #lang .lang-box a {
   color: #fff;
   display: block;
   padding: 10px 30px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 nav #lang .lang-box a:hover {
