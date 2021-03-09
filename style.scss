@@ -240,6 +240,16 @@ nav {
         left: 0;
         bottom: 0;
     }
+
+    .next-btn {
+        position: absolute;
+        right: 0;
+        bottom: 450px;
+        background: rgba(255,255,255,.6);
+        width: 50px;
+        height: 70px;
+        cursor: pointer;
+    }
 }
 
 // 相同樣式
