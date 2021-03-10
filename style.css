@@ -36,22 +36,8 @@ nav #lang span {
 nav #lang .lang-box {
   position: absolute;
   background: #00303a;
-  right: 11px;
+  right: 70px;
   bottom: -120px;
-}
-
-nav #lang span {
-  display: inline-block;
-  cursor: pointer;
-}
-
-nav #lang span:hover .lang-box {
-  display: block !important;
-}
-
-nav #lang .lang-box {
-  position: absolute;
-  right: 100px;
   display: none;
 }
 
@@ -69,6 +55,15 @@ nav #lang .lang-box a:hover {
   background: #fff;
 }
 
+nav #lang span {
+  display: inline-block;
+  cursor: pointer;
+}
+
+nav #lang span:hover .lang-box {
+  display: block !important;
+}
+
 nav #menu {
   width: 32px;
   height: 32px;
@@ -77,13 +72,13 @@ nav #menu {
 }
 
 #banner {
-  background-image: url(./image/bgblue.jpg);
+  background-image: url(./image/blue.png);
   height: 100vh;
   background-size: cover;
 }
 
 #text-info {
-  background-image: url(./image/bg-gold.jpg);
+  background-image: url(./image/gold.png);
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -122,6 +117,7 @@ nav #menu {
 
 #news h1 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 #news .news-contant {
@@ -153,7 +149,7 @@ nav #menu {
 }
 
 #room {
-  background-image: url(./image/bgblue.jpg);
+  background-image: url(./image/blue.png);
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -225,13 +221,13 @@ nav #menu {
   position: absolute;
   width: 900px;
   height: 550px;
-  background-image: url(./image/bg-gold.jpg);
+  background-image: url(./image/gold.png);
   background-size: cover;
   right: 0;
 }
 
 #land .land-simg {
-  background-image: url(./image/bg-gold.jpg);
+  background-image: url(./image/gold.png);
   background-size: cover;
   width: 500px;
   height: 260px;
@@ -248,6 +244,89 @@ nav #menu {
   width: 50px;
   height: 70px;
   cursor: pointer;
+}
+
+#maparea {
+  width: 100%;
+  height: 500px;
+  margin-top: 80px;
+  background-image: url(./image/blue.png);
+  background-size: cover;
+  position: relative;
+}
+
+#book-card {
+  position: absolute;
+  left: 220px;
+  top: 100px;
+  width: 350px;
+  height: 400px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+  padding: 80px 60px;
+}
+
+#book-card h3 {
+  text-align: center;
+  color: #00303a;
+  font-size: 30px;
+}
+
+footer {
+  margin-top: 250px;
+  width: 100%;
+  background-color: #00303a;
+}
+
+footer #top-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 40% 30%;
+      grid-template-columns: 30% 40% 30%;
+}
+
+footer .footer-logo {
+  padding: 20px;
+}
+
+footer .footer-logo img {
+  width: 300px;
+}
+
+footer .footer-contact {
+  padding: 20px;
+}
+
+footer .footer-contact a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+footer .footer-contact address {
+  font-style: normal;
+  margin-bottom: 5px;
+}
+
+footer .footer-icon {
+  padding: 20px;
+}
+
+footer .footer-icon a {
+  margin-left: 10px;
+}
+
+footer .footer-icon a:hover {
+  -webkit-filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
+          filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
+}
+
+footer #bottom-box {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
 
 .btn-book {
