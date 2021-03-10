@@ -290,6 +290,8 @@ footer {
     .footer-logo {
         img {
             width: 300px;
+            height: 100px;
+            object-fit: cover;
         }
         padding: 20px;
     }

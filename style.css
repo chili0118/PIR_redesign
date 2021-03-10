@@ -292,6 +292,9 @@ footer .footer-logo {
 
 footer .footer-logo img {
   width: 300px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer .footer-contact {
