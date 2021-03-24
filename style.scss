@@ -93,23 +93,30 @@ nav {
         font-size: 40px;
     }
 
-    h2 {
-        color: #fff;
+    #text-info-area {
+        width: 50%;
         padding: 10px 50px;
-        font-size: 26px;
-        margin-top: 50px;
+    
+        h2 {
+            color: #fff;
+            padding: 10px 50px;
+            font-size: 26px;
+            margin-top: 50px;
+        }
+    
+        p {
+            width: 60%;
+            color: #fff;
+            line-height: 1.5;
+            padding: 10px 50px;
+        }
+    
+        button {
+            margin: 20px 50px;
+        }
     }
 
-    p {
-        width: 60%;
-        color: #fff;
-        line-height: 1.5;
-        padding: 10px 50px;
-    }
-
-    button {
-        margin: 20px 50px;
-    }
+    
 }
 
 // 最新消息
@@ -172,6 +179,26 @@ nav {
         position: absolute;
         right: 100px;
         bottom: 200px;
+
+        #room-info-box {
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            right: 12px;
+            bottom: 115px;
+            pointer-events: none;
+        }
+
+        .shape {
+            fill: transparent;
+            width: 100%;
+            height: 300px;
+            stroke-dasharray: 100 2000;
+            stroke-dashoffset: 200;
+            stroke-width: 8px;
+            stroke: $brandgold;
+            
+        }
     }
 
     h2 {
@@ -248,7 +275,7 @@ nav {
     }
 }
 
-// 訂房卡片/MAP
+// MAP
 #maparea {
     width: 100%;
     height: 500px;
@@ -258,20 +285,42 @@ nav {
     position: relative;
 }
 
+// 訂房卡片
 #book-card {
     position: absolute;
     left: 220px;
     top: 100px;
-    width: 350px;
-    height: 400px;
+    width: 320px;
+    height: 450px;
     background-color: #fff;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
-    padding: 80px 60px;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.3);
+    padding: 40px 60px;
+    
+    
 
     h3 {
         text-align: center;
         color: $brandblue;
         font-size: 30px;
+        margin: 10px 0;
+    }
+    span {
+        display: block;
+        padding: 20px 0;
+    }
+
+    input {
+        width: 100%;
+        font-size: 16px;
+        display: block;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    button {
+        margin-top: 20px;
+        width: 100%;
+        margin-top: 50px;
     }
 }
 
@@ -292,12 +341,12 @@ footer {
             width: 300px;
             height: 100px;
             object-fit: cover;
+            padding: 20px;
         }
-        padding: 20px;
+        
     }
     .footer-contact {
         padding: 20px;
-        
 
         a {
             text-decoration: none;
@@ -314,6 +363,7 @@ footer {
 
     .footer-icon {
         padding: 20px;
+        position: relative;
 
         a {
             margin-left: 10px;
@@ -322,13 +372,23 @@ footer {
                 filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
             }
         }
+
+        span {
+            color: #fff;
+            font-size: 10px;
+            position: absolute;
+            display: block;
+            bottom: 25px;
+            right: 360px;
+            
+        }
     }
 
-    #bottom-box {
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-    }
+    // #bottom-box {
+    //     color: #fff;
+    //     text-align: center;
+        
+    // }
 }
 
 // 相同樣式
@@ -351,12 +411,15 @@ footer {
 }
 
 .btn {
+    margin: 0 auto;
+    display: block;
     padding: 10px 50px;
     color: #fff;
     background: $brandblue;
     border-radius: 8px;
     transition: 0.5s;
     border: 1px solid $brandblue;
+    cursor: pointer;
 
     &:hover {
         color: $brandblue;
@@ -374,10 +437,32 @@ footer {
     border: 1px solid $brandblue;
     width: 50px;
     margin-top: 10px;
+    cursor: pointer;
 
     &:hover {
         color: #fff;
         background: $brandblue;
         border: 1px solid #fff;
     }
+}
+
+@keyframes draw {
+    // 需跟上方.shape相同
+    0% {
+        stroke-dasharray: 100 2000;
+        stroke-dashoffset: 200;
+        stroke-width: 8px;
+    }
+    90% {
+        stroke-dasharray: 200 2000;
+        stroke-dashoffset: 2005;
+        stroke-width: 2px;
+    }
+    100% {
+        stroke-dasharray: 5000 2000;
+    }
+}
+
+#room-info:hover .shape {
+    animation: 0.5s draw linear forwards;
 }

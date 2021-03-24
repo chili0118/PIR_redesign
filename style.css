@@ -91,21 +91,26 @@ nav #menu {
   font-size: 40px;
 }
 
-#text-info h2 {
+#text-info #text-info-area {
+  width: 50%;
+  padding: 10px 50px;
+}
+
+#text-info #text-info-area h2 {
   color: #fff;
   padding: 10px 50px;
   font-size: 26px;
   margin-top: 50px;
 }
 
-#text-info p {
+#text-info #text-info-area p {
   width: 60%;
   color: #fff;
   line-height: 1.5;
   padding: 10px 50px;
 }
 
-#text-info button {
+#text-info #text-info-area button {
   margin: 20px 50px;
 }
 
@@ -172,6 +177,25 @@ nav #menu {
   position: absolute;
   right: 100px;
   bottom: 200px;
+}
+
+#room #room-info #room-info-box {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  right: 12px;
+  bottom: 115px;
+  pointer-events: none;
+}
+
+#room #room-info .shape {
+  fill: transparent;
+  width: 100%;
+  height: 300px;
+  stroke-dasharray: 100 2000;
+  stroke-dashoffset: 200;
+  stroke-width: 8px;
+  stroke: #be956a;
 }
 
 #room h2 {
@@ -259,18 +283,39 @@ nav #menu {
   position: absolute;
   left: 220px;
   top: 100px;
-  width: 350px;
-  height: 400px;
+  width: 320px;
+  height: 450px;
   background-color: #fff;
-  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
-  padding: 80px 60px;
+  -webkit-box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.3);
+  padding: 40px 60px;
 }
 
 #book-card h3 {
   text-align: center;
   color: #00303a;
   font-size: 30px;
+  margin: 10px 0;
+}
+
+#book-card span {
+  display: block;
+  padding: 20px 0;
+}
+
+#book-card input {
+  width: 100%;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#book-card button {
+  margin-top: 20px;
+  width: 100%;
+  margin-top: 50px;
 }
 
 footer {
@@ -286,15 +331,12 @@ footer #top-box {
       grid-template-columns: 30% 40% 30%;
 }
 
-footer .footer-logo {
-  padding: 20px;
-}
-
 footer .footer-logo img {
   width: 300px;
   height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
+  padding: 20px;
 }
 
 footer .footer-contact {
@@ -315,6 +357,7 @@ footer .footer-contact address {
 
 footer .footer-icon {
   padding: 20px;
+  position: relative;
 }
 
 footer .footer-icon a {
@@ -326,10 +369,13 @@ footer .footer-icon a:hover {
           filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
 }
 
-footer #bottom-box {
+footer .footer-icon span {
   color: #fff;
-  text-align: center;
-  padding: 10px 0;
+  font-size: 10px;
+  position: absolute;
+  display: block;
+  bottom: 25px;
+  right: 360px;
 }
 
 .btn-book {
@@ -352,6 +398,8 @@ footer #bottom-box {
 }
 
 .btn {
+  margin: 0 auto;
+  display: block;
   padding: 10px 50px;
   color: #fff;
   background: #00303a;
@@ -359,6 +407,7 @@ footer #bottom-box {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border: 1px solid #00303a;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -377,11 +426,49 @@ footer #bottom-box {
   border: 1px solid #00303a;
   width: 50px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .btn-more:hover {
   color: #fff;
   background: #00303a;
   border: 1px solid #fff;
+}
+
+@-webkit-keyframes draw {
+  0% {
+    stroke-dasharray: 100 2000;
+    stroke-dashoffset: 200;
+    stroke-width: 8px;
+  }
+  90% {
+    stroke-dasharray: 200 2000;
+    stroke-dashoffset: 2005;
+    stroke-width: 2px;
+  }
+  100% {
+    stroke-dasharray: 5000 2000;
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 100 2000;
+    stroke-dashoffset: 200;
+    stroke-width: 8px;
+  }
+  90% {
+    stroke-dasharray: 200 2000;
+    stroke-dashoffset: 2005;
+    stroke-width: 2px;
+  }
+  100% {
+    stroke-dasharray: 5000 2000;
+  }
+}
+
+#room-info:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+          animation: 0.5s draw linear forwards;
 }
 /*# sourceMappingURL=style.css.map */
