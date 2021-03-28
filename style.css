@@ -200,7 +200,6 @@ nav #menu {
 }
 
 #text-info {
-  margin-top: 30px;
   background-image: url(./image/about.jpg);
   background-size: cover;
   height: 100vh;
@@ -276,7 +275,7 @@ nav #menu {
   width: 100%;
 }
 
-#room {
+#room1 {
   background-image: url(./image/vila1.jpg);
   height: 100vh;
   width: 100%;
@@ -287,12 +286,12 @@ nav #menu {
   transition: 1s;
 }
 
-#room:hover {
+#room1:hover {
   -webkit-filter: blur(5px);
           filter: blur(5px);
 }
 
-#room #room-info {
+#room1 .room-info {
   width: 35%;
   border: 0px solid #fff;
   height: 300px;
@@ -303,11 +302,11 @@ nav #menu {
   cursor: pointer;
 }
 
-#room #room-info span {
+#room1 .room-info span {
   color: #fff;
 }
 
-#room #room-info #room-info-box {
+#room1 .room-info #room-info-box {
   width: 100%;
   height: 350px;
   position: absolute;
@@ -316,7 +315,7 @@ nav #menu {
   pointer-events: none;
 }
 
-#room #room-info .shape {
+#room1 .room-info .shape {
   fill: transparent;
   width: 100%;
   height: 350px;
@@ -326,19 +325,269 @@ nav #menu {
   stroke: #be956a;
 }
 
-#room h2 {
+#room1 h2 {
   color: #fff;
   padding: 15px 0;
   font-size: 28px;
 }
 
-#room p {
+#room1 p {
   font-size: 16px;
   color: #fff;
   padding: 15px 0;
 }
 
-#room .btn-more {
+#room1 .btn-more {
+  margin-top: 30px;
+}
+
+#room2 {
+  background-image: url(./image/vila2.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#room2 .room-info {
+  width: 35%;
+  border: 0px solid #fff;
+  height: 300px;
+  padding: 100px 80px;
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  cursor: pointer;
+}
+
+#room2 .room-info span {
+  color: #fff;
+}
+
+#room2 .room-info #room-info-box {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  right: 12px;
+  bottom: 115px;
+  pointer-events: none;
+}
+
+#room2 .room-info .shape {
+  fill: transparent;
+  width: 100%;
+  height: 350px;
+  stroke-dasharray: 100 2000;
+  stroke-dashoffset: 200;
+  stroke-width: 8px;
+  stroke: #be956a;
+}
+
+#room2 h2 {
+  color: #fff;
+  padding: 15px 0;
+  font-size: 28px;
+}
+
+#room2 p {
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 0;
+}
+
+#room2 .btn-more {
+  margin-top: 30px;
+}
+
+#room3 {
+  background-image: url(./image/vila3.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#room3:hover {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+#room3 .room-info {
+  width: 35%;
+  border: 0px solid #fff;
+  height: 300px;
+  padding: 100px 80px;
+  position: absolute;
+  right: 100px;
+  bottom: 200px;
+  cursor: pointer;
+}
+
+#room3 .room-info span {
+  color: #fff;
+}
+
+#room3 .room-info #room-info-box {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  right: 12px;
+  bottom: 115px;
+  pointer-events: none;
+}
+
+#room3 .room-info .shape {
+  fill: transparent;
+  width: 100%;
+  height: 350px;
+  stroke-dasharray: 100 2000;
+  stroke-dashoffset: 200;
+  stroke-width: 8px;
+  stroke: #be956a;
+}
+
+#room3 h2 {
+  color: #fff;
+  padding: 15px 0;
+  font-size: 28px;
+}
+
+#room3 p {
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 0;
+}
+
+#room3 .btn-more {
+  margin-top: 30px;
+}
+
+#room4 {
+  background-image: url(./image/vila4.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#room4 .room-info {
+  width: 35%;
+  border: 0px solid #fff;
+  height: 300px;
+  padding: 100px 80px;
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  cursor: pointer;
+}
+
+#room4 .room-info span {
+  color: #fff;
+}
+
+#room4 .room-info #room-info-box {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  right: 12px;
+  bottom: 115px;
+  pointer-events: none;
+}
+
+#room4 .room-info .shape {
+  fill: transparent;
+  width: 100%;
+  height: 350px;
+  stroke-dasharray: 100 2000;
+  stroke-dashoffset: 200;
+  stroke-width: 8px;
+  stroke: #be956a;
+}
+
+#room4 h2 {
+  color: #fff;
+  padding: 15px 0;
+  font-size: 28px;
+}
+
+#room4 p {
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 0;
+}
+
+#room4 .btn-more {
+  margin-top: 30px;
+}
+
+#room5 {
+  background-image: url(./image/vila5.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#room5:hover {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+#room5 .room-info {
+  width: 35%;
+  border: 0px solid #fff;
+  height: 300px;
+  padding: 100px 80px;
+  position: absolute;
+  right: 100px;
+  bottom: 200px;
+  cursor: pointer;
+}
+
+#room5 .room-info span {
+  color: #fff;
+}
+
+#room5 .room-info #room-info-box {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  right: 12px;
+  bottom: 115px;
+  pointer-events: none;
+}
+
+#room5 .room-info .shape {
+  fill: transparent;
+  width: 100%;
+  height: 350px;
+  stroke-dasharray: 100 2000;
+  stroke-dashoffset: 200;
+  stroke-width: 8px;
+  stroke: #be956a;
+}
+
+#room5 h2 {
+  color: #fff;
+  padding: 15px 0;
+  font-size: 28px;
+}
+
+#room5 p {
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 0;
+}
+
+#room5 .btn-more {
   margin-top: 30px;
 }
 
@@ -358,8 +607,7 @@ nav #menu {
   left: 200px;
 }
 
-#land .land-text h2,
-#land .land-text p {
+#land .land-text h2, #land .land-text p {
   display: none;
 }
 
@@ -377,6 +625,13 @@ nav #menu {
 #land .land-text p {
   font-size: 18px;
   padding: 15px 10px;
+  margin-bottom: 30px;
+}
+
+#land .land-text p span {
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
 }
 
 #land .land-text .title-active,

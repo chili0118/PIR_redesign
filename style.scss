@@ -202,7 +202,7 @@ nav {
 // 飯店文案
 
 #text-info {
-    margin-top: 30px;
+    
     background-image: url(./image/about.jpg);
     background-size: cover;
     height: 100vh;
@@ -278,7 +278,7 @@ nav {
 }
 
 // 客房/婚宴
-#room {
+#room1 {
     background-image: url(./image/vila1.jpg);
     height: 100vh;
     width: 100%;
@@ -291,7 +291,252 @@ nav {
         filter: blur(5px);
     }
 
-    #room-info {
+    .room-info {
+        width: 35%;
+        border: 0px solid #fff;
+        height: 300px;
+        padding: 100px 80px;
+        position: absolute;
+        right: 100px;
+        bottom: 200px;
+        cursor: pointer;
+
+        span {
+            color: #fff;
+        }
+
+        #room-info-box {
+            width: 100%;
+            height: 350px;
+            position: absolute;
+            right: 12px;
+            bottom: 115px;
+            pointer-events: none;
+        }
+
+        .shape {
+            fill: transparent;
+            width: 100%;
+            height: 350px;
+            stroke-dasharray: 100 2000;
+            stroke-dashoffset: 200;
+            stroke-width: 8px;
+            stroke: $brandgold;
+        }
+    }
+
+    h2 {
+        color: #fff;
+        padding: 15px 0;
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #fff;
+        padding: 15px 0;
+    }
+
+    .btn-more {
+        margin-top: 30px;
+    }
+}
+
+#room2 {
+    background-image: url(./image/vila2.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    transition: 1s;
+
+    .room-info {
+        width: 35%;
+        border: 0px solid #fff;
+        height: 300px;
+        padding: 100px 80px;
+        position: absolute;
+        left: 100px;
+        top: 200px;
+        cursor: pointer;
+
+        span {
+            color: #fff;
+        }
+
+        #room-info-box {
+            width: 100%;
+            height: 350px;
+            position: absolute;
+            right: 12px;
+            bottom: 115px;
+            pointer-events: none;
+        }
+
+        .shape {
+            fill: transparent;
+            width: 100%;
+            height: 350px;
+            stroke-dasharray: 100 2000;
+            stroke-dashoffset: 200;
+            stroke-width: 8px;
+            stroke: $brandgold;
+        }
+    }
+
+    h2 {
+        color: #fff;
+        padding: 15px 0;
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #fff;
+        padding: 15px 0;
+    }
+
+    .btn-more {
+        margin-top: 30px;
+    }
+}
+
+#room3 {
+    background-image: url(./image/vila3.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    transition: 1s;
+
+    &:hover {
+        filter: blur(5px);
+    }
+
+    .room-info {
+        width: 35%;
+        border: 0px solid #fff;
+        height: 300px;
+        padding: 100px 80px;
+        position: absolute;
+        right: 100px;
+        bottom: 200px;
+        cursor: pointer;
+
+        span {
+            color: #fff;
+        }
+
+        #room-info-box {
+            width: 100%;
+            height: 350px;
+            position: absolute;
+            right: 12px;
+            bottom: 115px;
+            pointer-events: none;
+        }
+
+        .shape {
+            fill: transparent;
+            width: 100%;
+            height: 350px;
+            stroke-dasharray: 100 2000;
+            stroke-dashoffset: 200;
+            stroke-width: 8px;
+            stroke: $brandgold;
+        }
+    }
+
+    h2 {
+        color: #fff;
+        padding: 15px 0;
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #fff;
+        padding: 15px 0;
+    }
+
+    .btn-more {
+        margin-top: 30px;
+    }
+}
+
+
+#room4 {
+    background-image: url(./image/vila4.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    transition: 1s;
+
+    .room-info {
+        width: 35%;
+        border: 0px solid #fff;
+        height: 300px;
+        padding: 100px 80px;
+        position: absolute;
+        left: 100px;
+        top: 200px;
+        cursor: pointer;
+
+        span {
+            color: #fff;
+        }
+
+        #room-info-box {
+            width: 100%;
+            height: 350px;
+            position: absolute;
+            right: 12px;
+            bottom: 115px;
+            pointer-events: none;
+        }
+
+        .shape {
+            fill: transparent;
+            width: 100%;
+            height: 350px;
+            stroke-dasharray: 100 2000;
+            stroke-dashoffset: 200;
+            stroke-width: 8px;
+            stroke: $brandgold;
+        }
+    }
+
+    h2 {
+        color: #fff;
+        padding: 15px 0;
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #fff;
+        padding: 15px 0;
+    }
+
+    .btn-more {
+        margin-top: 30px;
+    }
+}
+
+#room5 {
+    background-image: url(./image/vila5.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    transition: 1s;
+
+    &:hover {
+        filter: blur(5px);
+    }
+
+    .room-info {
         width: 35%;
         border: 0px solid #fff;
         height: 300px;
@@ -357,8 +602,7 @@ nav {
         top: 30px;
         left: 200px;
 
-        h2,
-        p {
+        h2,p {
             display: none;
         }
 
@@ -376,6 +620,13 @@ nav {
         p {
             font-size: 18px;
             padding: 15px 10px;
+            margin-bottom: 30px;
+
+            span {
+                font-size: 12px;
+                display: block;
+                margin-top: 5px;
+            }
         }
 
         .title-active,
