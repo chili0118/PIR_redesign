@@ -17,7 +17,16 @@ body #news-box {
   width: 350px;
   height: 350px;
   background-color: #00303a;
-  opacity: .85;
+  opacity: 0.85;
+}
+
+body #news-box .box-close::before {
+  content: url(./image/close-2.png);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
 }
 
 body #news-box h3 {
@@ -47,6 +56,7 @@ nav {
   -ms-grid-columns: 20% 70% 10%;
       grid-template-columns: 20% 70% 10%;
   position: fixed;
+  top: 0;
   z-index: 5;
 }
 
@@ -59,7 +69,6 @@ nav #logo a img {
 nav #lang {
   color: #fff;
   padding: 10px 60px;
-  margin: 0 20px;
   text-align: center;
   margin: 0 10px 0 auto;
   position: relative;
@@ -268,7 +277,7 @@ nav #menu {
 }
 
 #room {
-  background-image: url(./image/blue.png);
+  background-image: url(./image/vila1.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -279,23 +288,28 @@ nav #menu {
 }
 
 #room:hover {
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
 #room #room-info {
   width: 35%;
   border: 0px solid #fff;
   height: 300px;
-  padding: 80px;
+  padding: 100px 80px;
   position: absolute;
   right: 100px;
   bottom: 200px;
+  cursor: pointer;
+}
+
+#room #room-info span {
+  color: #fff;
 }
 
 #room #room-info #room-info-box {
   width: 100%;
-  height: 300px;
+  height: 350px;
   position: absolute;
   right: 12px;
   bottom: 115px;
@@ -305,7 +319,7 @@ nav #menu {
 #room #room-info .shape {
   fill: transparent;
   width: 100%;
-  height: 300px;
+  height: 350px;
   stroke-dasharray: 100 2000;
   stroke-dashoffset: 200;
   stroke-width: 8px;
@@ -324,6 +338,10 @@ nav #menu {
   padding: 15px 0;
 }
 
+#room .btn-more {
+  margin-top: 30px;
+}
+
 #land {
   height: 100vh;
   width: 100%;
@@ -340,7 +358,8 @@ nav #menu {
   left: 200px;
 }
 
-#land .land-text h2, #land .land-text p {
+#land .land-text h2,
+#land .land-text p {
   display: none;
 }
 
@@ -360,7 +379,8 @@ nav #menu {
   padding: 15px 10px;
 }
 
-#land .land-text .title-active, #land .land-text .p-active {
+#land .land-text .title-active,
+#land .land-text .p-active {
   display: block;
 }
 
@@ -510,16 +530,24 @@ footer .footer-contact {
   padding: 20px;
 }
 
+footer .footer-contact .icon-list {
+  width: 20px;
+  height: 20px;
+  margin-bottom: -5px;
+  margin-right: 10px;
+}
+
 footer .footer-contact a {
   text-decoration: none;
   color: #fff;
-  display: block;
+  display: inline-block;
   margin-bottom: 5px;
 }
 
 footer .footer-contact address {
   font-style: normal;
   margin-bottom: 5px;
+  display: inline-block;
 }
 
 footer .footer-icon {
@@ -528,7 +556,9 @@ footer .footer-icon {
 }
 
 footer .footer-icon a {
-  margin-left: 10px;
+  margin-right: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 footer .footer-icon a:hover {
@@ -536,13 +566,19 @@ footer .footer-icon a:hover {
           filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
 }
 
-footer .footer-icon span {
+footer .footer-icon a img {
+  width: 32px;
+  height: 32px;
+}
+
+#copy-text {
+  width: 100%;
+  text-align: center;
   color: #fff;
   font-size: 10px;
   position: absolute;
-  display: block;
-  bottom: 25px;
-  right: 360px;
+  background-color: #00303a;
+  padding: 10px 0;
 }
 
 .btn-book {

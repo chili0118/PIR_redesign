@@ -63,3 +63,7 @@ function showtitle() {
      p[index].classList.add("p-active");
   }
 
+  $(".box-close").click (function () {
+      $("#news-box").hide();
+  })
+
