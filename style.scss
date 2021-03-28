@@ -1,5 +1,8 @@
 $brandblue: rgb(0, 48, 58);
 $brandgold: rgb(190, 149, 106);
+$desktop: 1025px;
+$tablet: 1024px;
+$mobile: 767px;
 
 * {
     margin: 0;
@@ -10,6 +13,7 @@ $brandgold: rgb(190, 149, 106);
 // 浮動視窗
 body {
     position: relative;
+    
 
     #news-box {
         position: absolute;
@@ -20,6 +24,21 @@ body {
         height: 350px;
         background-color: $brandblue;
         opacity: 0.85;
+        
+
+        @media screen and (max-width: $tablet) {
+            left: 0px;
+            top: 700px;
+            width: 400px;
+            height: 400px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            left: 50px;
+            top: 300px;
+            width: 500px;
+            height: 500px;
+        }
 
         .box-close::before {
             content: url(./image/close-2.png);
@@ -33,6 +52,13 @@ body {
         h3 {
             margin: 10px 0;
             color: #fff;
+
+            @media screen and (max-width: $tablet) {
+                font-size: 28px;
+            }
+            @media screen and (max-width: $mobile) {
+                font-size: 30px;
+            }
         }
 
         span {
@@ -40,11 +66,25 @@ body {
             padding: 10px 30px;
             text-align: justify;
             display: block;
+
+            @media screen and (max-width: $tablet) {
+                font-size: 20px;
+            }
+            @media screen and (max-width: $mobile) {
+                font-size: 22px;
+            }
         }
         .last {
             margin-right: 0;
             font-size: 14px;
             text-align: right !important;
+
+            @media screen and (max-width: $tablet) {
+                font-size: 16px;
+            }
+            @media screen and (max-width: $mobile) {
+                font-size: 16px;
+            }
         }
     }
 }
@@ -60,6 +100,10 @@ nav {
     top: 0;
     z-index: 5;
 
+    @media screen and (max-width: $mobile) {
+        grid-template-columns: 20% 10% 70%;
+    }
+
     #logo a img {
         height: 60px;
         background-size: cover;
@@ -72,6 +116,10 @@ nav {
         text-align: center;
         margin: 0 10px 0 auto;
         position: relative;
+
+        @media screen and (max-width: $mobile) {
+            opacity: 0;
+        }
 
         span {
             display: inline-block;
@@ -120,6 +168,10 @@ nav {
         height: 32px;
         margin: 10px 15px 0 auto;
         padding: 10px 10px;
+
+        @media screen and (max-width: $mobile) {
+            margin: 15px 20px 0 auto;
+        }
     }
 }
 
@@ -202,7 +254,6 @@ nav {
 // 飯店文案
 
 #text-info {
-    
     background-image: url(./image/about.jpg);
     background-size: cover;
     height: 100vh;
@@ -213,17 +264,34 @@ nav {
         color: #fff;
         padding-top: 50px;
         font-size: 40px;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 50px;
+            padding-top: 150px;
+        }
     }
 
     #text-info-area {
         width: 50%;
         padding: 10px 50px;
 
+        @media screen and (max-width: $tablet) {
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+        }
+
         h2 {
             color: #fff;
             padding: 10px 50px;
             font-size: 26px;
             margin-top: 50px;
+
+            @media screen and (max-width: $tablet) {
+                font-size: 28px;
+                text-align: center;
+                margin-top: 80px;
+            }
         }
 
         p {
@@ -231,10 +299,23 @@ nav {
             color: #fff;
             line-height: 1.5;
             padding: 10px 50px;
+
+            @media screen and (max-width: $tablet) {
+                width: 80%;
+                font-size: 22px;
+                padding-top: 50px 0;
+                text-align: justify;
+                margin: 0 auto;
+            }
         }
 
         button {
             margin: 20px 50px;
+
+            @media screen and (max-width: $tablet) {
+                margin-left: 80px;
+                margin-top: 100px;
+            }
         }
     }
 }
@@ -464,7 +545,6 @@ nav {
     }
 }
 
-
 #room4 {
     background-image: url(./image/vila4.jpg);
     height: 100vh;
@@ -602,7 +682,8 @@ nav {
         top: 30px;
         left: 200px;
 
-        h2,p {
+        h2,
+        p {
             display: none;
         }
 
@@ -794,9 +875,8 @@ footer {
         position: relative;
 
         a {
-
             margin-right: 20px;
-            transition: .3s;
+            transition: 0.3s;
 
             &:hover {
                 filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
@@ -807,7 +887,6 @@ footer {
                 height: 32px;
             }
         }
-
     }
 }
 
@@ -821,7 +900,6 @@ footer {
     background-color: $brandblue;
     padding: 10px 0;
 }
-
 
 // 相同樣式
 .btn-book {

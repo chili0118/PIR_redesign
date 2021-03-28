@@ -20,6 +20,24 @@ body #news-box {
   opacity: 0.85;
 }
 
+@media screen and (max-width: 1024px) {
+  body #news-box {
+    left: 0px;
+    top: 700px;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body #news-box {
+    left: 50px;
+    top: 300px;
+    width: 500px;
+    height: 500px;
+  }
+}
+
 body #news-box .box-close::before {
   content: url(./image/close-2.png);
   width: 20px;
@@ -34,6 +52,18 @@ body #news-box h3 {
   color: #fff;
 }
 
+@media screen and (max-width: 1024px) {
+  body #news-box h3 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body #news-box h3 {
+    font-size: 30px;
+  }
+}
+
 body #news-box span {
   color: #fff;
   padding: 10px 30px;
@@ -41,10 +71,34 @@ body #news-box span {
   display: block;
 }
 
+@media screen and (max-width: 1024px) {
+  body #news-box span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body #news-box span {
+    font-size: 22px;
+  }
+}
+
 body #news-box .last {
   margin-right: 0;
   font-size: 14px;
   text-align: right !important;
+}
+
+@media screen and (max-width: 1024px) {
+  body #news-box .last {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body #news-box .last {
+    font-size: 16px;
+  }
 }
 
 nav {
@@ -60,6 +114,13 @@ nav {
   z-index: 5;
 }
 
+@media screen and (max-width: 767px) {
+  nav {
+    -ms-grid-columns: 20% 10% 70%;
+        grid-template-columns: 20% 10% 70%;
+  }
+}
+
 nav #logo a img {
   height: 60px;
   background-size: cover;
@@ -72,6 +133,12 @@ nav #lang {
   text-align: center;
   margin: 0 10px 0 auto;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  nav #lang {
+    opacity: 0;
+  }
 }
 
 nav #lang span {
@@ -121,6 +188,12 @@ nav #menu {
   height: 32px;
   margin: 10px 15px 0 auto;
   padding: 10px 10px;
+}
+
+@media screen and (max-width: 767px) {
+  nav #menu {
+    margin: 15px 20px 0 auto;
+  }
 }
 
 .navbox {
@@ -213,9 +286,24 @@ nav #menu {
   font-size: 40px;
 }
 
+@media screen and (max-width: 1024px) {
+  #text-info h1 {
+    font-size: 50px;
+    padding-top: 150px;
+  }
+}
+
 #text-info #text-info-area {
   width: 50%;
   padding: 10px 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  #text-info #text-info-area {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+  }
 }
 
 #text-info #text-info-area h2 {
@@ -225,6 +313,14 @@ nav #menu {
   margin-top: 50px;
 }
 
+@media screen and (max-width: 1024px) {
+  #text-info #text-info-area h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 80px;
+  }
+}
+
 #text-info #text-info-area p {
   width: 60%;
   color: #fff;
@@ -232,8 +328,25 @@ nav #menu {
   padding: 10px 50px;
 }
 
+@media screen and (max-width: 1024px) {
+  #text-info #text-info-area p {
+    width: 80%;
+    font-size: 22px;
+    padding-top: 50px 0;
+    text-align: justify;
+    margin: 0 auto;
+  }
+}
+
 #text-info #text-info-area button {
   margin: 20px 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  #text-info #text-info-area button {
+    margin-left: 80px;
+    margin-top: 100px;
+  }
 }
 
 #news {
@@ -607,7 +720,8 @@ nav #menu {
   left: 200px;
 }
 
-#land .land-text h2, #land .land-text p {
+#land .land-text h2,
+#land .land-text p {
   display: none;
 }
 
@@ -812,8 +926,8 @@ footer .footer-icon {
 
 footer .footer-icon a {
   margin-right: 20px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 footer .footer-icon a:hover {
