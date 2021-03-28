@@ -23,7 +23,7 @@ body #news-box {
 @media screen and (max-width: 1024px) {
   body #news-box {
     left: 0px;
-    top: 700px;
+    top: 500px;
     width: 400px;
     height: 400px;
   }
@@ -31,10 +31,11 @@ body #news-box {
 
 @media screen and (max-width: 767px) {
   body #news-box {
-    left: 50px;
-    top: 300px;
-    width: 500px;
-    height: 500px;
+    left: 0;
+    top: 180px;
+    width: 400px;
+    height: 400px;
+    padding: 10px 10px;
   }
 }
 
@@ -60,7 +61,7 @@ body #news-box h3 {
 
 @media screen and (max-width: 767px) {
   body #news-box h3 {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 
@@ -79,7 +80,7 @@ body #news-box span {
 
 @media screen and (max-width: 767px) {
   body #news-box span {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
@@ -290,6 +291,15 @@ nav #menu {
   #text-info h1 {
     font-size: 50px;
     padding-top: 150px;
+    letter-spacing: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #text-info h1 {
+    font-size: 40px;
+    padding-top: 50px;
+    letter-spacing: 10px;
   }
 }
 
@@ -300,8 +310,16 @@ nav #menu {
 
 @media screen and (max-width: 1024px) {
   #text-info #text-info-area {
-    margin: 0 auto;
-    width: 80%;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #text-info #text-info-area {
+    padding: 5px 0;
+    width: 100%;
     text-align: center;
   }
 }
@@ -318,6 +336,16 @@ nav #menu {
     font-size: 28px;
     text-align: center;
     margin-top: 80px;
+    letter-spacing: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #text-info #text-info-area h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 7.2px;
   }
 }
 
@@ -332,9 +360,21 @@ nav #menu {
   #text-info #text-info-area p {
     width: 80%;
     font-size: 22px;
-    padding-top: 50px 0;
+    padding-top: 50px;
     text-align: justify;
     margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #text-info #text-info-area p {
+    width: 70%;
+    font-size: 16px;
+    padding-top: 30px;
+    text-align: justify;
+    margin: 0 auto;
+    line-height: 1.8;
   }
 }
 
@@ -346,18 +386,48 @@ nav #menu {
   #text-info #text-info-area button {
     margin-left: 80px;
     margin-top: 100px;
+    background: #fff;
+    color: #00303a;
+    font-weight: 900;
+    font-size: 18px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #text-info #text-info-area button {
+    margin-left: 60px;
+    margin-top: 80px;
+    background: #fff;
+    color: #00303a;
+    font-weight: 900;
+    font-size: 16px;
+    border: none;
   }
 }
 
 #news {
   width: 1280px;
   margin: 0 auto;
-  margin-top: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  #news {
+    width: 100%;
+  }
 }
 
 #news h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 50px 0;
+  color: #00303a;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  #news h1 {
+    margin: 40px 0;
+  }
 }
 
 #news .news-contant {
@@ -368,24 +438,124 @@ nav #menu {
   grid-gap: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  #news .news-contant {
+    grid-gap: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #news .news-contant {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+}
+
 #news img {
   width: 100%;
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  #news img {
+    border-radius: 30px;
+    -webkit-filter: saturate(150%);
+            filter: saturate(150%);
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #news img {
+    border-radius: 0;
+    -webkit-filter: saturate(150%);
+            filter: saturate(150%);
+    height: 400px;
+  }
+}
+
+#news img:hover {
+  border-radius: 50px;
+  -webkit-filter: saturate(150%);
+          filter: saturate(150%);
 }
 
 #news h2 {
   text-align: center;
   padding: 10px 0;
+  letter-spacing: 3px;
+  color: #00303a;
+}
+
+@media screen and (max-width: 1024px) {
+  #news h2 {
+    letter-spacing: 0;
+    font-size: 20px;
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #news h2 {
+    letter-spacing: 2px;
+    font-size: 28px;
+    padding: 20px 0;
+  }
 }
 
 #news p {
   padding: 10px 0;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  height: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  #news p {
+    letter-spacing: 1;
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #news p {
+    letter-spacing: 1;
+    font-size: 16px;
+    padding: 10px 15px;
+    height: 80px;
+  }
 }
 
 #news .btn {
   width: 100%;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  #news .btn {
+    letter-spacing: 1;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 35px;
+    background: #fff;
+    color: #00303a;
+    font-weight: 900;
+    border: 2px solid #00303a;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #news .btn {
+    font-size: 16px;
+    width: 80%;
+  }
 }
 
 #room1 {
@@ -397,6 +567,12 @@ nav #menu {
   position: relative;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  #room1 {
+    margin-top: 50px;
+  }
 }
 
 #room1:hover {
@@ -413,6 +589,26 @@ nav #menu {
   right: 100px;
   bottom: 200px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  #room1 .room-info {
+    left: 0;
+    width: 70%;
+    background: rgba(0, 48, 58, 0.8);
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room1 .room-info {
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    left: 0px;
+    top: 250px;
+    padding: 50px 20px;
+  }
 }
 
 #room1 .room-info span {
@@ -444,14 +640,64 @@ nav #menu {
   font-size: 28px;
 }
 
+@media screen and (max-width: 1024px) {
+  #room1 h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    color: #be956a;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room1 h2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+}
+
 #room1 p {
   font-size: 16px;
   color: #fff;
   padding: 15px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  #room1 p {
+    font-size: 22px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room1 p {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+  }
+}
+
 #room1 .btn-more {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  #room1 .btn-more {
+    font-size: 16px;
+    border: 2px solid #fff;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room1 .btn-more {
+    font-size: 16px;
+    border: 2px solid #fff;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0);
+  }
 }
 
 #room2 {
@@ -473,6 +719,26 @@ nav #menu {
   left: 100px;
   top: 200px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  #room2 .room-info {
+    left: 0;
+    top: 400px;
+    width: 70%;
+    background: rgba(0, 48, 58, 0.8);
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room2 .room-info {
+    left: 95px;
+    top: 250px;
+    width: 70%;
+    text-align: right;
+    padding: 50px 15px;
+  }
 }
 
 #room2 .room-info span {
@@ -504,14 +770,65 @@ nav #menu {
   font-size: 28px;
 }
 
+@media screen and (max-width: 1024px) {
+  #room2 h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    color: #be956a;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room2 h2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #be956a;
+  }
+}
+
 #room2 p {
   font-size: 16px;
   color: #fff;
   padding: 15px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  #room2 p {
+    font-size: 22px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room2 p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
 #room2 .btn-more {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  #room2 .btn-more {
+    font-size: 16px;
+    border: 2px solid #fff;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room2 .btn-more {
+    font-size: 16px;
+    border: 2px solid #fff;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 30px 0 0 auto;
+  }
 }
 
 #room3 {
@@ -538,6 +855,26 @@ nav #menu {
   right: 100px;
   bottom: 200px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  #room3 .room-info {
+    left: 0;
+    width: 70%;
+    background: rgba(0, 48, 58, 0.8);
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room3 .room-info {
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    left: 0px;
+    top: 250px;
+    padding: 50px 20px;
+  }
 }
 
 #room3 .room-info span {
@@ -569,14 +906,64 @@ nav #menu {
   font-size: 28px;
 }
 
+@media screen and (max-width: 1024px) {
+  #room3 h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    color: #be956a;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room3 h2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #be956a;
+  }
+}
+
 #room3 p {
   font-size: 16px;
   color: #fff;
   padding: 15px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  #room3 p {
+    font-size: 22px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room3 p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
 #room3 .btn-more {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  #room3 .btn-more {
+    font-size: 16px;
+    border: 2px solid #fff;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room3 .btn-more {
+    font-size: 16px;
+    border: 2px solid #fff;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0);
+  }
 }
 
 #room4 {
@@ -598,6 +985,26 @@ nav #menu {
   left: 100px;
   top: 200px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  #room4 .room-info {
+    left: 0;
+    top: 400px;
+    width: 70%;
+    background: rgba(0, 48, 58, 0.8);
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room4 .room-info {
+    left: 95px;
+    top: 250px;
+    width: 70%;
+    text-align: right;
+    padding: 50px 15px;
+  }
 }
 
 #room4 .room-info span {
@@ -629,14 +1036,67 @@ nav #menu {
   font-size: 28px;
 }
 
+@media screen and (max-width: 1024px) {
+  #room4 h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    color: #be956a;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room4 h2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #be956a;
+  }
+}
+
 #room4 p {
   font-size: 16px;
   color: #fff;
   padding: 15px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  #room4 p {
+    font-size: 22px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room4 p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
 #room4 .btn-more {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  #room4 .btn-more {
+    font-size: 16px;
+    border: 2px solid #fff;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room4 .btn-more {
+    font-size: 16px;
+    border: 2px solid #fff;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    margin: 30px 0 0 auto;
+  }
 }
 
 #room5 {
@@ -663,6 +1123,26 @@ nav #menu {
   right: 100px;
   bottom: 200px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  #room5 .room-info {
+    left: 0;
+    width: 70%;
+    background: rgba(0, 48, 58, 0.8);
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room5 .room-info {
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    left: 0px;
+    top: 250px;
+    padding: 50px 20px;
+  }
 }
 
 #room5 .room-info span {
@@ -694,14 +1174,65 @@ nav #menu {
   font-size: 28px;
 }
 
+@media screen and (max-width: 1024px) {
+  #room5 h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    color: #be956a;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room5 h2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #be956a;
+  }
+}
+
 #room5 p {
   font-size: 16px;
   color: #fff;
   padding: 15px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  #room5 p {
+    font-size: 22px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room5 p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
 #room5 .btn-more {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  #room5 .btn-more {
+    font-size: 16px;
+    border: 2px solid #fff;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #room5 .btn-more {
+    font-size: 16px;
+    border: 2px solid #fff;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0);
+  }
 }
 
 #land {
@@ -711,6 +1242,12 @@ nav #menu {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  #land {
+    margin-top: 0;
+  }
+}
+
 #land .land-text {
   width: 200px;
   height: 200px;
@@ -718,11 +1255,13 @@ nav #menu {
   position: absolute;
   top: 30px;
   left: 200px;
+  z-index: 3;
 }
 
 #land .land-text h2,
 #land .land-text p {
   display: none;
+  z-index: 3;
 }
 
 #land .land-text h2 {
@@ -824,6 +1363,7 @@ nav #menu {
   width: 50px;
   height: 70px;
   cursor: pointer;
+  z-index: 4;
 }
 
 #maparea {
