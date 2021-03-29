@@ -96,6 +96,10 @@ $mobile: 767px;
     z-index: 8;
     cursor: pointer;
 
+    @media screen and (max-width: $tablet) {
+        right: 30px;
+    }
+
     &:hover {
         filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
     }
