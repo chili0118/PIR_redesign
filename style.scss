@@ -34,9 +34,9 @@ body {
         @media screen and (max-width: $mobile) {
             left: 0;
             top: 180px;
-            width: 400px;
-            height: 400px;
-            padding: 10px 10px;
+            width: 370px;
+            height: 370px;
+            padding: 15px 15px;
         }
 
         .box-close::before {
@@ -56,7 +56,7 @@ body {
                 font-size: 28px;
             }
             @media screen and (max-width: $mobile) {
-                font-size: 26px;
+                font-size: 24px;
             }
         }
 
@@ -97,8 +97,12 @@ nav {
     grid-template-columns: 20% 70% 10%;
     position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 10;
 
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+    }
     @media screen and (max-width: $mobile) {
         grid-template-columns: 20% 10% 70%;
     }
@@ -193,6 +197,10 @@ nav {
         cursor: pointer;
         width: 32px;
         height: 32px;
+
+        &:hover {
+            filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
+        }
     }
 
     #navbox-logo {
@@ -203,6 +211,10 @@ nav {
         display: inline-block;
         cursor: pointer;
         margin-left: 30px;
+
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
     }
 
     #left-box {
@@ -210,6 +222,12 @@ nav {
         margin-top: 80px;
         display: inline-block;
         height: 90vh;
+
+        @media screen and (max-width: $tablet) {
+            display: block;
+            margin: 0;
+            height: 50vh;
+        }
     }
 
     a {
@@ -220,8 +238,21 @@ nav {
         padding: 15px 30px;
         font-size: 18px;
 
+        @media screen and (max-width: $tablet) {
+            font-size: 28px;
+        }
+        @media screen and (max-width: $mobile) {
+            font-size: 24px;
+            padding: 8px 10px;
+        }
+
         &:hover {
             font-weight: 900;
+        }
+    }
+    .navbox-icon {
+        &:hover {
+            filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
         }
     }
 
@@ -230,10 +261,27 @@ nav {
         margin-left: 100px;
         height: 90vh;
 
+        @media screen and (max-width: $tablet) {
+            display: block;
+            margin: 0;
+        }
+        @media screen and (max-width: $mobile) {
+            margin: 10px;
+            margin-left: 0;
+        }
+
         img {
             margin-top: 150px;
             width: 32px;
             height: 32px;
+            
+            @media screen and (max-width: $tablet) {
+                margin-top: 100px;
+            }
+            @media screen and (max-width: $mobile) {
+                margin-top: 50px;
+                
+            }
         }
     }
 
@@ -1165,7 +1213,7 @@ nav {
 
             @media screen and (max-width: $mobile) {
                 width: 100%;
-                height: 500px;   
+                height: 500px;
             }
         }
 
@@ -1189,12 +1237,19 @@ nav {
         top: 70%;
 
         @media screen and (max-width: $tablet) {
+            box-sizing: border-box;
             left: 18%;
             top: 60%;
+            overflow: hidden;
+            width: 70%;
+            height: 30%;
+            
         }
         @media screen and (max-width: $mobile) {
             top: 75%;
             left: 12%;
+            width: 350px;
+            overflow: hidden;
         }
 
         .simg {
@@ -1207,6 +1262,7 @@ nav {
                 width: 500px;
                 height: 300px;
                 box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.3);
+                
             }
 
             @media screen and (max-width: $mobile) {
@@ -1358,7 +1414,7 @@ footer {
             text-align: center;
         }
     }
-    
+
     .footer-logo {
         img {
             width: 300px;
@@ -1368,7 +1424,6 @@ footer {
         }
         @media screen and (max-width: $tablet) {
             display: none;
-            
         }
     }
 
@@ -1400,8 +1455,7 @@ footer {
         position: relative;
 
         @media screen and (max-width: $tablet) {
-            padding-top: 10px;        
-                
+            padding-top: 10px;
         }
 
         a {
@@ -1411,7 +1465,6 @@ footer {
             @media screen and (max-width: $tablet) {
                 padding: 10px;
                 margin-right: 0;
-                
             }
 
             &:hover {

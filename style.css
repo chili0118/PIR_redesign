@@ -33,9 +33,9 @@ body #news-box {
   body #news-box {
     left: 0;
     top: 180px;
-    width: 400px;
-    height: 400px;
-    padding: 10px 10px;
+    width: 370px;
+    height: 370px;
+    padding: 15px 15px;
   }
 }
 
@@ -61,7 +61,7 @@ body #news-box h3 {
 
 @media screen and (max-width: 767px) {
   body #news-box h3 {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
@@ -112,7 +112,13 @@ nav {
       grid-template-columns: 20% 70% 10%;
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 10;
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -220,6 +226,11 @@ nav #menu {
   height: 32px;
 }
 
+.navbox #close:hover {
+  -webkit-filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
+          filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
+}
+
 .navbox #navbox-logo {
   background-image: url(./image/logo-cn-blue.png);
   width: 300px;
@@ -230,11 +241,25 @@ nav #menu {
   margin-left: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+  .navbox #navbox-logo {
+    display: none;
+  }
+}
+
 .navbox #left-box {
   margin-left: 200px;
   margin-top: 80px;
   display: inline-block;
   height: 90vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbox #left-box {
+    display: block;
+    margin: 0;
+    height: 50vh;
+  }
 }
 
 .navbox a {
@@ -246,8 +271,26 @@ nav #menu {
   font-size: 18px;
 }
 
+@media screen and (max-width: 1024px) {
+  .navbox a {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbox a {
+    font-size: 24px;
+    padding: 8px 10px;
+  }
+}
+
 .navbox a:hover {
   font-weight: 900;
+}
+
+.navbox .navbox-icon:hover {
+  -webkit-filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
+          filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
 }
 
 .navbox #right-box {
@@ -256,10 +299,36 @@ nav #menu {
   height: 90vh;
 }
 
+@media screen and (max-width: 1024px) {
+  .navbox #right-box {
+    display: block;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbox #right-box {
+    margin: 10px;
+    margin-left: 0;
+  }
+}
+
 .navbox #right-box img {
   margin-top: 150px;
   width: 32px;
   height: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbox #right-box img {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbox #right-box img {
+    margin-top: 50px;
+  }
 }
 
 .navbox .navbox-icon {
@@ -1415,8 +1484,13 @@ nav #menu {
 
 @media screen and (max-width: 1024px) {
   #land .land-simg {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     left: 18%;
     top: 60%;
+    overflow: hidden;
+    width: 70%;
+    height: 30%;
   }
 }
 
@@ -1424,6 +1498,8 @@ nav #menu {
   #land .land-simg {
     top: 75%;
     left: 12%;
+    width: 350px;
+    overflow: hidden;
   }
 }
 

@@ -3,8 +3,9 @@
 
 // document.querySelector("#today2").valueAsDate = new Date();
 
+
 $("#menu").click (function() {
-    $(".navbox").fadeIn(1500);
+    $(".navbox").show();
 });
 
 $("#close").click (function() {
