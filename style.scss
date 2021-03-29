@@ -507,18 +507,19 @@ nav {
         cursor: pointer;
 
         @media screen and (max-width: $tablet) {
-            left: 0;
-            width: 70%;
+            box-sizing: border-box;
+            bottom: 20%;
+            right: 0;
+            height: 45%;
+            width: 100%;
             background: rgba(0, 48, 58, 0.8);
             padding: 50px 50px;
         }
         @media screen and (max-width: $mobile) {
-            right: 0;
-            bottom: 0;
-            width: 70%;
+            bottom: 100px;
             left: 0px;
-            top: 250px;
             padding: 50px 20px;
+            height: 55%;
         }
 
         span {
@@ -551,7 +552,7 @@ nav {
         font-size: 28px;
 
         @media screen and (max-width: $tablet) {
-            font-size: 36px;
+            font-size: 38px;
             letter-spacing: 3px;
             color: $brandgold;
         }
@@ -574,7 +575,6 @@ nav {
         @media screen and (max-width: $mobile) {
             font-size: 18px;
             line-height: 1.6;
-            letter-spacing: 2px;
         }
     }
 
@@ -616,18 +616,20 @@ nav {
         cursor: pointer;
 
         @media screen and (max-width: $tablet) {
+            box-sizing: border-box;
             left: 0;
-            top: 400px;
-            width: 70%;
+            top: 35%;
+            height: 45%;
+            width: 100%;
             background: rgba(0, 48, 58, 0.8);
             padding: 50px 50px;
         }
         @media screen and (max-width: $mobile) {
-            left: 95px;
-            top: 250px;
-            width: 70%;
-            text-align: right;
-            padding: 50px 15px;
+            height: 60%;
+            bottom: 100px;
+            left: 0px;
+            padding: 50px 20px;
+            height: 55%;
         }
 
         span {
@@ -660,7 +662,7 @@ nav {
         font-size: 28px;
 
         @media screen and (max-width: $tablet) {
-            font-size: 36px;
+            font-size: 38px;
             letter-spacing: 3px;
             color: $brandgold;
         }
@@ -702,7 +704,6 @@ nav {
             border: 2px solid #fff;
             font-weight: 900;
             background-color: rgba(255, 255, 255, 0);
-            margin: 30px 0 0 auto;
         }
     }
 }
@@ -730,18 +731,19 @@ nav {
         cursor: pointer;
 
         @media screen and (max-width: $tablet) {
-            left: 0;
-            width: 70%;
+            box-sizing: border-box;
+            bottom: 20%;
+            right: 0;
+            height: 45%;
+            width: 100%;
             background: rgba(0, 48, 58, 0.8);
             padding: 50px 50px;
         }
         @media screen and (max-width: $mobile) {
-            right: 0;
-            bottom: 0;
-            width: 70%;
+            bottom: 100px;
             left: 0px;
-            top: 250px;
             padding: 50px 20px;
+            height: 55%;
         }
 
         span {
@@ -839,18 +841,20 @@ nav {
         cursor: pointer;
 
         @media screen and (max-width: $tablet) {
+            box-sizing: border-box;
             left: 0;
-            top: 400px;
-            width: 70%;
+            top: 35%;
+            height: 45%;
+            width: 100%;
             background: rgba(0, 48, 58, 0.8);
             padding: 50px 50px;
         }
         @media screen and (max-width: $mobile) {
-            left: 95px;
-            top: 250px;
-            width: 70%;
-            text-align: right;
-            padding: 50px 15px;
+            height: 60%;
+            bottom: 100px;
+            left: 0px;
+            padding: 50px 20px;
+            height: 55%;
         }
 
         span {
@@ -927,7 +931,6 @@ nav {
             font-weight: 900;
             background-color: rgba(255, 255, 255, 0);
             color: #fff;
-            margin: 30px 0 0 auto;
         }
     }
 }
@@ -955,18 +958,19 @@ nav {
         cursor: pointer;
 
         @media screen and (max-width: $tablet) {
-            left: 0;
-            width: 70%;
+            box-sizing: border-box;
+            bottom: 20%;
+            right: 0;
+            height: 45%;
+            width: 100%;
             background: rgba(0, 48, 58, 0.8);
             padding: 50px 50px;
         }
         @media screen and (max-width: $mobile) {
-            right: 0;
-            bottom: 0;
-            width: 70%;
+            bottom: 100px;
             left: 0px;
-            top: 250px;
             padding: 50px 20px;
+            height: 55%;
         }
 
         span {
@@ -1065,9 +1069,22 @@ nav {
         top: 30px;
         left: 200px;
         z-index: 3;
-        
 
-        
+        @media screen and (max-width: $tablet) {
+            top: 30%;
+            left: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 25vh;
+            background-color: rgba(255, 255, 255, 0.4);
+            padding: 20px 80px;
+        }
+        @media screen and (max-width: $mobile) {
+            top: 40%;
+            height: 30vh;
+            padding: 10px 80px;
+        }
+
         h2,
         p {
             display: none;
@@ -1078,17 +1095,40 @@ nav {
             color: $brandgold;
             font-size: 28px;
             padding: 15px 10px;
+
+            @media screen and (max-width: $tablet) {
+                font-size: 30px;
+                text-align: center;
+                letter-spacing: 5px;
+            }
         }
 
         hr {
             background: $brandgold;
             height: 1px;
+
+            @media screen and (max-width: $tablet) {
+                width: 50%;
+                margin: 0 auto;
+                border: none;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 70%;
+            }
         }
 
         p {
             font-size: 18px;
             padding: 15px 10px;
             margin-bottom: 30px;
+
+            @media screen and (max-width: $tablet) {
+                font-size: 22px;
+                text-align: center;
+                letter-spacing: 3px;
+                padding-top: 20px;
+                color: $brandgold;
+            }
 
             span {
                 font-size: 12px;
@@ -1110,11 +1150,23 @@ nav {
         background-size: cover;
         right: 0;
 
+        @media screen and (max-width: $tablet) {
+            bottom: 35%;
+        }
+        @media screen and (max-width: $mobile) {
+            bottom: 15%;
+        }
+
         .bimg {
             width: 900px;
             height: 550px;
             background-size: cover;
             display: none;
+
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+                height: 500px;   
+            }
         }
 
         .bimg-active {
@@ -1136,11 +1188,32 @@ nav {
         left: 0;
         top: 70%;
 
+        @media screen and (max-width: $tablet) {
+            left: 18%;
+            top: 60%;
+        }
+        @media screen and (max-width: $mobile) {
+            top: 75%;
+            left: 12%;
+        }
+
         .simg {
             width: 450px;
             height: 260px;
             background-size: cover;
             display: none;
+
+            @media screen and (max-width: $tablet) {
+                width: 500px;
+                height: 300px;
+                box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.3);
+            }
+
+            @media screen and (max-width: $mobile) {
+                width: 300px;
+                height: 220px;
+                box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.3);
+            }
         }
 
         .simg-active {
@@ -1163,6 +1236,15 @@ nav {
         height: 70px;
         cursor: pointer;
         z-index: 4;
+
+        @media screen and (max-width: $tablet) {
+            background: rgba(190, 149, 106, 0.6);
+            bottom: 55%;
+        }
+        @media screen and (max-width: $mobile) {
+            bottom: 35%;
+            width: 40px;
+        }
     }
 }
 
@@ -1174,6 +1256,14 @@ nav {
     background-image: url(./image/blue.png);
     background-size: cover;
     position: relative;
+
+    @media screen and (max-width: $tablet) {
+        margin-top: 0px;
+    }
+
+    @media screen and (max-width: $mobile) {
+        height: 100vh;
+    }
 }
 
 // 訂房卡片
@@ -1187,15 +1277,37 @@ nav {
     box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.3);
     padding: 40px 60px;
 
+    @media screen and (max-width: $tablet) {
+        top: 250px;
+        left: 50px;
+        padding: 20px 30px;
+        width: 380px;
+        box-sizing: border-box;
+    }
+    @media screen and (max-width: $mobile) {
+        top: 400px;
+        left: 10%;
+        padding: 15px 20px;
+    }
+
     h3 {
         text-align: center;
         color: $brandblue;
         font-size: 30px;
         margin: 10px 0;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 32px;
+        }
     }
     span {
         display: block;
         padding: 20px 0;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 20px;
+            padding: 25px 0;
+        }
     }
 
     input {
@@ -1204,6 +1316,10 @@ nav {
         display: block;
         padding: 10px;
         box-sizing: border-box;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 18px;
+        }
     }
 
     button {
