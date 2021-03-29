@@ -360,6 +360,19 @@ nav #menu {
   background-size: cover;
 }
 
+#news-banner {
+  background-image: url(./image/banner1.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+#news-content h2 {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
 #text-info {
   background-image: url(./image/about.jpg);
   background-size: cover;

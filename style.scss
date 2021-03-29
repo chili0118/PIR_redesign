@@ -313,6 +313,21 @@ nav {
     background-size: cover;
 }
 
+// 最新消息
+#news-banner {
+    background-image: url(./image/banner1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+#news-content {
+    h2 {
+        margin-top: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
 // 飯店文案
 
 #text-info {
