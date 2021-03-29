@@ -1253,16 +1253,16 @@ nav {
     width: 100%;
     height: 500px;
     margin-top: 80px;
-    background-image: url(./image/blue.png);
-    background-size: cover;
     position: relative;
 
     @media screen and (max-width: $tablet) {
-        margin-top: 0px;
+        height: 600px;
+        margin: 5px 0;
     }
 
     @media screen and (max-width: $mobile) {
         height: 100vh;
+        margin-top: 80px;
     }
 }
 
@@ -1280,14 +1280,13 @@ nav {
     @media screen and (max-width: $tablet) {
         top: 250px;
         left: 50px;
-        padding: 20px 30px;
-        width: 380px;
-        box-sizing: border-box;
+        padding: 30px 30px;
+        width: 350px;
     }
     @media screen and (max-width: $mobile) {
         top: 400px;
-        left: 10%;
-        padding: 15px 20px;
+        left: 28px;
+        width: 300px;
     }
 
     h3 {
@@ -1299,6 +1298,9 @@ nav {
         @media screen and (max-width: $tablet) {
             font-size: 32px;
         }
+        @media screen and (max-width: $mobile) {
+            font-size: 30px;
+        }
     }
     span {
         display: block;
@@ -1307,6 +1309,9 @@ nav {
         @media screen and (max-width: $tablet) {
             font-size: 20px;
             padding: 25px 0;
+        }
+        @media screen and (max-width: $mobile) {
+            font-size: 18px;
         }
     }
 
@@ -1320,12 +1325,20 @@ nav {
         @media screen and (max-width: $tablet) {
             font-size: 18px;
         }
+        @media screen and (max-width: $mobile) {
+            font-size: 16px;
+        }
     }
 
     button {
         margin-top: 20px;
         width: 100%;
         margin-top: 50px;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
     }
 }
 
@@ -1334,19 +1347,28 @@ footer {
     margin-top: 250px;
     width: 100%;
     background-color: $brandblue;
-    // padding: 20px 50px;
-    // overflow: hidden;
 
     #top-box {
         display: grid;
         grid-template-columns: 30% 40% 30%;
+
+        @media screen and (max-width: $tablet) {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
+    
     .footer-logo {
         img {
             width: 300px;
             height: 100px;
             object-fit: cover;
             padding: 20px;
+        }
+        @media screen and (max-width: $tablet) {
+            display: none;
+            
         }
     }
 
@@ -1369,7 +1391,6 @@ footer {
 
         address {
             font-style: normal;
-            margin-bottom: 5px;
             display: inline-block;
         }
     }
@@ -1378,9 +1399,20 @@ footer {
         padding: 20px;
         position: relative;
 
+        @media screen and (max-width: $tablet) {
+            padding-top: 10px;        
+                
+        }
+
         a {
             margin-right: 20px;
             transition: 0.3s;
+
+            @media screen and (max-width: $tablet) {
+                padding: 10px;
+                margin-right: 0;
+                
+            }
 
             &:hover {
                 filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
@@ -1403,6 +1435,7 @@ footer {
     position: absolute;
     background-color: $brandblue;
     padding: 10px 0;
+    letter-spacing: 2px;
 }
 
 // 相同樣式
