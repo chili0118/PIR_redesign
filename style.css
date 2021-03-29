@@ -14,7 +14,7 @@
   height: 350px;
   background-color: #00303a;
   opacity: 0.85;
-  z-index: 3;
+  z-index: 9;
 }
 
 @media screen and (max-width: 1024px) {
@@ -214,6 +214,8 @@ nav #menu {
   height: 32px;
   margin: 10px 15px 0 auto;
   padding: 10px 10px;
+  z-index: 8;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -659,14 +661,11 @@ nav #menu {
 }
 
 #room1 {
-  background-image: url(./image/vila1.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover;
   margin-top: 80px;
   position: relative;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -675,7 +674,16 @@ nav #menu {
   }
 }
 
-#room1:hover {
+#room1 #room1bg {
+  background-image: url(./image/vila1.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#room1 #room1bg:hover {
   -webkit-filter: blur(5px);
           filter: blur(5px);
 }
@@ -802,13 +810,24 @@ nav #menu {
 }
 
 #room2 {
-  background-image: url(./image/vila2.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover;
   position: relative;
+}
+
+#room2 #room2bg {
+  background-image: url(./image/vila2.jpg);
+  height: 100vh;
+  width: 100%;
   -webkit-transition: 1s;
   transition: 1s;
+  background-size: cover;
+}
+
+#room2 #room2bg:hover {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
 #room2 .room-info {
@@ -935,16 +954,22 @@ nav #menu {
 }
 
 #room3 {
-  background-image: url(./image/vila3.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover;
   position: relative;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
-#room3:hover {
+#room3 #room3bg {
+  background-image: url(./image/vila3.jpg);
+  height: 100vh;
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-size: cover;
+}
+
+#room3 #room3bg:hover {
   -webkit-filter: blur(5px);
           filter: blur(5px);
 }
@@ -1072,13 +1097,24 @@ nav #menu {
 }
 
 #room4 {
-  background-image: url(./image/vila4.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover;
   position: relative;
+}
+
+#room4 #room4bg {
+  background-image: url(./image/vila4.jpg);
+  height: 100vh;
+  width: 100%;
   -webkit-transition: 1s;
   transition: 1s;
+  background-size: cover;
+}
+
+#room4 #room4bg:hover {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
 #room4 .room-info {
@@ -1207,16 +1243,22 @@ nav #menu {
 }
 
 #room5 {
-  background-image: url(./image/vila5.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover;
   position: relative;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
-#room5:hover {
+#room5 #room5bg {
+  background-image: url(./image/vila5.jpg);
+  height: 100vh;
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-size: cover;
+}
+
+#room5 #room5bg:hover {
   -webkit-filter: blur(5px);
           filter: blur(5px);
 }
@@ -1364,6 +1406,7 @@ nav #menu {
   position: absolute;
   top: 30px;
   left: 200px;
+  z-index: 5;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1374,7 +1417,7 @@ nav #menu {
             box-sizing: border-box;
     width: 100%;
     height: 25vh;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 20px 80px;
   }
 }
@@ -1388,9 +1431,9 @@ nav #menu {
 }
 
 #land .land-text h2,
-#land .land-text p {
+#land .land-text p, #land .land-text hr {
   display: none;
-  z-index: 3;
+  z-index: 5;
 }
 
 #land .land-text h2 {
@@ -1449,7 +1492,7 @@ nav #menu {
 }
 
 #land .land-text .title-active,
-#land .land-text .p-active {
+#land .land-text .p-active, #land .land-text .hr-active {
   display: block;
 }
 
@@ -1577,8 +1620,8 @@ nav #menu {
 #land .next-btn {
   position: absolute;
   right: 0;
-  bottom: 300px;
-  background: rgba(255, 255, 255, 0.6);
+  bottom: 50%;
+  background: rgba(190, 149, 106, 0.6);
   width: 50px;
   height: 70px;
   cursor: pointer;
@@ -1729,16 +1772,27 @@ footer {
 footer #top-box {
   display: -ms-grid;
   display: grid;
+      grid-template-areas: "logo contact icon";
   -ms-grid-columns: 30% 40% 30%;
       grid-template-columns: 30% 40% 30%;
 }
 
 @media screen and (max-width: 1024px) {
   footer #top-box {
-    display: block;
+    display: -ms-grid;
+    display: grid;
     margin: 0 auto;
     text-align: center;
+        grid-template-areas: "icon" "contact" "logo";
+    -ms-grid-columns: none;
+        grid-template-columns: none;
   }
+}
+
+footer .footer-logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
 }
 
 footer .footer-logo img {
@@ -1749,13 +1803,10 @@ footer .footer-logo img {
   padding: 20px;
 }
 
-@media screen and (max-width: 1024px) {
-  footer .footer-logo {
-    display: none;
-  }
-}
-
 footer .footer-contact {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: contact;
   padding: 20px;
 }
 
@@ -1779,13 +1830,16 @@ footer .footer-contact address {
 }
 
 footer .footer-icon {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: icon;
   padding: 20px;
   position: relative;
 }
 
 @media screen and (max-width: 1024px) {
   footer .footer-icon {
-    padding-top: 10px;
+    padding-top: 20px;
   }
 }
 
@@ -1880,6 +1934,11 @@ footer .footer-icon a img {
   border: 1px solid #fff;
 }
 
+.room-info:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+          animation: 0.5s draw linear forwards;
+}
+
 @-webkit-keyframes draw {
   0% {
     stroke-dasharray: 100 2000;
@@ -1910,10 +1969,5 @@ footer .footer-icon a img {
   100% {
     stroke-dasharray: 5000 2000;
   }
-}
-
-#room-info:hover .shape {
-  -webkit-animation: 0.5s draw linear forwards;
-          animation: 0.5s draw linear forwards;
 }
 /*# sourceMappingURL=style.css.map */

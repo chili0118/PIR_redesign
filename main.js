@@ -2,7 +2,7 @@
 // document.querySelector("#today").value = today;
 
 // document.querySelector("#today2").valueAsDate = new Date();
-
+$(".navbox").hide();
 
 $("#menu").click (function() {
     $(".navbox").show();
@@ -21,6 +21,7 @@ var smallimg = document.getElementsByClassName("simg");
 
 var title = document.getElementsByClassName("land-title");
 var p = document.getElementsByClassName("land-p");
+var hr = document.getElementsByClassName("land-hr");
 
 
 function next() {
@@ -32,6 +33,7 @@ function next() {
     showsimg();
     showtitle();
     showp();
+    showhr();
 };
 
 nextBtn.onclick = next;
@@ -62,6 +64,12 @@ function showtitle() {
          p[tp].classList.remove("p-active");
      }
      p[index].classList.add("p-active");
+  }
+  function showhr() {
+      for (let l = 0; l < hr.length; l++) {
+          hr[l].classList.remove("hr-active");
+      }
+      hr[index].classList.add("hr-active");
   }
 
   $(".box-close").click (function () {
