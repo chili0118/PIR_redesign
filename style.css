@@ -117,8 +117,8 @@
 }
 
 #arrow:hover {
-  -webkit-filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
-          filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
+  -webkit-filter: invert(57%) sepia(55%) saturate(287%) hue-rotate(350deg) brightness(97%) contrast(87%);
+          filter: invert(57%) sepia(55%) saturate(287%) hue-rotate(350deg) brightness(97%) contrast(87%);
 }
 
 nav {
