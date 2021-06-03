@@ -8,12 +8,12 @@
 #news-box {
   position: fixed;
   padding: 20px 40px;
-  left: 0;
-  top: 300px;
-  width: 350px;
+  left: 30vw;
+  top: 30vh;
+  width: 500px;
   height: 350px;
   background-color: #00303a;
-  opacity: 0.85;
+  opacity: 0.8;
   z-index: 9;
 }
 
@@ -41,13 +41,14 @@
   width: 20px;
   height: 20px;
   position: absolute;
-  right: 20px;
+  right: 30px;
   cursor: pointer;
 }
 
 #news-box h3 {
-  margin: 10px 0;
+  margin: 15px 30px;
   color: #fff;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -67,6 +68,9 @@
   padding: 10px 30px;
   text-align: justify;
   display: block;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -123,12 +127,12 @@
 
 nav {
   width: 100%;
-  height: 90px;
+  height: 80px;
   background: #00303a;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 70% 10%;
-      grid-template-columns: 20% 70% 10%;
+  -ms-grid-columns: 20% 44% 13% 13% 10%;
+      grid-template-columns: 20% 44% 13% 13% 10%;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -150,14 +154,31 @@ nav {
 nav #logo a img {
   height: 60px;
   background-size: cover;
-  padding: 10px 10px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+nav #nav-book {
+  margin: 30px auto 0;
+}
+
+nav #nav-book a {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2.5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+nav #nav-book a:hover {
+  font-weight: 900;
 }
 
 nav #lang {
   color: #fff;
-  padding: 10px 60px;
   text-align: center;
-  margin: 0 10px 0 auto;
+  margin: 30px auto 0;
   position: relative;
 }
 
@@ -167,21 +188,23 @@ nav #lang {
   }
 }
 
-nav #lang span {
-  display: inline-block;
-  padding: 10px 30px;
+nav #lang .lang-text {
+  font-size: 16px;
+  letter-spacing: 2.5px;
+  -webkit-transition: 1s;
+  transition: 1s;
   height: 50px;
 }
 
-nav #lang span:hover .lang-box {
-  display: block;
+nav #lang .lang-text:hover {
+  font-weight: 900;
 }
 
 nav #lang .lang-box {
   position: absolute;
   background: #00303a;
-  right: 70px;
-  bottom: -115px;
+  right: -10px;
+  bottom: -90px;
   display: none;
 }
 
@@ -190,6 +213,7 @@ nav #lang .lang-box a {
   color: #fff;
   display: block;
   padding: 10px 30px;
+  font-size: 14px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -197,22 +221,23 @@ nav #lang .lang-box a {
 nav #lang .lang-box a:hover {
   color: #00303a;
   background: #fff;
+  font-weight: 900;
 }
 
 nav #lang span {
   display: inline-block;
-  margin-top: 10px;
   cursor: pointer;
 }
 
 nav #lang span:hover .lang-box {
   display: block !important;
+  font-weight: normal;
 }
 
 nav #menu {
   width: 32px;
   height: 32px;
-  margin: 10px 15px 0 auto;
+  margin: 15px 15px 0 auto;
   padding: 10px 10px;
   z-index: 8;
   cursor: pointer;
@@ -225,12 +250,13 @@ nav #menu {
 }
 
 .navbox {
+  display: none;
   height: 100vh;
-  width: 100%;
-  position: absolute;
+  width: 1000px;
+  position: fixed;
   top: 0;
+  right: 0;
   background: #fff;
-  padding: 70px 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
@@ -239,11 +265,13 @@ nav #menu {
 
 .navbox #close {
   position: absolute;
-  right: 50px;
+  right: 25px;
   bottom: 90%;
   cursor: pointer;
   width: 32px;
   height: 32px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .navbox #close:hover {
@@ -251,128 +279,159 @@ nav #menu {
           filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
 }
 
-.navbox #navbox-logo {
-  background-image: url(./image/logo-cn-blue.png);
+.navbox #navbox-l,
+.navbox #navbox-r {
+  width: 50%;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  float: left;
+}
+
+.navbox #navbox-l {
+  background-color: rgba(0, 48, 58, 0.05);
+  text-align: center;
+}
+
+.navbox #navbox-l img {
+  margin-top: 150px;
   width: 300px;
   height: 300px;
-  background-size: cover;
-  display: inline-block;
-  cursor: pointer;
-  margin-left: 30px;
 }
 
-@media screen and (max-width: 1024px) {
-  .navbox #navbox-logo {
-    display: none;
-  }
-}
-
-.navbox #left-box {
-  margin-left: 200px;
-  margin-top: 80px;
-  display: inline-block;
-  height: 90vh;
-}
-
-@media screen and (max-width: 1024px) {
-  .navbox #left-box {
-    display: block;
-    margin: 0;
-    height: 50vh;
-  }
-}
-
-.navbox a {
+.navbox #navbox-l #m-btn span {
   display: block;
-  list-style: none;
-  text-decoration: none;
-  color: #00303a;
-  padding: 15px 30px;
-  font-size: 18px;
+  width: 180px;
+  height: 30px;
+  letter-spacing: 2.5px;
+  padding-left: 2.5px;
+  padding-top: 6px;
+  font-size: 16px;
+  background-color: #00303a;
+  color: #fff;
+  text-align: center;
+  border: none;
+  margin: 0 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 10px auto;
 }
 
-@media screen and (max-width: 1024px) {
-  .navbox a {
-    font-size: 28px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .navbox a {
-    font-size: 24px;
-    padding: 8px 10px;
-  }
-}
-
-.navbox a:hover {
+.navbox #navbox-l #m-btn span:hover {
   font-weight: 900;
 }
 
-.navbox .navbox-icon:hover {
+.navbox #navbox-l #m-btn #m-lang-box {
+  display: none;
+}
+
+.navbox #navbox-l #m-btn #m-lang-box a {
+  width: 182.5px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #00303a;
+  padding: 10px 0;
+  margin-left: -2.5px;
+}
+
+.navbox #navbox-l #m-btn #m-lang-box a:hover {
+  color: #00303a;
+  background-color: #fff;
+}
+
+.navbox #navbox-l #m-btn #m-lang:hover #m-lang-box {
+  display: block !important;
+}
+
+.navbox #navbox-r {
+  background-image: url(./image/brandpattern.png);
+  background-size: cover;
+}
+
+.navbox #navbox-r #m-title {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  padding-left: 2.5px;
+  color: #00303a;
+  margin-top: 200px;
+  padding-left: 50px;
+}
+
+.navbox #navbox-r hr {
+  width: 20%;
+  margin: 10px 0 30px 50px;
+  border: none;
+  height: 3px;
+  background-color: #00303a;
+}
+
+.navbox #navbox-r #m-content {
+  margin-left: 20px;
+}
+
+.navbox #navbox-r #m-content a {
+  text-decoration: none;
+  color: #00303a;
+  font-size: 16px;
+  margin: 10px 30px;
+  display: inline-block;
+}
+
+.navbox #navbox-r #m-content a:hover {
+  font-weight: 900;
+}
+
+.navbox #navbox-r #m-icon {
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+
+.navbox #navbox-r #m-icon img {
+  margin: 0 10px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.navbox #navbox-r #m-icon img:hover {
   -webkit-filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
           filter: invert(66%) sepia(11%) saturate(1278%) hue-rotate(350deg) brightness(91%) contrast(90%);
 }
 
-.navbox #right-box {
-  display: inline-block;
-  margin-left: 100px;
-  height: 90vh;
+.navbox #navbox-r #m-footer {
+  margin-top: 40px;
+  height: 130px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  padding: 10px 0;
 }
 
-@media screen and (max-width: 1024px) {
-  .navbox #right-box {
-    display: block;
-    margin: 0;
-  }
+.navbox #navbox-r #m-footer span {
+  display: block;
+  color: #00303a;
+  font-size: 12px;
+  margin-left: 50px;
+  margin-top: 5px;
 }
 
-@media screen and (max-width: 767px) {
-  .navbox #right-box {
-    margin: 10px;
-    margin-left: 0;
-  }
-}
-
-.navbox #right-box img {
-  margin-top: 150px;
-  width: 32px;
-  height: 32px;
-}
-
-@media screen and (max-width: 1024px) {
-  .navbox #right-box img {
-    margin-top: 100px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .navbox #right-box img {
-    margin-top: 50px;
-  }
-}
-
-.navbox .navbox-icon {
-  display: inline-block !important;
-  cursor: pointer;
+.navbox #navbox-r #m-footer #m-copy {
+  font-size: 10px;
+  color: #bbb;
 }
 
 #banner {
-  background-image: url(./image/banner2.jpg);
+  background-image: url(./image/banner-2.jpg);
   height: 100vh;
   background-size: cover;
-}
-
-#news-banner {
-  background-image: url(./image/banner1.jpg);
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-}
-
-#news-content h2 {
-  margin-top: 20px;
-  font-size: 30px;
-  text-align: center;
 }
 
 #text-info {
@@ -383,10 +442,11 @@ nav #menu {
 }
 
 #text-info h1 {
-  text-align: center;
   color: #fff;
-  padding-top: 50px;
-  font-size: 40px;
+  padding-top: 350px;
+  padding-left: 100px;
+  font-size: 18px;
+  letter-spacing: 3px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -405,107 +465,22 @@ nav #menu {
   }
 }
 
-#text-info #text-info-area {
-  width: 50%;
-  padding: 10px 50px;
-}
-
-@media screen and (max-width: 1024px) {
-  #text-info #text-info-area {
-    padding: 10px 0;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #text-info #text-info-area {
-    padding: 5px 0;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-#text-info #text-info-area h2 {
+#text-info h2 {
+  font-size: 32px;
   color: #fff;
-  padding: 10px 50px;
-  font-size: 26px;
-  margin-top: 50px;
+  padding-left: 100px;
+  padding-top: 30px;
+  letter-spacing: 3px;
 }
 
-@media screen and (max-width: 1024px) {
-  #text-info #text-info-area h2 {
-    font-size: 28px;
-    text-align: center;
-    margin-top: 80px;
-    letter-spacing: 5px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #text-info #text-info-area h2 {
-    font-size: 22px;
-    text-align: center;
-    margin-top: 40px;
-    letter-spacing: 7.2px;
-  }
-}
-
-#text-info #text-info-area p {
-  width: 60%;
+#text-info p {
+  width: 55%;
+  font-size: 14px;
   color: #fff;
-  line-height: 1.5;
-  padding: 10px 50px;
-}
-
-@media screen and (max-width: 1024px) {
-  #text-info #text-info-area p {
-    width: 80%;
-    font-size: 22px;
-    padding-top: 50px;
-    text-align: justify;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #text-info #text-info-area p {
-    width: 70%;
-    font-size: 16px;
-    padding-top: 30px;
-    text-align: justify;
-    margin: 0 auto;
-    line-height: 1.8;
-  }
-}
-
-#text-info #text-info-area button {
-  margin: 20px 50px;
-}
-
-@media screen and (max-width: 1024px) {
-  #text-info #text-info-area button {
-    margin-left: 80px;
-    margin-top: 100px;
-    background: #fff;
-    color: #00303a;
-    font-weight: 900;
-    font-size: 18px;
-    border: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #text-info #text-info-area button {
-    margin-left: 60px;
-    margin-top: 80px;
-    background: #fff;
-    color: #00303a;
-    font-weight: 900;
-    font-size: 16px;
-    border: none;
-  }
+  padding-top: 20px;
+  letter-spacing: 1px;
+  padding-left: 100px;
+  line-height: 1.8;
 }
 
 #news {
@@ -519,25 +494,13 @@ nav #menu {
   }
 }
 
-#news h1 {
-  text-align: center;
-  margin: 50px 0;
-  color: #00303a;
-  font-size: 40px;
-}
-
-@media screen and (max-width: 767px) {
-  #news h1 {
-    margin: 40px 0;
-  }
-}
-
 #news .news-contant {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 30px;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -587,10 +550,19 @@ nav #menu {
           filter: saturate(150%);
 }
 
+#news .date {
+  font-size: 12px;
+  color: #be956a;
+  margin-top: 10px;
+  margin-left: 20px;
+  letter-spacing: 1.5px;
+}
+
 #news h2 {
-  text-align: center;
-  padding: 10px 0;
-  letter-spacing: 3px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 20px;
+  letter-spacing: 2.5px;
   color: #00303a;
 }
 
@@ -613,8 +585,10 @@ nav #menu {
 #news p {
   padding: 10px 0;
   letter-spacing: 1.5px;
-  line-height: 1.6;
-  height: 100px;
+  line-height: 1.8;
+  margin-left: 20px;
+  font-size: 14px;
+  width: 90%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -637,7 +611,7 @@ nav #menu {
 
 #news .btn {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -668,6 +642,20 @@ nav #menu {
   position: relative;
 }
 
+#room1:hover .bg {
+  opacity: 0.5;
+}
+
+#room1 .bg {
+  background-color: #00303a;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
 @media screen and (max-width: 1024px) {
   #room1 {
     margin-top: 50px;
@@ -683,19 +671,12 @@ nav #menu {
   transition: 1s;
 }
 
-#room1 #room1bg:hover {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-}
-
 #room1 .room-info {
   width: 35%;
-  border: 0px solid #fff;
   height: 300px;
-  padding: 100px 80px;
   position: absolute;
-  right: 100px;
-  bottom: 200px;
+  right: 10%;
+  bottom: 30%;
   cursor: pointer;
 }
 
@@ -721,37 +702,46 @@ nav #menu {
   }
 }
 
-#room1 .room-info span {
-  color: #fff;
-}
-
 #room1 .room-info #room-info-box {
   width: 100%;
-  height: 350px;
+  height: 100%;
   position: absolute;
-  right: 12px;
-  bottom: 115px;
   pointer-events: none;
 }
 
-#room1 .room-info .shape {
+#room1 .room-info #room-info-box .shape {
   fill: transparent;
   width: 100%;
-  height: 350px;
-  stroke-dasharray: 100 2000;
-  stroke-dashoffset: 200;
-  stroke-width: 8px;
+  height: 100%;
+  stroke-dasharray: 60 2000;
+  stroke-dashoffset: 490;
+  stroke-width: 6px;
   stroke: #be956a;
 }
 
-#room1 h2 {
+#room1 .room-info .room-content {
+  width: 100%;
+  height: 100%;
+  padding: 30px 50px;
+}
+
+#room1 .room-info .room-content span {
   color: #fff;
-  padding: 15px 0;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  display: block;
+}
+
+#room1 .room-info .room-content h2 {
+  color: #fff;
+  margin: 20px 0;
   font-size: 28px;
+  letter-spacing: 2.5px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room1 h2 {
+  #room1 .room-info .room-content h2 {
     font-size: 38px;
     letter-spacing: 3px;
     color: #be956a;
@@ -759,20 +749,20 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room1 h2 {
+  #room1 .room-info .room-content h2 {
     font-size: 32px;
     letter-spacing: 3px;
   }
 }
 
-#room1 p {
-  font-size: 16px;
+#room1 .room-info .room-content p {
+  font-size: 14px;
   color: #fff;
-  padding: 15px 0;
+  letter-spacing: 1.5px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room1 p {
+  #room1 .room-info .room-content p {
     font-size: 22px;
     line-height: 1.6;
     letter-spacing: 2px;
@@ -780,18 +770,18 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room1 p {
+  #room1 .room-info .room-content p {
     font-size: 18px;
     line-height: 1.6;
   }
 }
 
-#room1 .btn-more {
-  margin-top: 30px;
+#room1 .room-info .room-content .btn-more {
+  margin-top: 35px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room1 .btn-more {
+  #room1 .room-info .room-content .btn-more {
     font-size: 16px;
     border: 2px solid #fff;
     font-weight: 900;
@@ -801,7 +791,7 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room1 .btn-more {
+  #room1 .room-info .room-content .btn-more {
     font-size: 16px;
     border: 2px solid #fff;
     font-weight: 900;
@@ -816,28 +806,33 @@ nav #menu {
   position: relative;
 }
 
+#room2:hover .bg {
+  opacity: 0.5;
+}
+
+#room2 .bg {
+  background-color: #00303a;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
 #room2 #room2bg {
   background-image: url(./image/vila2.jpg);
   height: 100vh;
   width: 100%;
-  -webkit-transition: 1s;
-  transition: 1s;
   background-size: cover;
-}
-
-#room2 #room2bg:hover {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
 }
 
 #room2 .room-info {
   width: 35%;
-  border: 0px solid #fff;
   height: 300px;
-  padding: 100px 80px;
   position: absolute;
-  left: 100px;
-  top: 200px;
+  left: 10%;
+  top: 30%;
   cursor: pointer;
 }
 
@@ -864,37 +859,46 @@ nav #menu {
   }
 }
 
-#room2 .room-info span {
-  color: #fff;
-}
-
 #room2 .room-info #room-info-box {
   width: 100%;
-  height: 350px;
+  height: 100%;
   position: absolute;
-  right: 12px;
-  bottom: 115px;
   pointer-events: none;
 }
 
-#room2 .room-info .shape {
+#room2 .room-info #room-info-box .shape {
   fill: transparent;
   width: 100%;
-  height: 350px;
-  stroke-dasharray: 100 2000;
-  stroke-dashoffset: 200;
-  stroke-width: 8px;
+  height: 100%;
+  stroke-dasharray: 60 2000;
+  stroke-dashoffset: 490;
+  stroke-width: 6px;
   stroke: #be956a;
 }
 
-#room2 h2 {
+#room2 .room-info .room-content {
+  width: 100%;
+  height: 100%;
+  padding: 30px 50px;
+}
+
+#room2 .room-info .room-content span {
   color: #fff;
-  padding: 15px 0;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  display: block;
+}
+
+#room2 .room-info .room-content h2 {
+  color: #fff;
+  margin: 20px 0;
   font-size: 28px;
+  letter-spacing: 2.5px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room2 h2 {
+  #room2 .room-info .room-content h2 {
     font-size: 38px;
     letter-spacing: 3px;
     color: #be956a;
@@ -902,21 +906,21 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room2 h2 {
+  #room2 .room-info .room-content h2 {
     font-size: 32px;
     letter-spacing: 3px;
     color: #be956a;
   }
 }
 
-#room2 p {
-  font-size: 16px;
+#room2 .room-info .room-content p {
+  font-size: 14px;
   color: #fff;
-  padding: 15px 0;
+  letter-spacing: 1.5px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room2 p {
+  #room2 .room-info .room-content p {
     font-size: 22px;
     line-height: 1.6;
     letter-spacing: 2px;
@@ -924,18 +928,18 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room2 p {
+  #room2 .room-info .room-content p {
     font-size: 18px;
     line-height: 1.6;
   }
 }
 
-#room2 .btn-more {
-  margin-top: 30px;
+#room2 .room-info .room-content .btn-more {
+  margin-top: 35px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room2 .btn-more {
+  #room2 .room-info .room-content .btn-more {
     font-size: 16px;
     border: 2px solid #fff;
     font-weight: 900;
@@ -945,7 +949,7 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room2 .btn-more {
+  #room2 .room-info .room-content .btn-more {
     font-size: 16px;
     border: 2px solid #fff;
     font-weight: 900;
@@ -960,28 +964,33 @@ nav #menu {
   position: relative;
 }
 
+#room3:hover .bg {
+  opacity: 0.5;
+}
+
+#room3 .bg {
+  background-color: #00303a;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
 #room3 #room3bg {
   background-image: url(./image/vila3.jpg);
   height: 100vh;
   width: 100%;
-  -webkit-transition: 1s;
-  transition: 1s;
   background-size: cover;
-}
-
-#room3 #room3bg:hover {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
 }
 
 #room3 .room-info {
   width: 35%;
-  border: 0px solid #fff;
   height: 300px;
-  padding: 100px 80px;
   position: absolute;
-  right: 100px;
-  bottom: 200px;
+  right: 10%;
+  bottom: 30%;
   cursor: pointer;
 }
 
@@ -1007,37 +1016,46 @@ nav #menu {
   }
 }
 
-#room3 .room-info span {
-  color: #fff;
-}
-
 #room3 .room-info #room-info-box {
   width: 100%;
-  height: 350px;
+  height: 100%;
   position: absolute;
-  right: 12px;
-  bottom: 115px;
   pointer-events: none;
 }
 
-#room3 .room-info .shape {
+#room3 .room-info #room-info-box .shape {
   fill: transparent;
   width: 100%;
-  height: 350px;
-  stroke-dasharray: 100 2000;
-  stroke-dashoffset: 200;
-  stroke-width: 8px;
+  height: 100%;
+  stroke-dasharray: 60 2000;
+  stroke-dashoffset: 490;
+  stroke-width: 6px;
   stroke: #be956a;
 }
 
-#room3 h2 {
+#room3 .room-info .room-content {
+  width: 100%;
+  height: 100%;
+  padding: 30px 50px;
+}
+
+#room3 .room-info .room-content span {
   color: #fff;
-  padding: 15px 0;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  display: block;
+}
+
+#room3 .room-info .room-content h2 {
+  color: #fff;
+  margin: 20px 0;
   font-size: 28px;
+  letter-spacing: 2.5px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room3 h2 {
+  #room3 .room-info .room-content h2 {
     font-size: 36px;
     letter-spacing: 3px;
     color: #be956a;
@@ -1045,21 +1063,21 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room3 h2 {
+  #room3 .room-info .room-content h2 {
     font-size: 32px;
     letter-spacing: 3px;
     color: #be956a;
   }
 }
 
-#room3 p {
-  font-size: 16px;
+#room3 .room-info .room-content p {
+  font-size: 14px;
   color: #fff;
-  padding: 15px 0;
+  letter-spacing: 1.5px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room3 p {
+  #room3 .room-info .room-content p {
     font-size: 22px;
     line-height: 1.6;
     letter-spacing: 2px;
@@ -1067,18 +1085,18 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room3 p {
+  #room3 .room-info .room-content p {
     font-size: 18px;
     line-height: 1.6;
   }
 }
 
-#room3 .btn-more {
-  margin-top: 30px;
+#room3 .room-info .room-content .btn-more {
+  margin-top: 35px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room3 .btn-more {
+  #room3 .room-info .room-content .btn-more {
     font-size: 16px;
     border: 2px solid #fff;
     font-weight: 900;
@@ -1088,7 +1106,7 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room3 .btn-more {
+  #room3 .room-info .room-content .btn-more {
     font-size: 16px;
     border: 2px solid #fff;
     font-weight: 900;
@@ -1103,28 +1121,34 @@ nav #menu {
   position: relative;
 }
 
+#room4:hover .bg {
+  opacity: 0.5;
+}
+
+#room4 .bg {
+  background-color: #00303a;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
 #room4 #room4bg {
   background-image: url(./image/vila4.jpg);
   height: 100vh;
   width: 100%;
-  -webkit-transition: 1s;
-  transition: 1s;
   background-size: cover;
-}
-
-#room4 #room4bg:hover {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  background-position: center;
 }
 
 #room4 .room-info {
   width: 35%;
-  border: 0px solid #fff;
   height: 300px;
-  padding: 100px 80px;
   position: absolute;
-  left: 100px;
-  top: 200px;
+  left: 10%;
+  top: 30%;
   cursor: pointer;
 }
 
@@ -1151,37 +1175,47 @@ nav #menu {
   }
 }
 
-#room4 .room-info span {
-  color: #fff;
-}
-
 #room4 .room-info #room-info-box {
   width: 100%;
-  height: 350px;
+  height: 100%;
   position: absolute;
-  right: 12px;
-  bottom: 115px;
   pointer-events: none;
 }
 
-#room4 .room-info .shape {
+#room4 .room-info #room-info-box .shape {
   fill: transparent;
   width: 100%;
-  height: 350px;
-  stroke-dasharray: 100 2000;
-  stroke-dashoffset: 200;
-  stroke-width: 8px;
+  height: 100%;
+  stroke-dasharray: 60 2000;
+  stroke-dashoffset: 490;
+  stroke-width: 6px;
   stroke: #be956a;
 }
 
-#room4 h2 {
+#room4 .room-info .room-content {
+  width: 100%;
+  height: 100%;
+  padding: 30px 50px;
+}
+
+#room4 .room-info .room-content span {
   color: #fff;
-  padding: 15px 0;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  display: block;
+}
+
+#room4 .room-info .room-content h2 {
+  color: #fff;
+  margin: 20px 0;
   font-size: 28px;
+  letter-spacing: 2.5px;
+  width: 60%;
 }
 
 @media screen and (max-width: 1024px) {
-  #room4 h2 {
+  #room4 .room-info .room-content h2 {
     font-size: 36px;
     letter-spacing: 3px;
     color: #be956a;
@@ -1189,21 +1223,21 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room4 h2 {
+  #room4 .room-info .room-content h2 {
     font-size: 32px;
     letter-spacing: 3px;
     color: #be956a;
   }
 }
 
-#room4 p {
-  font-size: 16px;
+#room4 .room-info .room-content p {
+  font-size: 14px;
   color: #fff;
-  padding: 15px 0;
+  letter-spacing: 1.5px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room4 p {
+  #room4 .room-info .room-content p {
     font-size: 22px;
     line-height: 1.6;
     letter-spacing: 2px;
@@ -1212,18 +1246,18 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room4 p {
+  #room4 .room-info .room-content p {
     font-size: 18px;
     line-height: 1.6;
   }
 }
 
-#room4 .btn-more {
-  margin-top: 30px;
+#room4 .room-info .room-content .btn-more {
+  margin-top: 35px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room4 .btn-more {
+  #room4 .room-info .room-content .btn-more {
     font-size: 16px;
     border: 2px solid #fff;
     font-weight: 900;
@@ -1233,7 +1267,7 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room4 .btn-more {
+  #room4 .room-info .room-content .btn-more {
     font-size: 16px;
     border: 2px solid #fff;
     font-weight: 900;
@@ -1249,28 +1283,34 @@ nav #menu {
   position: relative;
 }
 
+#room5:hover .bg {
+  opacity: 0.5;
+}
+
+#room5 .bg {
+  background-color: #00303a;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
 #room5 #room5bg {
   background-image: url(./image/vila5.jpg);
   height: 100vh;
   width: 100%;
-  -webkit-transition: 1s;
-  transition: 1s;
   background-size: cover;
-}
-
-#room5 #room5bg:hover {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  background-position: center;
 }
 
 #room5 .room-info {
   width: 35%;
-  border: 0px solid #fff;
   height: 300px;
-  padding: 100px 80px;
   position: absolute;
-  right: 100px;
-  bottom: 200px;
+  right: 10%;
+  bottom: 30%;
   cursor: pointer;
 }
 
@@ -1296,37 +1336,46 @@ nav #menu {
   }
 }
 
-#room5 .room-info span {
-  color: #fff;
-}
-
 #room5 .room-info #room-info-box {
   width: 100%;
-  height: 350px;
+  height: 100%;
   position: absolute;
-  right: 12px;
-  bottom: 115px;
   pointer-events: none;
 }
 
-#room5 .room-info .shape {
+#room5 .room-info #room-info-box .shape {
   fill: transparent;
   width: 100%;
-  height: 350px;
-  stroke-dasharray: 100 2000;
-  stroke-dashoffset: 200;
-  stroke-width: 8px;
+  height: 100%;
+  stroke-dasharray: 60 2000;
+  stroke-dashoffset: 490;
+  stroke-width: 6px;
   stroke: #be956a;
 }
 
-#room5 h2 {
+#room5 .room-info .room-content {
+  width: 100%;
+  height: 100%;
+  padding: 30px 50px;
+}
+
+#room5 .room-info .room-content span {
+  font-size: 14px;
   color: #fff;
-  padding: 15px 0;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  display: block;
+}
+
+#room5 .room-info .room-content h2 {
+  color: #fff;
   font-size: 28px;
+  margin: 20px 0;
+  letter-spacing: 2.5px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room5 h2 {
+  #room5 .room-info .room-content h2 {
     font-size: 36px;
     letter-spacing: 3px;
     color: #be956a;
@@ -1334,21 +1383,21 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room5 h2 {
+  #room5 .room-info .room-content h2 {
     font-size: 32px;
     letter-spacing: 3px;
     color: #be956a;
   }
 }
 
-#room5 p {
-  font-size: 16px;
+#room5 .room-info .room-content p {
+  font-size: 14px;
   color: #fff;
-  padding: 15px 0;
+  letter-spacing: 1.5px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room5 p {
+  #room5 .room-info .room-content p {
     font-size: 22px;
     line-height: 1.6;
     letter-spacing: 2px;
@@ -1357,18 +1406,18 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room5 p {
+  #room5 .room-info .room-content p {
     font-size: 18px;
     line-height: 1.6;
   }
 }
 
-#room5 .btn-more {
-  margin-top: 30px;
+#room5 .room-info .room-content .btn-more {
+  margin-top: 35px;
 }
 
 @media screen and (max-width: 1024px) {
-  #room5 .btn-more {
+  #room5 .room-info .room-content .btn-more {
     font-size: 16px;
     border: 2px solid #fff;
     font-weight: 900;
@@ -1378,7 +1427,7 @@ nav #menu {
 }
 
 @media screen and (max-width: 767px) {
-  #room5 .btn-more {
+  #room5 .room-info .room-content .btn-more {
     font-size: 16px;
     border: 2px solid #fff;
     font-weight: 900;
@@ -1431,7 +1480,8 @@ nav #menu {
 }
 
 #land .land-text h2,
-#land .land-text p, #land .land-text hr {
+#land .land-text p,
+#land .land-text hr {
   display: none;
   z-index: 5;
 }
@@ -1492,7 +1542,8 @@ nav #menu {
 }
 
 #land .land-text .title-active,
-#land .land-text .p-active, #land .land-text .hr-active {
+#land .land-text .p-active,
+#land .land-text .hr-active {
   display: block;
 }
 
@@ -1897,7 +1948,6 @@ footer .footer-icon a img {
 }
 
 .btn {
-  margin: 0 auto;
   display: block;
   padding: 10px 50px;
   color: #fff;
@@ -1916,21 +1966,21 @@ footer .footer-icon a img {
 }
 
 .btn-more {
-  padding: 10px 50px;
-  color: #00303a;
+  padding: 10px 30px;
+  color: #be956a;
   background: #fff;
-  border-radius: 8px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border: 1px solid #00303a;
-  width: 50px;
-  margin-top: 10px;
+  border: none;
+  font-size: 14px;
+  width: 80px;
+  text-align: center;
   cursor: pointer;
 }
 
 .btn-more:hover {
   color: #fff;
-  background: #00303a;
+  background: #be956a;
   border: 1px solid #fff;
 }
 
