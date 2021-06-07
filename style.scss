@@ -12,30 +12,24 @@ $mobile: 767px;
 
 // 浮動視窗
 // 20210530更新
+
 #news-box {
     position: fixed;
     padding: 20px 40px;
-    left: 30vw;
-    top: 30vh;
+    top: 50%;
+    left: 50%;
     width: 500px;
     height: 350px;
     background-color: $brandblue;
     opacity: 0.8;
     z-index: 9;
-
-    @media screen and (max-width: $tablet) {
-        left: 0px;
-        top: 500px;
-        width: 400px;
-        height: 400px;
-    }
+    transform: translate(-50%, -50%);
 
     @media screen and (max-width: $mobile) {
-        left: 0;
-        top: 180px;
-        width: 370px;
-        height: 370px;
-        padding: 15px 15px;
+        width: 95vw;
+        height: 400px;
+        box-sizing: border-box;
+        padding: 10px;
     }
 
     .box-close::before {
@@ -47,45 +41,32 @@ $mobile: 767px;
         cursor: pointer;
     }
 
-    h3 {
-        margin: 15px 30px;
-        color: #fff;
-        font-size: 16px;
+    .news-box-content {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        box-sizing: border-box;
 
-        @media screen and (max-width: $tablet) {
-            font-size: 28px;
-        }
-        @media screen and (max-width: $mobile) {
-            font-size: 24px;
-        }
-    }
-
-    span {
-        color: #fff;
-        padding: 10px 30px;
-        text-align: justify;
-        display: block;
-        line-height: 1.8;
-        letter-spacing: 1px;
-        font-size: 14px;
-
-        @media screen and (max-width: $tablet) {
-            font-size: 20px;
-        }
-        @media screen and (max-width: $mobile) {
-            font-size: 18px;
-        }
-    }
-    .last {
-        margin-right: 0;
-        font-size: 14px;
-        text-align: right !important;
-
-        @media screen and (max-width: $tablet) {
+        h3 {
+            letter-spacing: 1.5px;
+            color: #fff;
             font-size: 16px;
         }
-        @media screen and (max-width: $mobile) {
-            font-size: 16px;
+
+        span {
+            color: #fff;
+            margin-top: 20px;
+            text-align: justify;
+            display: block;
+            line-height: 1.8;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+
+        .last {
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            text-align: right !important;
         }
     }
 }
@@ -100,9 +81,9 @@ $mobile: 767px;
     z-index: 8;
     cursor: pointer;
 
-    @media screen and (max-width: $tablet) {
-        right: 30px;
-    }
+    // @media screen and (max-width: $tablet) {
+    //     right: 30px;
+    // }
 
     &:hover {
         filter: invert(57%) sepia(55%) saturate(287%) hue-rotate(350deg) brightness(97%) contrast(87%);
@@ -123,10 +104,8 @@ nav {
     z-index: 10;
 
     @media screen and (max-width: $mobile) {
-        width: 100%;
-    }
-    @media screen and (max-width: $mobile) {
-        grid-template-columns: 20% 10% 70%;
+        grid-template-columns: 20% 70% 10%;
+        height: 60px;
     }
 
     // 20210527更新
@@ -135,10 +114,20 @@ nav {
         background-size: cover;
         margin-top: 10px;
         margin-left: 15px;
+
+        @media screen and (max-width: $mobile) {
+            height: 40px;
+            margin-left: 10px;
+        }
     }
     // 20210527更新
     #nav-book {
         margin: 30px auto 0;
+
+        @media screen and (max-width: $mobile) {
+            display: none;
+        }
+
         a {
             color: #fff;
             text-align: center;
@@ -159,7 +148,7 @@ nav {
         position: relative;
 
         @media screen and (max-width: $mobile) {
-            opacity: 0;
+            display: none;
         }
 
         .lang-text {
@@ -216,7 +205,7 @@ nav {
         cursor: pointer;
 
         @media screen and (max-width: $mobile) {
-            margin: 15px 20px 0 auto;
+            padding: 0;
         }
     }
 }
@@ -226,18 +215,23 @@ nav {
     height: 100vh;
     width: 1000px;
     position: fixed;
-    top: 0;
     right: 0;
     background: #fff;
-    // padding: 70px 80px;
     box-sizing: border-box;
-    overflow: hidden;
+    // overflow: hidden;
     z-index: 11;
+
+    @media screen and (max-width: $tablet) {
+        width: 800px;
+    }
+    @media screen and (max-width: $mobile) {
+        width: 100vw;
+    }
 
     #close {
         position: absolute;
         right: 25px;
-        bottom: 90%;
+        bottom: 92%;
         cursor: pointer;
         width: 32px;
         height: 32px;
@@ -260,6 +254,10 @@ nav {
     #navbox-l {
         background-color: rgba(0, 48, 58, 0.05);
         text-align: center;
+
+        @media screen and (max-width: $mobile) {
+            display: none;
+        }
 
         img {
             margin-top: 150px;
@@ -321,6 +319,83 @@ nav {
     #navbox-r {
         background-image: url(./image/brandpattern.png);
         background-size: cover;
+
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+        }
+
+        .m-btn {
+            display: none;
+            margin-left: 50px;
+            margin-top: 75px;
+
+            @media screen and (max-width: $mobile) {
+                display: block;
+            }
+
+            span {
+                display: inline-block;
+                width: 150px;
+                height: 30px;
+                letter-spacing: 2.5px;
+                padding-left: 2.5px;
+                padding-top: 6px;
+                font-size: 16px;
+                background-color: $brandblue;
+                color: #fff;
+                text-align: center;
+                border: none;
+                margin: 0 20px;
+                cursor: pointer;
+                transition: 0.5s;
+                margin: 10px auto;
+
+                @media screen and (max-width: $mobile) {
+                    width: 130px;
+                }
+
+                &:hover {
+                    font-weight: 900;
+                }
+            }
+
+            .m-lang-box {
+                display: none;
+                position: absolute;
+                top: 35px;
+
+                a {
+                    width: 152.5px;
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: $brandblue;
+                    padding: 10px 0;
+                    margin-left: -2.5px;
+                    font-weight: normal;
+
+                    @media screen and (max-width: $mobile) {
+                        width: 132.5px;
+                    }
+
+                    &:hover {
+                        color: $brandblue;
+                        background-color: #fff;
+                        font-weight: 900;
+                    }
+                }
+            }
+
+            .m-lang {
+                position: relative;
+
+                &:hover .m-lang-box {
+                    display: block !important;
+                }
+            }
+        }
+
         #m-title {
             font-size: 18px;
             font-weight: 900;
@@ -329,6 +404,10 @@ nav {
             color: $brandblue;
             margin-top: 200px;
             padding-left: 50px;
+
+            @media screen and (max-width: $mobile) {
+                margin-top: 50px;
+            }
         }
 
         hr {
@@ -360,6 +439,10 @@ nav {
             margin-right: 50px;
             margin-top: 100px;
 
+            @media screen and (max-width: $mobile) {
+                margin-top: 80px;
+            }
+
             img {
                 margin: 0 10px;
                 width: 32px;
@@ -384,6 +467,7 @@ nav {
                 display: block;
                 color: $brandblue;
                 font-size: 12px;
+                letter-spacing: 1.5px;
                 margin-left: 50px;
                 margin-top: 5px;
             }
@@ -401,6 +485,11 @@ nav {
     background-image: url(./image/banner-2.jpg);
     height: 100vh;
     background-size: cover;
+    position: relative;
+
+    @media screen and (max-width: $mobile) {
+        height: 50vh;
+    }
 }
 
 // 飯店文案
@@ -411,6 +500,14 @@ nav {
     height: 100vh;
     width: 100%;
 
+    @media screen and (max-width: $mobile) {
+        height: 50vh;
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
     h1 {
         color: #fff;
         padding-top: 350px;
@@ -418,15 +515,9 @@ nav {
         font-size: 18px;
         letter-spacing: 3px;
 
-        @media screen and (max-width: $tablet) {
-            font-size: 50px;
-            padding-top: 150px;
-            letter-spacing: 10px;
-        }
         @media screen and (max-width: $mobile) {
-            font-size: 40px;
-            padding-top: 50px;
-            letter-spacing: 10px;
+            padding-top: 10px;
+            padding-left: 0;
         }
     }
     h2 {
@@ -435,6 +526,11 @@ nav {
         padding-left: 100px;
         padding-top: 30px;
         letter-spacing: 3px;
+
+        @media screen and (max-width: $mobile) {
+            padding-top: 20px;
+            padding-left: 0;
+        }
     }
 
     p {
@@ -445,6 +541,13 @@ nav {
         letter-spacing: 1px;
         padding-left: 100px;
         line-height: 1.8;
+
+        @media screen and (max-width: $mobile) {
+            padding-top: 30px;
+            padding-left: 0;
+            width: 100%;
+            text-align: center;
+        }
     }
 }
 
@@ -456,20 +559,18 @@ nav {
 
     @media screen and (max-width: $tablet) {
         width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
     }
 
-    .news-contant {
+    .news-content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
         margin-top: 50px;
 
-        @media screen and (max-width: $tablet) {
-            grid-gap: 15px;
-        }
         @media screen and (max-width: $mobile) {
             grid-template-columns: 1fr;
-            grid-gap: 40px;
         }
     }
 
@@ -479,21 +580,13 @@ nav {
         object-fit: cover;
         transition: 1s;
 
-        @media screen and (max-width: $tablet) {
-            border-radius: 30px;
-            filter: saturate(150%);
-            height: 300px;
-        }
-
-        @media screen and (max-width: $mobile) {
-            border-radius: 0;
-            filter: saturate(150%);
-            height: 400px;
-        }
-
         &:hover {
             border-radius: 50px;
             filter: saturate(150%);
+        }
+
+        @media screen and (max-width: $mobile) {
+            height: 250px;
         }
     }
 
@@ -512,16 +605,16 @@ nav {
         letter-spacing: 2.5px;
         color: $brandblue;
 
-        @media screen and (max-width: $tablet) {
-            letter-spacing: 0;
-            font-size: 20px;
-            padding: 15px 0;
-        }
-        @media screen and (max-width: $mobile) {
-            letter-spacing: 2px;
-            font-size: 28px;
-            padding: 20px 0;
-        }
+        // @media screen and (max-width: $tablet) {
+        //     letter-spacing: 0;
+        //     font-size: 20px;
+        //     padding: 15px 0;
+        // }
+        // @media screen and (max-width: $mobile) {
+        //     letter-spacing: 2px;
+        //     font-size: 28px;
+        //     padding: 20px 0;
+        // }
     }
 
     p {
@@ -531,39 +624,40 @@ nav {
         margin-left: 20px;
         font-size: 14px;
         width: 90%;
+        // box-sizing: border-box;
 
-        @media screen and (max-width: $tablet) {
-            letter-spacing: 1;
-            font-size: 16px;
-            line-height: 1.8;
-            padding: 10px 10px;
-        }
-        @media screen and (max-width: $mobile) {
-            letter-spacing: 1;
-            font-size: 16px;
-            padding: 10px 15px;
-            height: 80px;
-        }
+        // @media screen and (max-width: $tablet) {
+        //     letter-spacing: 1;
+        //     font-size: 16px;
+        //     line-height: 1.8;
+
+        // }
+        // @media screen and (max-width: $mobile) {
+        //     letter-spacing: 1;
+        //     font-size: 16px;
+        //     padding: 10px 15px;
+        //     height: 80px;
+        // }
     }
 
     .btn {
         width: 100%;
         margin-top: 15px;
 
-        @media screen and (max-width: $tablet) {
-            letter-spacing: 1;
-            font-size: 14px;
-            line-height: 1.8;
-            margin-top: 35px;
-            background: #fff;
-            color: $brandblue;
-            font-weight: 900;
-            border: 2px solid $brandblue;
-        }
-        @media screen and (max-width: $mobile) {
-            font-size: 16px;
-            width: 80%;
-        }
+        // @media screen and (max-width: $tablet) {
+        //     letter-spacing: 1;
+        //     font-size: 14px;
+        //     line-height: 1.8;
+        //     margin-top: 35px;
+        //     background: #fff;
+        //     color: $brandblue;
+        //     font-weight: 900;
+        //     border: 2px solid $brandblue;
+        // }
+        // @media screen and (max-width: $mobile) {
+        //     font-size: 16px;
+        //     width: 80%;
+        // }
     }
 }
 
@@ -574,6 +668,12 @@ nav {
     background-size: cover;
     margin-top: 80px;
     position: relative;
+    transition: 1s;
+
+    @media screen and (max-width: $tablet) {
+        margin-top: 30px;
+        height: 50vh;
+    }
 
     &:hover .bg {
         opacity: 0.5;
@@ -587,18 +687,17 @@ nav {
         top: 0;
         left: 0;
         opacity: 0;
-    }
 
-    @media screen and (max-width: $tablet) {
-        margin-top: 50px;
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
     }
 
     #room1bg {
         background-image: url(./image/vila1.jpg);
-        height: 100vh;
+        height: 100%;
         width: 100%;
         background-size: cover;
-        transition: 1s;
     }
 
     .room-info {
@@ -610,19 +709,15 @@ nav {
         cursor: pointer;
 
         @media screen and (max-width: $tablet) {
-            box-sizing: border-box;
-            bottom: 20%;
-            right: 0;
-            height: 45%;
-            width: 100%;
-            background: rgba(0, 48, 58, 0.8);
-            padding: 50px 50px;
+            width: 40%;
         }
+
         @media screen and (max-width: $mobile) {
-            bottom: 100px;
-            left: 0px;
-            padding: 50px 20px;
-            height: 55%;
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            top: 30%;
+            left: 0;
         }
 
         #room-info-box {
@@ -639,6 +734,10 @@ nav {
                 stroke-dashoffset: 490;
                 stroke-width: 6px;
                 stroke: $brandgold;
+
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
             }
         }
 
@@ -646,6 +745,12 @@ nav {
             width: 100%;
             height: 100%;
             padding: 30px 50px;
+            box-sizing: border-box;
+
+            @media screen and (max-width: $tablet) {
+                background: rgba(190, 149, 106, 0.6);
+                padding: 10px 50px;
+            }
 
             span {
                 color: #fff;
@@ -654,61 +759,28 @@ nav {
                 margin-top: 10px;
                 display: block;
             }
-    
+
             h2 {
                 color: #fff;
                 margin: 20px 0;
                 font-size: 28px;
                 letter-spacing: 2.5px;
-                
-    
-                @media screen and (max-width: $tablet) {
-                    font-size: 38px;
-                    letter-spacing: 3px;
-                    color: $brandgold;
-                }
-                @media screen and (max-width: $mobile) {
-                    font-size: 32px;
-                    letter-spacing: 3px;
-                }
             }
-    
+
             p {
                 font-size: 14px;
                 color: #fff;
                 letter-spacing: 1.5px;
-    
-                @media screen and (max-width: $tablet) {
-                    font-size: 22px;
-                    line-height: 1.6;
-                    letter-spacing: 2px;
-                }
-                @media screen and (max-width: $mobile) {
-                    font-size: 18px;
-                    line-height: 1.6;
-                }
             }
-    
+
             .btn-more {
                 margin-top: 35px;
-    
-                @media screen and (max-width: $tablet) {
-                    font-size: 16px;
-                    border: 2px solid #fff;
-                    font-weight: 900;
-                    background-color: rgba(255, 255, 255, 0);
-                    color: #fff;
-                }
+
                 @media screen and (max-width: $mobile) {
-                    font-size: 16px;
-                    border: 2px solid #fff;
-                    font-weight: 900;
-                    background-color: rgba(255, 255, 255, 0);
+                    display: none;
                 }
             }
         }
-
-        
     }
 }
 
@@ -717,6 +789,10 @@ nav {
     width: 100%;
     background-size: cover;
     position: relative;
+
+    @media screen and (max-width: $tablet) {
+        height: 50vh;
+    }
 
     &:hover .bg {
         opacity: 0.5;
@@ -730,11 +806,15 @@ nav {
         top: 0;
         left: 0;
         opacity: 0;
+
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
     }
 
     #room2bg {
         background-image: url(./image/vila2.jpg);
-        height: 100vh;
+        height: 100%;
         width: 100%;
         background-size: cover;
     }
@@ -748,20 +828,14 @@ nav {
         cursor: pointer;
 
         @media screen and (max-width: $tablet) {
-            box-sizing: border-box;
-            left: 0;
-            top: 35%;
-            height: 45%;
-            width: 100%;
-            background: rgba(0, 48, 58, 0.8);
-            padding: 50px 50px;
+            width: 40%;
         }
         @media screen and (max-width: $mobile) {
-            height: 60%;
-            bottom: 100px;
-            left: 0px;
-            padding: 50px 20px;
-            height: 55%;
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            top: 30%;
+            left: 0;
         }
 
         #room-info-box {
@@ -778,6 +852,10 @@ nav {
                 stroke-dashoffset: 490;
                 stroke-width: 6px;
                 stroke: $brandgold;
+
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
             }
         }
 
@@ -785,6 +863,12 @@ nav {
             width: 100%;
             height: 100%;
             padding: 30px 50px;
+            box-sizing: border-box;
+
+            @media screen and (max-width: $tablet) {
+                background: rgba(190, 149, 106, 0.6);
+                padding: 10px 50px;
+            }
 
             span {
                 color: #fff;
@@ -799,57 +883,23 @@ nav {
                 margin: 20px 0;
                 font-size: 28px;
                 letter-spacing: 2.5px;
-        
-                @media screen and (max-width: $tablet) {
-                    font-size: 38px;
-                    letter-spacing: 3px;
-                    color: $brandgold;
-                }
-                @media screen and (max-width: $mobile) {
-                    font-size: 32px;
-                    letter-spacing: 3px;
-                    color: $brandgold;
-                }
             }
-        
+
             p {
                 font-size: 14px;
                 color: #fff;
                 letter-spacing: 1.5px;
-        
-                @media screen and (max-width: $tablet) {
-                    font-size: 22px;
-                    line-height: 1.6;
-                    letter-spacing: 2px;
-                }
-                @media screen and (max-width: $mobile) {
-                    font-size: 18px;
-                    line-height: 1.6;
-                }
             }
-        
+
             .btn-more {
                 margin-top: 35px;
-        
-                @media screen and (max-width: $tablet) {
-                    font-size: 16px;
-                    border: 2px solid #fff;
-                    font-weight: 900;
-                    background-color: rgba(255, 255, 255, 0);
-                    color: #fff;
-                }
+
                 @media screen and (max-width: $mobile) {
-                    font-size: 16px;
-                    border: 2px solid #fff;
-                    font-weight: 900;
-                    background-color: rgba(255, 255, 255, 0);
+                    display: none;
                 }
             }
-
         }
     }
-
-   
 }
 
 #room3 {
@@ -857,6 +907,10 @@ nav {
     width: 100%;
     background-size: cover;
     position: relative;
+
+    @media screen and (max-width: $tablet) {
+        height: 50vh;
+    }
 
     &:hover .bg {
         opacity: 0.5;
@@ -870,11 +924,15 @@ nav {
         top: 0;
         left: 0;
         opacity: 0;
+
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
     }
 
     #room3bg {
         background-image: url(./image/vila3.jpg);
-        height: 100vh;
+        height: 100%;
         width: 100%;
         background-size: cover;
     }
@@ -888,19 +946,14 @@ nav {
         cursor: pointer;
 
         @media screen and (max-width: $tablet) {
-            box-sizing: border-box;
-            bottom: 20%;
-            right: 0;
-            height: 45%;
-            width: 100%;
-            background: rgba(0, 48, 58, 0.8);
-            padding: 50px 50px;
+            width: 40%;
         }
         @media screen and (max-width: $mobile) {
-            bottom: 100px;
-            left: 0px;
-            padding: 50px 20px;
-            height: 55%;
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            top: 30%;
+            left: 0;
         }
 
         #room-info-box {
@@ -917,6 +970,10 @@ nav {
                 stroke-dashoffset: 490;
                 stroke-width: 6px;
                 stroke: $brandgold;
+
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
             }
         }
 
@@ -924,6 +981,12 @@ nav {
             width: 100%;
             height: 100%;
             padding: 30px 50px;
+            box-sizing: border-box;
+
+            @media screen and (max-width: $tablet) {
+                background: rgba(190, 149, 106, 0.6);
+                padding: 10px 50px;
+            }
 
             span {
                 color: #fff;
@@ -938,57 +1001,23 @@ nav {
                 margin: 20px 0;
                 font-size: 28px;
                 letter-spacing: 2.5px;
-        
-                @media screen and (max-width: $tablet) {
-                    font-size: 36px;
-                    letter-spacing: 3px;
-                    color: $brandgold;
-                }
-                @media screen and (max-width: $mobile) {
-                    font-size: 32px;
-                    letter-spacing: 3px;
-                    color: $brandgold;
-                }
             }
-        
+
             p {
                 font-size: 14px;
                 color: #fff;
                 letter-spacing: 1.5px;
-        
-                @media screen and (max-width: $tablet) {
-                    font-size: 22px;
-                    line-height: 1.6;
-                    letter-spacing: 2px;
-                }
-                @media screen and (max-width: $mobile) {
-                    font-size: 18px;
-                    line-height: 1.6;
-                }
             }
-        
+
             .btn-more {
                 margin-top: 35px;
-        
-                @media screen and (max-width: $tablet) {
-                    font-size: 16px;
-                    border: 2px solid #fff;
-                    font-weight: 900;
-                    background-color: rgba(255, 255, 255, 0);
-                    color: #fff;
-                }
+
                 @media screen and (max-width: $mobile) {
-                    font-size: 16px;
-                    border: 2px solid #fff;
-                    font-weight: 900;
-                    background-color: rgba(255, 255, 255, 0);
+                    display: none;
                 }
             }
-
         }
     }
-
-    
 }
 
 #room4 {
@@ -996,6 +1025,10 @@ nav {
     width: 100%;
     background-size: cover;
     position: relative;
+
+    @media screen and (max-width: $tablet) {
+        height: 50vh;
+    }
 
     &:hover .bg {
         opacity: 0.5;
@@ -1009,11 +1042,15 @@ nav {
         top: 0;
         left: 0;
         opacity: 0;
+
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
     }
 
     #room4bg {
         background-image: url(./image/vila4.jpg);
-        height: 100vh;
+        height: 100%;
         width: 100%;
         background-size: cover;
         background-position: center;
@@ -1028,20 +1065,14 @@ nav {
         cursor: pointer;
 
         @media screen and (max-width: $tablet) {
-            box-sizing: border-box;
-            left: 0;
-            top: 35%;
-            height: 45%;
-            width: 100%;
-            background: rgba(0, 48, 58, 0.8);
-            padding: 50px 50px;
+            width: 40%;
         }
         @media screen and (max-width: $mobile) {
-            height: 60%;
-            bottom: 100px;
-            left: 0px;
-            padding: 50px 20px;
-            height: 55%;
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            top: 30%;
+            left: 0;
         }
 
         #room-info-box {
@@ -1058,6 +1089,10 @@ nav {
                 stroke-dashoffset: 490;
                 stroke-width: 6px;
                 stroke: $brandgold;
+
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
             }
         }
 
@@ -1065,6 +1100,12 @@ nav {
             width: 100%;
             height: 100%;
             padding: 30px 50px;
+            box-sizing: border-box;
+
+            @media screen and (max-width: $tablet) {
+                background: rgba(190, 149, 106, 0.6);
+                padding: 10px 50px;
+            }
 
             span {
                 color: #fff;
@@ -1081,59 +1122,27 @@ nav {
                 font-size: 28px;
                 letter-spacing: 2.5px;
                 width: 60%;
-        
+
                 @media screen and (max-width: $tablet) {
-                    font-size: 36px;
-                    letter-spacing: 3px;
-                    color: $brandgold;
-                }
-                @media screen and (max-width: $mobile) {
-                    font-size: 32px;
-                    letter-spacing: 3px;
-                    color: $brandgold;
+                    width: 100%;
                 }
             }
-        
+
             p {
                 font-size: 14px;
                 color: #fff;
                 letter-spacing: 1.5px;
-        
-                @media screen and (max-width: $tablet) {
-                    font-size: 22px;
-                    line-height: 1.6;
-                    letter-spacing: 2px;
-                    padding: 0;
-                }
-                @media screen and (max-width: $mobile) {
-                    font-size: 18px;
-                    line-height: 1.6;
-                }
             }
-        
+
             .btn-more {
                 margin-top: 35px;
-        
-                @media screen and (max-width: $tablet) {
-                    font-size: 16px;
-                    border: 2px solid #fff;
-                    font-weight: 900;
-                    background-color: rgba(255, 255, 255, 0);
-                    color: #fff;
-                }
+
                 @media screen and (max-width: $mobile) {
-                    font-size: 16px;
-                    border: 2px solid #fff;
-                    font-weight: 900;
-                    background-color: rgba(255, 255, 255, 0);
-                    color: #fff;
+                    display: none;
                 }
             }
         }
-        
     }
-
-    
 }
 
 #room5 {
@@ -1141,6 +1150,10 @@ nav {
     width: 100%;
     background-size: cover;
     position: relative;
+
+    @media screen and (max-width: $tablet) {
+        height: 50vh;
+    }
 
     &:hover .bg {
         opacity: 0.5;
@@ -1154,11 +1167,15 @@ nav {
         top: 0;
         left: 0;
         opacity: 0;
+
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
     }
 
     #room5bg {
         background-image: url(./image/vila5.jpg);
-        height: 100vh;
+        height: 100%;
         width: 100%;
         background-size: cover;
         background-position: center;
@@ -1173,19 +1190,14 @@ nav {
         cursor: pointer;
 
         @media screen and (max-width: $tablet) {
-            box-sizing: border-box;
-            bottom: 20%;
-            right: 0;
-            height: 45%;
-            width: 100%;
-            background: rgba(0, 48, 58, 0.8);
-            padding: 50px 50px;
+            width: 40%;
         }
         @media screen and (max-width: $mobile) {
-            bottom: 100px;
-            left: 0px;
-            padding: 50px 20px;
-            height: 55%;
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            top: 30%;
+            left: 0;
         }
 
         #room-info-box {
@@ -1202,6 +1214,10 @@ nav {
                 stroke-dashoffset: 490;
                 stroke-width: 6px;
                 stroke: $brandgold;
+
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
             }
         }
 
@@ -1209,6 +1225,12 @@ nav {
             width: 100%;
             height: 100%;
             padding: 30px 50px;
+            box-sizing: border-box;
+
+            @media screen and (max-width: $tablet) {
+                background: rgba(190, 149, 106, 0.6);
+                padding: 10px 50px;
+            }
 
             span {
                 font-size: 14px;
@@ -1223,59 +1245,23 @@ nav {
                 font-size: 28px;
                 margin: 20px 0;
                 letter-spacing: 2.5px;
-                
-        
-                @media screen and (max-width: $tablet) {
-                    font-size: 36px;
-                    letter-spacing: 3px;
-                    color: $brandgold;
-                }
-                @media screen and (max-width: $mobile) {
-                    font-size: 32px;
-                    letter-spacing: 3px;
-                    color: $brandgold;
-                }
             }
-        
+
             p {
                 font-size: 14px;
                 color: #fff;
                 letter-spacing: 1.5px;
-        
-                @media screen and (max-width: $tablet) {
-                    font-size: 22px;
-                    line-height: 1.6;
-                    letter-spacing: 2px;
-                    padding: 0;
-                }
-                @media screen and (max-width: $mobile) {
-                    font-size: 18px;
-                    line-height: 1.6;
-                }
             }
-        
+
             .btn-more {
                 margin-top: 35px;
-        
-                @media screen and (max-width: $tablet) {
-                    font-size: 16px;
-                    border: 2px solid #fff;
-                    font-weight: 900;
-                    background-color: rgba(255, 255, 255, 0);
-                    color: #fff;
-                }
+
                 @media screen and (max-width: $mobile) {
-                    font-size: 16px;
-                    border: 2px solid #fff;
-                    font-weight: 900;
-                    background-color: rgba(255, 255, 255, 0);
+                    display: none;
                 }
             }
         }
-       
     }
-
-    
 }
 
 // 飯店設施
@@ -1283,92 +1269,72 @@ nav {
     height: 100vh;
     width: 100%;
     position: relative;
-    margin-top: 20px;
+    background-color: rgb(242, 242, 242);
 
     @media screen and (max-width: $tablet) {
-        margin-top: 0;
+        height: 50vh;
     }
 
-    .land-text {
-        width: 200px;
-        height: 200px;
-        padding: 50px 80px;
+    #land-text-area {
+        width: 450px;
+        height: 220px;
         position: absolute;
-        top: 30px;
-        left: 200px;
+        top: 150px;
+        left: 300px;
+        background-color: #fff;
+        box-shadow: 5px 8px 13px rgba(0, 0, 0, 0.05);
         z-index: 5;
 
         @media screen and (max-width: $tablet) {
-            top: 30%;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.9);
+            top: 10%;
             left: 0;
-            box-sizing: border-box;
-            width: 100%;
-            height: 25vh;
-            background-color: rgba(255, 255, 255, 0.2);
-            padding: 20px 80px;
         }
+
         @media screen and (max-width: $mobile) {
-            top: 40%;
-            height: 30vh;
-            padding: 10px 80px;
+            top: 25%;
+            width: 100%;
+            height: 180px;
         }
 
-        h2,
-        p,
-        hr {
+        .land-text {
             display: none;
-            z-index: 5;
-        }
 
-        h2 {
-            color: $brandgold;
-            font-size: 28px;
-            padding: 15px 10px;
+            h2 {
+                color: #999;
+                font-size: 16px;
+                margin: 30px 50px;
+                letter-spacing: 1.5px;
+                z-index: 2;
 
-            @media screen and (max-width: $tablet) {
-                font-size: 30px;
-                text-align: center;
-                letter-spacing: 5px;
+                @media screen and (max-width: $mobile) {
+                    margin: 20px 50px;
+                }
             }
-        }
 
-        hr {
-            background: $brandgold;
-            height: 1px;
-
-            @media screen and (max-width: $tablet) {
-                width: 50%;
-                margin: 0 auto;
-                border: none;
-            }
-            @media screen and (max-width: $mobile) {
-                width: 70%;
-            }
-        }
-
-        p {
-            font-size: 18px;
-            padding: 15px 10px;
-            margin-bottom: 30px;
-
-            @media screen and (max-width: $tablet) {
-                font-size: 22px;
-                text-align: center;
-                letter-spacing: 3px;
-                padding-top: 20px;
+            h5 {
+                font-size: 28px;
+                margin: 0 50px;
+                letter-spacing: 2.5px;
                 color: $brandgold;
             }
 
-            span {
-                font-size: 12px;
-                display: block;
-                margin-top: 5px;
+            .land-content {
+                margin-left: 50px;
+                margin-top: 20px;
+
+                span {
+                    font-size: 14px;
+                    color: #999;
+                    display: block;
+                    margin-top: 5px;
+                    letter-spacing: 1.5px;
+                }
             }
         }
 
-        .title-active,
-        .p-active,
-        .hr-active {
+        .text-active {
             display: block;
         }
     }
@@ -1376,27 +1342,20 @@ nav {
     .land-bimg {
         position: absolute;
         width: 900px;
-        height: 550px;
+        height: 500px;
         background-size: cover;
         right: 0;
 
         @media screen and (max-width: $tablet) {
-            bottom: 35%;
-        }
-        @media screen and (max-width: $mobile) {
-            bottom: 15%;
+            width: 100%;
+            height: 100%;
         }
 
         .bimg {
-            width: 900px;
-            height: 550px;
+            width: 100%;
+            height: 100%;
             background-size: cover;
             display: none;
-
-            @media screen and (max-width: $mobile) {
-                width: 100%;
-                height: 500px;
-            }
         }
 
         .bimg-active {
@@ -1413,43 +1372,19 @@ nav {
     .land-simg {
         background-size: cover;
         width: 450px;
-        height: 260px;
+        height: 300px;
         position: absolute;
-        left: 0;
-        top: 70%;
+        bottom: 0;
 
         @media screen and (max-width: $tablet) {
-            box-sizing: border-box;
-            left: 18%;
-            top: 60%;
-            overflow: hidden;
-            width: 70%;
-            height: 30%;
-        }
-        @media screen and (max-width: $mobile) {
-            top: 75%;
-            left: 12%;
-            width: 350px;
-            overflow: hidden;
+            display: none;
         }
 
         .simg {
-            width: 450px;
-            height: 260px;
+            width: 100%;
+            height: 100%;
             background-size: cover;
             display: none;
-
-            @media screen and (max-width: $tablet) {
-                width: 500px;
-                height: 300px;
-                box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.3);
-            }
-
-            @media screen and (max-width: $mobile) {
-                width: 300px;
-                height: 220px;
-                box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.3);
-            }
         }
 
         .simg-active {
@@ -1466,20 +1401,20 @@ nav {
     .next-btn {
         position: absolute;
         right: 0;
-        bottom: 50%;
-        background: rgba(190, 149, 106, 0.6);
+        bottom: 55%;
+        background: rgba(190, 149, 106, 0.9);
         width: 50px;
         height: 70px;
         cursor: pointer;
-        z-index: 4;
+        z-index: 6;
 
         @media screen and (max-width: $tablet) {
-            background: rgba(190, 149, 106, 0.6);
-            bottom: 55%;
+            background: rgba(255, 255, 255, 0.9);
+            bottom: 50%;
         }
         @media screen and (max-width: $mobile) {
-            bottom: 35%;
-            width: 40px;
+            background: rgba(190, 149, 106, 0.9);
+            bottom: 40%;
         }
     }
 }
@@ -1488,99 +1423,94 @@ nav {
 #maparea {
     width: 100%;
     height: 500px;
-    margin-top: 80px;
+    padding-top: 50px;
+    background-color: rgb(242, 242, 242);
     position: relative;
 
     @media screen and (max-width: $tablet) {
-        height: 600px;
-        margin: 5px 0;
+        background-color: #fff;
     }
-
     @media screen and (max-width: $mobile) {
         height: 100vh;
-        margin-top: 80px;
     }
-}
 
-// 訂房卡片
-#book-card {
-    position: absolute;
-    left: 220px;
-    top: 100px;
-    width: 320px;
-    height: 450px;
-    background-color: #fff;
-    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.3);
-    padding: 40px 60px;
-
-    @media screen and (max-width: $tablet) {
-        top: 250px;
-        left: 50px;
-        padding: 30px 30px;
-        width: 350px;
+    #map {
+        width: 100%;
+        height: 100%;
     }
-    @media screen and (max-width: $mobile) {
-        top: 400px;
-        left: 28px;
+
+    // 訂房卡片
+    #book-card {
+        position: absolute;
+        left: 220px;
+        top: 100px;
         width: 300px;
-    }
-
-    h3 {
-        text-align: center;
-        color: $brandblue;
-        font-size: 30px;
-        margin: 10px 0;
+        height: 450px;
+        background-color: #fff;
+        box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
+        padding: 40px 60px;
 
         @media screen and (max-width: $tablet) {
-            font-size: 32px;
+            top: 200px;
+            left: 50px;
+            padding: 30px 30px;
+            height: 400px;
         }
         @media screen and (max-width: $mobile) {
-            font-size: 30px;
+            padding: 25px 25px;
+            left: 30px;
+            top: 450px;
         }
-    }
-    span {
-        display: block;
-        padding: 20px 0;
 
-        @media screen and (max-width: $tablet) {
-            font-size: 20px;
-            padding: 25px 0;
+        h3 {
+            text-align: center;
+            color: $brandblue;
+            font-size: 28px;
+            margin-bottom: 50px;
+
+            
         }
-        @media screen and (max-width: $mobile) {
-            font-size: 18px;
+
+        span {
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            display: block;
+            margin-top: 30px;
+
+           
         }
-    }
 
-    input {
-        width: 100%;
-        font-size: 16px;
-        display: block;
-        padding: 10px;
-        box-sizing: border-box;
+        input {
+            margin-top: 10px;
+            width: 100%;
+            font-size: 12px;
+            color: #999;
+            letter-spacing: 1.5px;
+            display: block;
+            padding: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
 
-        @media screen and (max-width: $tablet) {
-            font-size: 18px;
+            @media screen and (max-width: $tablet) {
+                padding: 8px;
+            }
         }
-        @media screen and (max-width: $mobile) {
-            font-size: 16px;
-        }
-    }
 
-    button {
-        margin-top: 20px;
-        width: 100%;
-        margin-top: 50px;
+        button {
+            width: 100%;
+            margin-top: 80px;
 
-        @media screen and (max-width: $tablet) {
-            font-size: 16px;
-            letter-spacing: 2px;
+            // @media screen and (max-width: $tablet) {
+            //     font-size: 16px;
+            //     letter-spacing: 2px;
+            // }
         }
     }
 }
 
 // 頁尾
 footer {
-    margin-top: 250px;
+    margin-top: 200px;
     width: 100%;
     background-color: $brandblue;
 
@@ -1589,7 +1519,7 @@ footer {
         grid-template-areas: "logo contact icon";
         grid-template-columns: 30% 40% 30%;
 
-        @media screen and (max-width: $tablet) {
+        @media screen and (max-width: $mobile) {
             display: grid;
             margin: 0 auto;
             text-align: center;
@@ -1600,18 +1530,34 @@ footer {
 
     .footer-logo {
         grid-area: logo;
+        margin: 30px auto 0;
+
+        @media screen and (max-width: $tablet) {
+            text-align: center;
+        }
+        @media screen and (max-width: $mobile) {
+            margin: 0 auto;
+        }
 
         img {
             width: 300px;
             height: 100px;
             object-fit: cover;
-            padding: 20px;
+
+            @media screen and (max-width: $tablet) {
+                width: 240px;
+                height: 80px;
+            }
         }
     }
 
     .footer-contact {
         grid-area: contact;
-        padding: 20px;
+        margin: 30px auto 0;
+
+        @media screen and (max-width: $tablet) {
+            margin: 30px auto;
+        }
 
         .icon-list {
             width: 20px;
@@ -1624,7 +1570,8 @@ footer {
             text-decoration: none;
             color: #fff;
             display: inline-block;
-            margin-bottom: 5px;
+            font-size: 12px;
+            letter-spacing: 1.5px;
         }
 
         address {
@@ -1635,18 +1582,15 @@ footer {
 
     .footer-icon {
         grid-area: icon;
-        padding: 20px;
-        position: relative;
+        margin: 30px auto 0;
 
-        @media screen and (max-width: $tablet) {
-            padding-top: 20px;
-        }
+        
 
         a {
             margin-right: 20px;
             transition: 0.3s;
 
-            @media screen and (max-width: $tablet) {
+            @media screen and (max-width: $mobile) {
                 padding: 10px;
                 margin-right: 0;
             }
@@ -1661,18 +1605,18 @@ footer {
             }
         }
     }
-}
 
-// Copyright
-#copy-text {
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    font-size: 10px;
-    position: absolute;
-    background-color: $brandblue;
-    padding: 10px 0;
-    letter-spacing: 2px;
+    // Copyright
+    #copy-text {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 8px;
+        position: absolute;
+        background-color: $brandblue;
+        padding: 10px 0;
+        letter-spacing: 1.5px;
+    }
 }
 
 // 相同樣式
@@ -1697,12 +1641,13 @@ footer {
 .btn {
     // margin: 0 auto;
     display: block;
-    padding: 10px 50px;
+    padding: 10px 30px;
     color: #fff;
     background: $brandblue;
-    border-radius: 8px;
+    // border-radius: 8px;
     transition: 0.5s;
-    border: 1px solid $brandblue;
+    border: none;
+    border: 1px solid #fff;
     cursor: pointer;
 
     &:hover {

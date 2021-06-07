@@ -13,20 +13,22 @@
     <!-- 公告 -->
     <div id="news-box">
         <div href="" class="box-close"></div>
-        <h3>飯店公告</h3>
-        <span>
-            <strong>
-                日暉食安符合HACPP 請消費者放心
-                <br>
-            </strong>
-        </span>
-        <span>
-            針對昨日衛福部食藥署公布「旅宿業附設餐廳稽查專案」日暉國際渡假村名列不合格之名單上，日暉於2020年9月9日進行首次抽,2020年10月15日經由複檢已通過,確認食品安全無虞。日暉為觀光局所評鑑之五星飯店,為避免大眾誤導造成恐慌,我們有責任對外說明。為了讓旅客吃的更安心,日暉也聲明僅使用在地台灣豬,敬請消費者安心。
-            <br>
-        </span>
-        <span class="last">
-            日暉集團總公司 敬上
-        </span>
+        <div class="news-box-content">
+            <h3>飯店公告</h3>
+            <span>
+                <strong>
+                    日暉食安符合HACPP 請消費者放心
+                    <br>
+                </strong>
+            </span>
+            <span>
+                針對昨日衛福部食藥署公布「旅宿業附設餐廳稽查專案」日暉國際渡假村名列不合格之名單上，日暉於2020年9月9日進行首次抽，2020年10月15日經由複檢已通過，確認食品安全無虞。日暉為觀光局所評鑑之五星飯店，為避免大眾誤導造成恐慌，我們有責任對外說明。為了讓旅客吃的更安心，日暉也聲明僅使用在地台灣豬，敬請消費者安心。
+                
+            </span>
+            <span class="last">
+                日暉集團總公司 敬上
+            </span>
+        </div>
     </div>
 
     <!-- arrow -->
@@ -79,6 +81,16 @@
             </div>
         </div>
         <div id="navbox-r">
+            <div class="m-btn">
+                <span>BOOKING</span>
+                <span class="m-lang">LANGUAGE
+                    <div class="m-lang-box">
+                        <a href="">繁體中文</a>
+                        <a href="">ENGLISH</a>
+                        <a href="">日本語</a>
+                    </div>
+                </span>
+            </div> 
             <div id="close"><img src="./image/close.png" alt=""></div>
             <div id="m-title">MENU</div>
             <hr>
@@ -122,7 +134,10 @@
 
     <!-- banner -->
     <div id="banner">
-
+        <!-- <div id="banner-content">
+            <h2>日行東旅，暉應寒舍</h2>
+            <h6>享受山巒環抱優美景色，深度體驗台東之旅</h6>
+        </div> -->
     </div>
 
     <!-- 飯店文案 -->
@@ -137,7 +152,7 @@
     <!-- 最新消息 -->
     <div id="news">
         <!-- <h1>最新消息</h1> -->
-        <div class="news-contant">
+        <div class="news-content">
             <div class="news-card">
                 <a href=""><img src="./image/news1.jpg" alt=""></a>
                 <div class="date">May 16.2021</div>
@@ -254,25 +269,35 @@
 
     <!-- 飯店設施 -->
     <div id="land">
-        <div class="land-text">
-            <h2 class="land-title title-active">戶外設施</h2>
-            <hr class="land-hr hr-active">
-            <p class="land-p p-active">中庭游泳池<br>
-                <span>開放時間：</span>
-                <span>08:00~12:00</span>
-                <span>15:30~20:00</span>
-            </p>
+        <!-- 文字區域 -->
+        <div id="land-text-area">
+            <div class="land-text text-active">
+                <h2>戶外設施</h2>
+                <h5>中庭游泳池</h5>
+                <div class="land-content">
+                    <span>開放時間</span>
+                    <span>08:00-12:00、15:30-20:00</span>
+                </div>
+            </div>
+            <div class="land-text">
+                <h2>室內設施</h2>
+                <h5>神仙湯三溫暖</h5>
+                <div class="land-content">
+                    <span>開放時間</span>
+                    <span>10:00-22:30 (最後入場時間21:30)</span>
+
+                </div>
+            </div>
+            <div class="land-text">
+                <h2>特色活動</h2>
+                <h5>射箭場</h5>
+                <div class="land-content">
+                    <span>開放時間</span>
+                    <span>15:30-17:30</span>
+                </div>
+            </div>
         </div>
-        <div class="land-text">
-            <h2 class="land-title">室內設施</h2>
-            <hr class="land-hr">
-            <p class="land-p">SPA</p>
-        </div>
-        <div class="land-text">
-            <h2 class="land-title">特色活動</h2>
-            <hr class="land-hr">
-            <p class="land-p">射箭場</p>
-        </div>
+        <!-- 大張照片區域 -->
         <div class="land-bimg">
             <div class="bimg bimg-active"></div>
             <div class="bimg"></div>
@@ -280,6 +305,7 @@
         </div>
         <!-- 下一個按鈕樣式 -->
         <div class="next-btn"></div>
+        <!-- 小張照片區域 -->
         <div class="land-simg">
             <div class="simg simg-active"></div>
             <div class="simg"></div>
@@ -300,7 +326,7 @@
             <form action="">
                 <span>入住日期</span>
                 <input type="date">
-                <span>入住日期</span>
+                <span>退房日期</span>
                 <input type="date">
                 <button class="btn">BOOK NOW</button>
             </form>
@@ -311,7 +337,7 @@
     <footer>
         <div id="top-box">
             <div class="footer-logo">
-                <a href=""><img src="./image/whitelogo.png" alt=""></a>
+                <a href=""><img src="./image/logo-text.png" alt=""></a>
             </div>
             <div class="footer-contact">
 
@@ -325,7 +351,7 @@
                 </a><br>
                 <img class="icon-list" src="./image/icon-map.png" alt="">
                 <a href="">
-                    <address>958台東縣池上鄉新興路107號</address>
+                    <address>958 台東縣池上鄉新興路107號</address>
                 </a><br>
                 <img class="icon-list" src="./image/icon-mail.png" alt="">
                 <a href="">
