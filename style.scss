@@ -1124,7 +1124,6 @@ nav {
                 margin: 20px 0;
                 font-size: 28px;
                 letter-spacing: 2.5px;
-                
             }
 
             p {
@@ -1149,7 +1148,6 @@ nav {
     width: 100%;
     background-size: cover;
     position: relative;
-    
 
     @media screen and (max-width: $tablet) {
         height: 50vh;
@@ -1282,8 +1280,7 @@ nav {
         position: absolute;
         top: 150px;
         left: 300px;
-        background-color: #fff;
-        box-shadow: 5px 8px 13px rgba(0, 0, 0, 0.05);
+        border: 1px solid #fff;
         z-index: 5;
 
         @media screen and (max-width: $tablet) {
@@ -1297,6 +1294,7 @@ nav {
             top: 25%;
             width: 100%;
             height: 180px;
+            box-sizing: border-box;
         }
 
         .land-text {
@@ -1338,6 +1336,104 @@ nav {
         .text-active {
             display: block;
         }
+
+        #arrowbox {
+            position: absolute;
+            top: 105%;
+            left: 0;
+            z-index: 6;
+
+            @media screen and (max-width: $tablet) {
+                width: 100%;
+                text-align: right;
+            }
+            
+
+            .prev-btn {
+                display: inline-block;
+                background: transparent;
+                border: 1px solid $brandgold;
+                padding: 6px 15px 10px;
+                cursor: pointer;
+                transition: .5s;
+
+                @media screen and (max-width: $tablet) {
+                    border-color: #fff;
+                }
+
+                &:hover {
+                    background: $brandgold;
+                }
+
+                &:hover .arrow {
+                    border-color: #fff;
+                }
+    
+                .arrow {
+                    border: solid $brandgold;
+                    border-width: 0 1px 1px 0;
+                    display: inline-block;
+                    padding: 3px;
+
+                    @media screen and (max-width: $tablet) {
+                        border-color: #fff;
+                    }
+                }
+    
+                .left {
+                    transform: rotate(135deg);
+                }
+    
+            }
+
+            .next-btn {
+                display: inline-block;
+                background: transparent;
+                border: 1px solid $brandgold;
+                padding: 6px 15px 10px;
+                cursor: pointer;
+                z-index: 6;
+                transition: .5s;
+
+                @media screen and (max-width: $tablet) {
+                    border-color: #fff;
+                }
+
+                &:hover {
+                    background: $brandgold;
+                }
+
+                &:hover .arrow {
+                    border-color: #fff;
+                }
+        
+                @media screen and (max-width: $tablet) {
+                    background: rgba(255, 255, 255, 0.9);
+                    bottom: 50%;
+                }
+                @media screen and (max-width: $mobile) {
+                    background: rgba(190, 149, 106, 0.9);
+                    bottom: 40%;
+                }
+        
+                .arrow {
+                    border: solid $brandgold;
+                    border-width: 0 1px 1px 0;
+                    display: inline-block;
+                    padding: 3px;
+
+                    @media screen and (max-width: $tablet) {
+                        border-color: #fff;
+                    }
+                }
+        
+                .right {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        
     }
 
     .land-bimg {
@@ -1399,25 +1495,7 @@ nav {
         }
     }
 
-    .next-btn {
-        position: absolute;
-        right: 0;
-        bottom: 55%;
-        background: rgba(190, 149, 106, 0.9);
-        width: 50px;
-        height: 70px;
-        cursor: pointer;
-        z-index: 6;
-
-        @media screen and (max-width: $tablet) {
-            background: rgba(255, 255, 255, 0.9);
-            bottom: 50%;
-        }
-        @media screen and (max-width: $mobile) {
-            background: rgba(190, 149, 106, 0.9);
-            bottom: 40%;
-        }
-    }
+    
 }
 
 // MAP
@@ -1468,8 +1546,6 @@ nav {
             color: $brandblue;
             font-size: 28px;
             margin-bottom: 50px;
-
-            
         }
 
         span {
@@ -1477,8 +1553,6 @@ nav {
             letter-spacing: 1.5px;
             display: block;
             margin-top: 30px;
-
-           
         }
 
         input {
@@ -1584,8 +1658,6 @@ footer {
     .footer-icon {
         grid-area: icon;
         margin: 30px auto 0;
-
-        
 
         a {
             margin-right: 20px;
