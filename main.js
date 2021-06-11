@@ -13,6 +13,8 @@ $("#close").click(function () {
 });
 
 var index = 0;
+var prevBtn = document.querySelector(".prev-btn")
+// console.log(prevBtn);
 var nextBtn = document.querySelector(".next-btn");
 // console.log(nextBtn);
 var bigimg = document.getElementsByClassName("bimg");
@@ -21,6 +23,14 @@ var smallimg = document.getElementsByClassName("simg");
 
 var textarea = document.getElementsByClassName("land-text");
 
+
+function prev() {
+    index--;
+    if (index == -1) index = bigimg.length -1;
+    showbimg();
+    showsimg();
+    showtext();
+}
 
 
 function next() {
@@ -33,6 +43,7 @@ function next() {
     showtext();
 };
 
+prevBtn.onclick = prev;
 nextBtn.onclick = next;
 
 function showbimg() {
@@ -60,9 +71,5 @@ function showtext() {
 $(".box-close").click(function () {
     $("#news-box").hide();
 });
-
-
-
-
 
 

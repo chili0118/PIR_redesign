@@ -440,7 +440,7 @@ nav {
             margin-top: 100px;
 
             @media screen and (max-width: $mobile) {
-                margin-top: 60px;
+                margin-top: 40px;
             }
 
             img {
@@ -516,7 +516,7 @@ nav {
         letter-spacing: 3px;
 
         @media screen and (max-width: $mobile) {
-            padding-top: 10px;
+            padding-top: 0;
             padding-left: 0;
         }
     }
@@ -765,6 +765,10 @@ nav {
                 margin: 20px 0;
                 font-size: 28px;
                 letter-spacing: 2.5px;
+
+                @media screen and (max-width: $mobile) {
+                    margin: 15px 0;
+                }
             }
 
             p {
@@ -884,6 +888,10 @@ nav {
                 margin: 20px 0;
                 font-size: 28px;
                 letter-spacing: 2.5px;
+
+                @media screen and (max-width: $mobile) {
+                    margin: 15px 0;
+                }
             }
 
             p {
@@ -1003,6 +1011,10 @@ nav {
                 margin: 20px 0;
                 font-size: 28px;
                 letter-spacing: 2.5px;
+
+                @media screen and (max-width: $mobile) {
+                    margin: 15px 0;
+                }
             }
 
             p {
@@ -1124,6 +1136,10 @@ nav {
                 margin: 20px 0;
                 font-size: 28px;
                 letter-spacing: 2.5px;
+
+                @media screen and (max-width: $mobile) {
+                    margin: 15px 0;
+                }
             }
 
             p {
@@ -1244,6 +1260,10 @@ nav {
                 font-size: 28px;
                 margin: 20px 0;
                 letter-spacing: 2.5px;
+
+                @media screen and (max-width: $mobile) {
+                    margin: 15px 0;
+                }
             }
 
             p {
@@ -1285,7 +1305,7 @@ nav {
 
         @media screen and (max-width: $tablet) {
             width: 400px;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.7);
             top: 10%;
             left: 0;
         }
@@ -1329,6 +1349,10 @@ nav {
                     display: block;
                     margin-top: 5px;
                     letter-spacing: 1.5px;
+
+                    @media screen and (max-width: $mobile) {
+                        color: rgb(125, 125, 125);
+                    }
                 }
             }
         }
@@ -1408,11 +1432,9 @@ nav {
                 }
         
                 @media screen and (max-width: $tablet) {
-                    background: rgba(255, 255, 255, 0.9);
                     bottom: 50%;
                 }
                 @media screen and (max-width: $mobile) {
-                    background: rgba(190, 149, 106, 0.9);
                     bottom: 40%;
                 }
         

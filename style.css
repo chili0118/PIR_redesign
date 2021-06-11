@@ -468,7 +468,7 @@ nav #menu {
 
 @media screen and (max-width: 767px) {
   .navbox #navbox-r #m-icon {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 }
 
@@ -550,7 +550,7 @@ nav #menu {
 
 @media screen and (max-width: 767px) {
   #text-info h1 {
-    padding-top: 10px;
+    padding-top: 0;
     padding-left: 0;
   }
 }
@@ -792,6 +792,12 @@ nav #menu {
   letter-spacing: 2.5px;
 }
 
+@media screen and (max-width: 767px) {
+  #room1 .room-info .room-content h2 {
+    margin: 15px 0;
+  }
+}
+
 #room1 .room-info .room-content p {
   font-size: 14px;
   color: #fff;
@@ -928,6 +934,12 @@ nav #menu {
   letter-spacing: 2.5px;
 }
 
+@media screen and (max-width: 767px) {
+  #room2 .room-info .room-content h2 {
+    margin: 15px 0;
+  }
+}
+
 #room2 .room-info .room-content p {
   font-size: 14px;
   color: #fff;
@@ -1062,6 +1074,12 @@ nav #menu {
   margin: 20px 0;
   font-size: 28px;
   letter-spacing: 2.5px;
+}
+
+@media screen and (max-width: 767px) {
+  #room3 .room-info .room-content h2 {
+    margin: 15px 0;
+  }
 }
 
 #room3 .room-info .room-content p {
@@ -1201,6 +1219,12 @@ nav #menu {
   letter-spacing: 2.5px;
 }
 
+@media screen and (max-width: 767px) {
+  #room4 .room-info .room-content h2 {
+    margin: 15px 0;
+  }
+}
+
 #room4 .room-info .room-content p {
   font-size: 14px;
   color: #fff;
@@ -1338,6 +1362,12 @@ nav #menu {
   letter-spacing: 2.5px;
 }
 
+@media screen and (max-width: 767px) {
+  #room5 .room-info .room-content h2 {
+    margin: 15px 0;
+  }
+}
+
 #room5 .room-info .room-content p {
   font-size: 14px;
   color: #fff;
@@ -1380,7 +1410,7 @@ nav #menu {
 @media screen and (max-width: 1024px) {
   #land #land-text-area {
     width: 400px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.7);
     top: 10%;
     left: 0;
   }
@@ -1432,6 +1462,12 @@ nav #menu {
   display: block;
   margin-top: 5px;
   letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 767px) {
+  #land #land-text-area .land-text .land-content span {
+    color: #7d7d7d;
+  }
 }
 
 #land #land-text-area .text-active {
@@ -1521,14 +1557,12 @@ nav #menu {
 
 @media screen and (max-width: 1024px) {
   #land #land-text-area #arrowbox .next-btn {
-    background: rgba(255, 255, 255, 0.9);
     bottom: 50%;
   }
 }
 
 @media screen and (max-width: 767px) {
   #land #land-text-area #arrowbox .next-btn {
-    background: rgba(190, 149, 106, 0.9);
     bottom: 40%;
   }
 }
