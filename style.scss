@@ -406,7 +406,7 @@ nav {
             padding-left: 50px;
 
             @media screen and (max-width: $mobile) {
-                margin-top: 50px;
+                margin-top: 40px;
             }
         }
 
@@ -490,9 +490,85 @@ nav {
     @media screen and (max-width: $mobile) {
         height: 50vh;
     }
+
+    #banner-content {
+        padding-top: 180px;
+        text-align: center;
+
+        @media screen and (max-width: $mobile) {
+            padding-top: 100px;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+
+            @media screen and (max-width: $mobile) {
+                display: none;
+            }
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 36px;
+            letter-spacing: 12px;
+            
+
+            @media screen and (max-width: $mobile) {
+                font-size: 20px;
+                margin-top: 60px;
+            }
+        }
+
+        h6 {
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: 2.5px;
+            margin-top: 50px;
+            font-weight: 100;
+
+            @media screen and (max-width: $mobile) {
+                font-size: 16px;
+            }
+        }
+
+        button.scroll_down {
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            height: 50px;
+            width: 30px;
+            bottom: 50px;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 20px;
+            cursor: pointer;
+            outline: none;
+
+            @media screen and (max-width: $mobile) {
+                display: none;
+            }
+        }
+
+        button.scroll_down:before {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            content: '';
+            width: 6px;
+            height: 6px;
+            margin-left: -3px;
+            background-color: #fff;
+            border-radius: 100%;
+            animation: scroll_down_btn-animation 2s infinite;
+            box-sizing: border-box;
+          }
+    }
 }
 
-// 飯店文案
+// 飯店介紹
 
 #text-info {
     background-image: url(./image/about.jpg);
@@ -543,7 +619,7 @@ nav {
         line-height: 1.8;
 
         @media screen and (max-width: $mobile) {
-            padding-top: 30px;
+            padding-top: 20px;
             padding-left: 0;
             width: 100%;
             text-align: center;
@@ -767,7 +843,7 @@ nav {
                 letter-spacing: 2.5px;
 
                 @media screen and (max-width: $mobile) {
-                    margin: 15px 0;
+                    margin: 10px 0;
                 }
             }
 
@@ -890,7 +966,7 @@ nav {
                 letter-spacing: 2.5px;
 
                 @media screen and (max-width: $mobile) {
-                    margin: 15px 0;
+                    margin: 10px 0;
                 }
             }
 
@@ -1013,7 +1089,7 @@ nav {
                 letter-spacing: 2.5px;
 
                 @media screen and (max-width: $mobile) {
-                    margin: 15px 0;
+                    margin: 10px 0;
                 }
             }
 
@@ -1138,7 +1214,7 @@ nav {
                 letter-spacing: 2.5px;
 
                 @media screen and (max-width: $mobile) {
-                    margin: 15px 0;
+                    margin: 10px 0;
                 }
             }
 
@@ -1262,7 +1338,7 @@ nav {
                 letter-spacing: 2.5px;
 
                 @media screen and (max-width: $mobile) {
-                    margin: 15px 0;
+                    margin: 10px 0;
                 }
             }
 
@@ -1371,7 +1447,6 @@ nav {
                 width: 100%;
                 text-align: right;
             }
-            
 
             .prev-btn {
                 display: inline-block;
@@ -1379,7 +1454,7 @@ nav {
                 border: 1px solid $brandgold;
                 padding: 6px 15px 10px;
                 cursor: pointer;
-                transition: .5s;
+                transition: 0.5s;
 
                 @media screen and (max-width: $tablet) {
                     border-color: #fff;
@@ -1392,7 +1467,7 @@ nav {
                 &:hover .arrow {
                     border-color: #fff;
                 }
-    
+
                 .arrow {
                     border: solid $brandgold;
                     border-width: 0 1px 1px 0;
@@ -1403,11 +1478,10 @@ nav {
                         border-color: #fff;
                     }
                 }
-    
+
                 .left {
                     transform: rotate(135deg);
                 }
-    
             }
 
             .next-btn {
@@ -1417,7 +1491,7 @@ nav {
                 padding: 6px 15px 10px;
                 cursor: pointer;
                 z-index: 6;
-                transition: .5s;
+                transition: 0.5s;
 
                 @media screen and (max-width: $tablet) {
                     border-color: #fff;
@@ -1430,14 +1504,14 @@ nav {
                 &:hover .arrow {
                     border-color: #fff;
                 }
-        
+
                 @media screen and (max-width: $tablet) {
                     bottom: 50%;
                 }
                 @media screen and (max-width: $mobile) {
                     bottom: 40%;
                 }
-        
+
                 .arrow {
                     border: solid $brandgold;
                     border-width: 0 1px 1px 0;
@@ -1448,14 +1522,12 @@ nav {
                         border-color: #fff;
                     }
                 }
-        
+
                 .right {
                     transform: rotate(-45deg);
                 }
             }
         }
-
-        
     }
 
     .land-bimg {
@@ -1516,8 +1588,6 @@ nav {
             }
         }
     }
-
-    
 }
 
 // MAP
@@ -1774,6 +1844,7 @@ footer {
     animation: 0.8s draw linear forwards;
 }
 
+// 方塊動畫
 @keyframes draw {
     // 需跟上方.shape相同
     0% {
@@ -1790,3 +1861,21 @@ footer {
         stroke-dasharray: 5000 2000;
     }
 }
+
+// scroll down動畫
+@keyframes scroll_down_btn-animation {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
