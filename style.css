@@ -432,7 +432,7 @@ nav #menu {
 
 @media screen and (max-width: 767px) {
   .navbox #navbox-r #m-title {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 
@@ -522,6 +522,94 @@ nav #menu {
   }
 }
 
+#banner #banner-content {
+  padding-top: 180px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  #banner #banner-content {
+    padding-top: 100px;
+  }
+}
+
+#banner #banner-content img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #banner #banner-content img {
+    display: none;
+  }
+}
+
+#banner #banner-content h2 {
+  color: #fff;
+  font-size: 36px;
+  letter-spacing: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  #banner #banner-content h2 {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+}
+
+#banner #banner-content h6 {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2.5px;
+  margin-top: 50px;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 767px) {
+  #banner #banner-content h6 {
+    font-size: 16px;
+  }
+}
+
+#banner #banner-content button.scroll_down {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 30px;
+  bottom: 50px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  #banner #banner-content button.scroll_down {
+    display: none;
+  }
+}
+
+#banner #banner-content button.scroll_down:before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: scroll_down_btn-animation 2s infinite;
+          animation: scroll_down_btn-animation 2s infinite;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #text-info {
   background-image: url(./image/about.jpg);
   background-size: cover;
@@ -582,7 +670,7 @@ nav #menu {
 
 @media screen and (max-width: 767px) {
   #text-info p {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 0;
     width: 100%;
     text-align: center;
@@ -794,7 +882,7 @@ nav #menu {
 
 @media screen and (max-width: 767px) {
   #room1 .room-info .room-content h2 {
-    margin: 15px 0;
+    margin: 10px 0;
   }
 }
 
@@ -936,7 +1024,7 @@ nav #menu {
 
 @media screen and (max-width: 767px) {
   #room2 .room-info .room-content h2 {
-    margin: 15px 0;
+    margin: 10px 0;
   }
 }
 
@@ -1078,7 +1166,7 @@ nav #menu {
 
 @media screen and (max-width: 767px) {
   #room3 .room-info .room-content h2 {
-    margin: 15px 0;
+    margin: 10px 0;
   }
 }
 
@@ -1221,7 +1309,7 @@ nav #menu {
 
 @media screen and (max-width: 767px) {
   #room4 .room-info .room-content h2 {
-    margin: 15px 0;
+    margin: 10px 0;
   }
 }
 
@@ -1364,7 +1452,7 @@ nav #menu {
 
 @media screen and (max-width: 767px) {
   #room5 .room-info .room-content h2 {
-    margin: 15px 0;
+    margin: 10px 0;
   }
 }
 
@@ -1494,8 +1582,8 @@ nav #menu {
   border: 1px solid #be956a;
   padding: 6px 15px 10px;
   cursor: pointer;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1537,8 +1625,8 @@ nav #menu {
   padding: 6px 15px 10px;
   cursor: pointer;
   z-index: 6;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1975,6 +2063,44 @@ footer #copy-text {
   }
   100% {
     stroke-dasharray: 5000 2000;
+  }
+}
+
+@-webkit-keyframes scroll_down_btn-animation {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scroll_down_btn-animation {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
