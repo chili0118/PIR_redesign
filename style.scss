@@ -705,8 +705,16 @@ nav {
     height: 50vh;
     text-align: center;
 
+    @media screen and (max-width: $tablet) {
+        height: 30vh;
+    }
+
     img {
         margin-top: 150px;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 80px;
+        }
     }
 }
 
@@ -714,8 +722,17 @@ nav {
     width: 1200px;
     margin: 80px auto 0;
 
+    @media screen and (max-width: $tablet) {
+        margin-top: 50px;
+        width: 100%;
+    }
+
     #news-title {
         text-align: center;
+
+        @media screen and (max-width: $tablet) {
+            width: 100vw;
+        }
 
         h1 {
             font-size: 24px;
@@ -729,71 +746,137 @@ nav {
             height: 3px;
             background-color: $brandgold;
             margin: 10px auto 30px;
+
+            @media screen and (max-width: $tablet) {
+                width: 15%;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 30%;
+            }
         }
 
         p {
             width: 35%;
             margin: 0 auto;
             font-size: 16px;
+            letter-spacing: 1.5px;
+
+            @media screen and (max-width: $tablet) {
+                width: 50%;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 80%;
+                font-size: 14px;
+            }
         }
     }
 
     #top-news {
         margin-top: 100px;
         height: 700px;
+        display: block;
+
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+            padding: 0 30px;
+            box-sizing: border-box;
+            margin-top: 50px;
+        }
+        @media screen and (max-width: $mobile) {
+            height: 500px;
+        }
 
         #top-content {
             position: relative;
             width: 100%;
 
-            img {
+            .t-img {
                 position: absolute;
                 left: 0;
                 width: 45%;
-                height: 600px;
-                object-fit: cover;
-                transition: 1s;
 
-                &:hover {
-                    border-radius: 50px;
-                    filter: saturate(150%);
+                @media screen and (max-width: $mobile) {
+                    width: 100%;
+                    box-sizing: border-box;
                 }
-            }
 
-            .t-content {
-                position: absolute;
-                right: 0;
-                width: 60%;
-                border: 1px solid $brandgold;
-                padding: 30px 50px;
-                background-color: #fff;
-                box-sizing: border-box;
-                top: 250px;
+                img {
+                    width: 100%;
+                    height: 600px;
+                    object-fit: cover;
+                    transition: 1s;
 
-                h2 {
-                    font-size: 24px;
-                    letter-spacing: 2.5px;
+                    @media screen and (max-width: $mobile) {
+                        width: 100%;
+                        height: 300px;
+                    }
 
-                    a {
-                        text-decoration: none;
-                        color: $brandgold;
+                    &:hover {
+                        border-radius: 50px;
+                        filter: saturate(150%);
                     }
                 }
+            }
 
-                p {
-                    font-size: 14px;
-                    margin: 20px 0;
-                    letter-spacing: 1.5px;
-                    line-height: 1.8;
-                }
+            a {
+                text-decoration: none;
 
-                span {
-                    color: $brandgold;
-                    font-size: 12px;
-                    letter-spacing: 1.5px;
-                    margin-top: 10px;
+                .t-content {
+                    position: absolute;
+                    right: 0;
+                    width: 60%;
+                    border: 1px solid $brandgold;
+                    padding: 30px 50px;
+                    background-color: #fff;
+                    box-sizing: border-box;
+                    top: 250px;
+    
+                    @media screen and (max-width: $mobile) {
+                        width: 100%;
+                        padding: 20px 20px;
+                        background-color: $brandgold;
+    
+                    }
+    
+                    h2 {
+                        font-size: 24px;
+                        letter-spacing: 2.5px;
+                        color: $brandgold;
+    
+                        @media screen and (max-width: $mobile) {
+                            font-size: 16px;
+                            color: #fff;
+                        }
+    
+                        
+                    }
+    
+                    p {
+                        font-size: 14px;
+                        margin: 20px 0;
+                        letter-spacing: 1.5px;
+                        line-height: 1.8;
+                        color: #000;
+    
+                        @media screen and (max-width: $mobile) {
+                            margin: 15px 0;
+                            color: #fff;
+                        }
+                    }
+    
+                    span {
+                        color: $brandgold;
+                        font-size: 12px;
+                        letter-spacing: 1.5px;
+                        margin-top: 10px;
+    
+                        @media screen and (max-width: $mobile) {
+                            color: #fff;
+                        }
+                    }
                 }
             }
+            
         }
     }
 
@@ -802,6 +885,17 @@ nav {
         display: grid;
         grid-gap: 30px;
         grid-template-columns: repeat(4, 1fr);
+
+        @media screen and (max-width: $tablet) {
+            width: 100vw;
+            padding: 0 30px;
+            box-sizing: border-box;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: $mobile) {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
         img {
             width: 100%;
@@ -858,11 +952,27 @@ nav {
     height: 80vh;
     margin: 150px auto 0;
 
+    @media screen and (max-width: $tablet) {
+        width: 100%;
+        margin-top: 100px;
+        padding: 30px;
+        box-sizing: border-box;
+        height: 60vh;
+    }
+
+    @media screen and (max-width: $mobile) {
+        margin-top: 60px;
+        height: 100%;
+    }
+
+
     .bread {
+
         span {
             font-size: 14px;
             color: #999;
             letter-spacing: 1.5px;
+
 
             a {
                 text-decoration: none;
@@ -879,16 +989,30 @@ nav {
         display: block;
         height: 450px;
 
+        @media screen and (max-width: $mobile) {
+            margin-top: 20px;
+            height:max-content;
+        }
+
         .np-l {
             width: 60%;
             border: none;
             box-sizing: border-box;
             float: left;
 
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+                float: none;
+            }
+
             img {
                 width: 100%;
                 height: 450px;
                 object-fit: cover;
+
+                @media screen and (max-width: $mobile) {
+                    height: 300px;
+                }
             }
         }
 
@@ -898,6 +1022,14 @@ nav {
             box-sizing: border-box;
             float: left;
             padding: 0 20px;
+
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+                padding: 0;
+                margin-top: 10px;
+                height:fit-content;
+                float: none;
+            }
 
             strong {
                 padding: 5px 10px;
@@ -927,6 +1059,10 @@ nav {
                 border: none;
                 background: $brandgold;
                 margin-top: 10px;
+
+                @media screen and (max-width: $mobile) {
+                    width: 100%;
+                }
             }
 
             p {
@@ -934,16 +1070,18 @@ nav {
                 line-height: 1.6;
                 letter-spacing: 1.5px;
                 color: $brandgold;
+                text-align: justify;
             }
         }
     }
-
+    // 下文
     .news-page-content {
         width: 100%;
         margin-top: 20px;
         display: block;
         line-height: 1.6;
         letter-spacing: 1.5px;
+        text-align: justify;
     }
 }
 
@@ -1320,7 +1458,7 @@ nav {
     }
 }
 
-#room4 {
+#room4 {ㄔㄛ
     height: 100vh;
     width: 100%;
     background-size: cover;
