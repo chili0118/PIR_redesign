@@ -830,53 +830,49 @@ nav {
                     background-color: #fff;
                     box-sizing: border-box;
                     top: 250px;
-    
+
                     @media screen and (max-width: $mobile) {
                         width: 100%;
                         padding: 20px 20px;
                         background-color: $brandgold;
-    
                     }
-    
+
                     h2 {
                         font-size: 24px;
                         letter-spacing: 2.5px;
                         color: $brandgold;
-    
+
                         @media screen and (max-width: $mobile) {
                             font-size: 16px;
                             color: #fff;
                         }
-    
-                        
                     }
-    
+
                     p {
                         font-size: 14px;
                         margin: 20px 0;
                         letter-spacing: 1.5px;
                         line-height: 1.8;
                         color: #000;
-    
+
                         @media screen and (max-width: $mobile) {
                             margin: 15px 0;
                             color: #fff;
                         }
                     }
-    
+
                     span {
                         color: $brandgold;
                         font-size: 12px;
                         letter-spacing: 1.5px;
                         margin-top: 10px;
-    
+
                         @media screen and (max-width: $mobile) {
                             color: #fff;
                         }
                     }
                 }
             }
-            
         }
     }
 
@@ -965,14 +961,11 @@ nav {
         height: 100%;
     }
 
-
     .bread {
-
         span {
             font-size: 14px;
             color: #999;
             letter-spacing: 1.5px;
-
 
             a {
                 text-decoration: none;
@@ -991,7 +984,7 @@ nav {
 
         @media screen and (max-width: $mobile) {
             margin-top: 20px;
-            height:max-content;
+            height: max-content;
         }
 
         .np-l {
@@ -1027,7 +1020,7 @@ nav {
                 width: 100%;
                 padding: 0;
                 margin-top: 10px;
-                height:fit-content;
+                height: fit-content;
                 float: none;
             }
 
@@ -1086,6 +1079,7 @@ nav {
 }
 
 // 客房/婚宴
+
 #room1 {
     height: 100vh;
     width: 100%;
@@ -1458,7 +1452,7 @@ nav {
     }
 }
 
-#room4 {ㄔㄛ
+#room4 {
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -1702,6 +1696,222 @@ nav {
                 @media screen and (max-width: $mobile) {
                     display: none;
                 }
+            }
+        }
+    }
+}
+
+// 房型介紹頁面
+
+#rooms-banner {
+    background-image: url(./image/rooms-banner.jpg);
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+
+    @media screen and (max-width: $tablet) {
+        height: 30vh;
+    }
+
+    img {
+        margin-top: 150px;
+    }
+}
+
+#rooms-area {
+    width: 1200px;
+    margin: 80px auto 0;
+
+    @media screen and (max-width: $tablet) {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #rooms-title {
+        text-align: center;
+
+        @media screen and (max-width: $tablet) {
+            width: 100vw;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: 2.5px;
+        }
+
+        hr {
+            width: 10%;
+            border: none;
+            background-color: $brandgold;
+            height: 3px;
+            margin: 10px auto 30px;
+
+            @media screen and (max-width: $tablet) {
+                width: 15%;
+            }
+            
+        }
+
+        p {
+            width: 50%;
+            font-size: 16px;
+            margin: 0 auto;
+            letter-spacing: 1.5px;
+
+            @media screen and (max-width: $tablet) {
+                width: 50%;
+            }
+        }
+    }
+
+    #rooms-menu {
+        margin-top: 80px;
+
+        @media screen and (max-width: $tablet) {
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #999;
+            margin-right: 50px;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                color: $brandgold;
+                font-weight: 900;
+            }
+        }
+    }
+
+    #rooms-content {
+        margin-top: 50px;
+        position: relative;
+
+        @media screen and (max-width: $tablet) {
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+
+        @for $r from 1 through 5 {
+            .rooms-item#{$r} {
+                background-image: url(./image/vila#{$r}.jpg);
+                width: 100%;
+                height: 600px;
+                background-size: cover;
+                position: relative;
+
+                .r-name {
+                    color: #fff;
+                    text-shadow: 2px 2px 5px #000;
+                    letter-spacing: 2.5px;
+                    position: absolute;
+                    top: 80%;
+                    left: 5%;
+
+                    h2 {
+                        font-size: 24px;
+                    }
+
+                    h5 {
+                        font-size: 20px;
+                        margin-top: 10px;
+                    }
+                }
+
+                .r-content {
+                    position: absolute;
+                    right: 5%;
+                    bottom: 10%;
+                    width: 35%;
+                    background-color: rgba(190, 149, 106, 0.8);
+                    padding: 20px 30px;
+                    box-sizing: border-box;
+                    color: #fff;
+                    letter-spacing: 1.5px;
+
+                    span {
+                        font-size: 14px;
+                        display: block;
+                        margin-top: 8px;
+                        font-weight: 900;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        margin-top: 25px;
+                    }
+                }
+            }
+
+            .r-i-content {
+                display: none;
+            }
+            .rooms-active {
+                display: block;
+            }
+        }
+
+        #rooms-prev {
+            display: inline-block;
+            border: 1px solid $brandgold;
+            background: transparent;
+            padding: 6px 15px 10px;
+            cursor: pointer;
+            transition: 0.5s;
+            z-index: 3;
+            position: absolute;
+            top: 50%;
+            left: -5%;
+
+            &:hover {
+                background: $brandgold;
+            }
+
+            &:hover .r-arrow-left {
+                border-color: #fff;
+            }
+
+            .r-arrow-left {
+                border: solid $brandgold;
+                border-width: 0 1px 1px 0;
+                display: inline-block;
+                padding: 3px;
+                transform: rotate(135deg);
+            }
+        }
+
+        #rooms-next {
+            display: inline-block;
+            border: 1px solid $brandgold;
+            background: transparent;
+            padding: 6px 15px 10px;
+            cursor: pointer;
+            transition: 0.5s;
+            z-index: 3;
+            position: absolute;
+            bottom: 50%;
+            right: -5%;
+
+            &:hover {
+                background: $brandgold;
+            }
+
+            &:hover .r-arrow-right {
+                border-color: #fff;
+            }
+
+            .r-arrow-right {
+                border: solid $brandgold;
+                border-width: 0 1px 1px 0;
+                display: inline-block;
+                padding: 3px;
+                transform: rotate(-45deg);
             }
         }
     }

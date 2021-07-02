@@ -1929,6 +1929,475 @@ nav #menu {
   }
 }
 
+#rooms-banner {
+  background-image: url(./image/rooms-banner.jpg);
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-banner {
+    height: 30vh;
+  }
+}
+
+#rooms-banner img {
+  margin-top: 150px;
+}
+
+#rooms-area {
+  width: 1200px;
+  margin: 80px auto 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-area {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+
+#rooms-area #rooms-title {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-area #rooms-title {
+    width: 100vw;
+  }
+}
+
+#rooms-area #rooms-title h1 {
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+
+#rooms-area #rooms-title hr {
+  width: 10%;
+  border: none;
+  background-color: #be956a;
+  height: 3px;
+  margin: 10px auto 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-area #rooms-title hr {
+    width: 15%;
+  }
+}
+
+#rooms-area #rooms-title p {
+  width: 50%;
+  font-size: 16px;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-area #rooms-title p {
+    width: 50%;
+  }
+}
+
+#rooms-area #rooms-menu {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-area #rooms-menu {
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+#rooms-area #rooms-menu a {
+  display: inline-block;
+  text-decoration: none;
+  color: #999;
+  margin-right: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#rooms-area #rooms-menu a:hover {
+  color: #be956a;
+  font-weight: 900;
+}
+
+#rooms-area #rooms-content {
+  margin-top: 50px;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-area #rooms-content {
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+#rooms-area #rooms-content .rooms-item1 {
+  background-image: url(./image/vila1.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+}
+
+#rooms-area #rooms-content .rooms-item1 .r-name {
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  letter-spacing: 2.5px;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+#rooms-area #rooms-content .rooms-item1 .r-name h2 {
+  font-size: 24px;
+}
+
+#rooms-area #rooms-content .rooms-item1 .r-name h5 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#rooms-area #rooms-content .rooms-item1 .r-content {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  width: 35%;
+  background-color: rgba(190, 149, 106, 0.8);
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+#rooms-area #rooms-content .rooms-item1 .r-content span {
+  font-size: 14px;
+  display: block;
+  margin-top: 8px;
+  font-weight: 900;
+}
+
+#rooms-area #rooms-content .rooms-item1 .r-content p {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+#rooms-area #rooms-content .r-i-content {
+  display: none;
+}
+
+#rooms-area #rooms-content .rooms-active {
+  display: block;
+}
+
+#rooms-area #rooms-content .rooms-item2 {
+  background-image: url(./image/vila2.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+}
+
+#rooms-area #rooms-content .rooms-item2 .r-name {
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  letter-spacing: 2.5px;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+#rooms-area #rooms-content .rooms-item2 .r-name h2 {
+  font-size: 24px;
+}
+
+#rooms-area #rooms-content .rooms-item2 .r-name h5 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#rooms-area #rooms-content .rooms-item2 .r-content {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  width: 35%;
+  background-color: rgba(190, 149, 106, 0.8);
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+#rooms-area #rooms-content .rooms-item2 .r-content span {
+  font-size: 14px;
+  display: block;
+  margin-top: 8px;
+  font-weight: 900;
+}
+
+#rooms-area #rooms-content .rooms-item2 .r-content p {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+#rooms-area #rooms-content .r-i-content {
+  display: none;
+}
+
+#rooms-area #rooms-content .rooms-active {
+  display: block;
+}
+
+#rooms-area #rooms-content .rooms-item3 {
+  background-image: url(./image/vila3.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+}
+
+#rooms-area #rooms-content .rooms-item3 .r-name {
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  letter-spacing: 2.5px;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+#rooms-area #rooms-content .rooms-item3 .r-name h2 {
+  font-size: 24px;
+}
+
+#rooms-area #rooms-content .rooms-item3 .r-name h5 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#rooms-area #rooms-content .rooms-item3 .r-content {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  width: 35%;
+  background-color: rgba(190, 149, 106, 0.8);
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+#rooms-area #rooms-content .rooms-item3 .r-content span {
+  font-size: 14px;
+  display: block;
+  margin-top: 8px;
+  font-weight: 900;
+}
+
+#rooms-area #rooms-content .rooms-item3 .r-content p {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+#rooms-area #rooms-content .r-i-content {
+  display: none;
+}
+
+#rooms-area #rooms-content .rooms-active {
+  display: block;
+}
+
+#rooms-area #rooms-content .rooms-item4 {
+  background-image: url(./image/vila4.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+}
+
+#rooms-area #rooms-content .rooms-item4 .r-name {
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  letter-spacing: 2.5px;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+#rooms-area #rooms-content .rooms-item4 .r-name h2 {
+  font-size: 24px;
+}
+
+#rooms-area #rooms-content .rooms-item4 .r-name h5 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#rooms-area #rooms-content .rooms-item4 .r-content {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  width: 35%;
+  background-color: rgba(190, 149, 106, 0.8);
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+#rooms-area #rooms-content .rooms-item4 .r-content span {
+  font-size: 14px;
+  display: block;
+  margin-top: 8px;
+  font-weight: 900;
+}
+
+#rooms-area #rooms-content .rooms-item4 .r-content p {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+#rooms-area #rooms-content .r-i-content {
+  display: none;
+}
+
+#rooms-area #rooms-content .rooms-active {
+  display: block;
+}
+
+#rooms-area #rooms-content .rooms-item5 {
+  background-image: url(./image/vila5.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+}
+
+#rooms-area #rooms-content .rooms-item5 .r-name {
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  letter-spacing: 2.5px;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+#rooms-area #rooms-content .rooms-item5 .r-name h2 {
+  font-size: 24px;
+}
+
+#rooms-area #rooms-content .rooms-item5 .r-name h5 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#rooms-area #rooms-content .rooms-item5 .r-content {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  width: 35%;
+  background-color: rgba(190, 149, 106, 0.8);
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+#rooms-area #rooms-content .rooms-item5 .r-content span {
+  font-size: 14px;
+  display: block;
+  margin-top: 8px;
+  font-weight: 900;
+}
+
+#rooms-area #rooms-content .rooms-item5 .r-content p {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+#rooms-area #rooms-content .r-i-content {
+  display: none;
+}
+
+#rooms-area #rooms-content .rooms-active {
+  display: block;
+}
+
+#rooms-area #rooms-content #rooms-prev {
+  display: inline-block;
+  border: 1px solid #be956a;
+  background: transparent;
+  padding: 6px 15px 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: -5%;
+}
+
+#rooms-area #rooms-content #rooms-prev:hover {
+  background: #be956a;
+}
+
+#rooms-area #rooms-content #rooms-prev:hover .r-arrow-left {
+  border-color: #fff;
+}
+
+#rooms-area #rooms-content #rooms-prev .r-arrow-left {
+  border: solid #be956a;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+#rooms-area #rooms-content #rooms-next {
+  display: inline-block;
+  border: 1px solid #be956a;
+  background: transparent;
+  padding: 6px 15px 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 3;
+  position: absolute;
+  bottom: 50%;
+  right: -5%;
+}
+
+#rooms-area #rooms-content #rooms-next:hover {
+  background: #be956a;
+}
+
+#rooms-area #rooms-content #rooms-next:hover .r-arrow-right {
+  border-color: #fff;
+}
+
+#rooms-area #rooms-content #rooms-next .r-arrow-right {
+  border: solid #be956a;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 #land {
   height: 100vh;
   width: 100%;
