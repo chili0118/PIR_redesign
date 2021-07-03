@@ -1947,6 +1947,12 @@ nav #menu {
   margin-top: 150px;
 }
 
+@media screen and (max-width: 767px) {
+  #rooms-banner img {
+    margin-top: 80px;
+  }
+}
+
 #rooms-area {
   width: 1200px;
   margin: 80px auto 0;
@@ -1989,6 +1995,12 @@ nav #menu {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-title hr {
+    width: 30%;
+  }
+}
+
 #rooms-area #rooms-title p {
   width: 50%;
   font-size: 16px;
@@ -2002,6 +2014,13 @@ nav #menu {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-title p {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
 #rooms-area #rooms-menu {
   margin-top: 80px;
 }
@@ -2011,6 +2030,12 @@ nav #menu {
     padding: 0 30px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-menu {
+    display: none;
   }
 }
 
@@ -2041,12 +2066,30 @@ nav #menu {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-content {
+    padding: 0;
+  }
+}
+
 #rooms-area #rooms-content .rooms-item1 {
   background-image: url(./image/vila1.jpg);
   width: 100%;
   height: 600px;
   background-size: cover;
   position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-area #rooms-content .rooms-item1 {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-content .rooms-item1 {
+    height: 450px;
+  }
 }
 
 #rooms-area #rooms-content .rooms-item1 .r-name {
@@ -2080,6 +2123,12 @@ nav #menu {
   letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-content .rooms-item1 .r-content {
+    display: none;
+  }
+}
+
 #rooms-area #rooms-content .rooms-item1 .r-content span {
   font-size: 14px;
   display: block;
@@ -2106,6 +2155,18 @@ nav #menu {
   height: 600px;
   background-size: cover;
   position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-area #rooms-content .rooms-item2 {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-content .rooms-item2 {
+    height: 450px;
+  }
 }
 
 #rooms-area #rooms-content .rooms-item2 .r-name {
@@ -2139,6 +2200,12 @@ nav #menu {
   letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-content .rooms-item2 .r-content {
+    display: none;
+  }
+}
+
 #rooms-area #rooms-content .rooms-item2 .r-content span {
   font-size: 14px;
   display: block;
@@ -2165,6 +2232,18 @@ nav #menu {
   height: 600px;
   background-size: cover;
   position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-area #rooms-content .rooms-item3 {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-content .rooms-item3 {
+    height: 450px;
+  }
 }
 
 #rooms-area #rooms-content .rooms-item3 .r-name {
@@ -2198,6 +2277,12 @@ nav #menu {
   letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-content .rooms-item3 .r-content {
+    display: none;
+  }
+}
+
 #rooms-area #rooms-content .rooms-item3 .r-content span {
   font-size: 14px;
   display: block;
@@ -2224,6 +2309,18 @@ nav #menu {
   height: 600px;
   background-size: cover;
   position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-area #rooms-content .rooms-item4 {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-content .rooms-item4 {
+    height: 450px;
+  }
 }
 
 #rooms-area #rooms-content .rooms-item4 .r-name {
@@ -2257,6 +2354,12 @@ nav #menu {
   letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-content .rooms-item4 .r-content {
+    display: none;
+  }
+}
+
 #rooms-area #rooms-content .rooms-item4 .r-content span {
   font-size: 14px;
   display: block;
@@ -2283,6 +2386,18 @@ nav #menu {
   height: 600px;
   background-size: cover;
   position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-area #rooms-content .rooms-item5 {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-content .rooms-item5 {
+    height: 450px;
+  }
 }
 
 #rooms-area #rooms-content .rooms-item5 .r-name {
@@ -2316,6 +2431,12 @@ nav #menu {
   letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-content .rooms-item5 .r-content {
+    display: none;
+  }
+}
+
 #rooms-area #rooms-content .rooms-item5 .r-content span {
   font-size: 14px;
   display: block;
@@ -2344,10 +2465,23 @@ nav #menu {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  z-index: 3;
+  z-index: 8;
   position: absolute;
   top: 50%;
   left: -5%;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-area #rooms-content #rooms-prev {
+    left: 30px;
+    background: #fff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-content #rooms-prev {
+    left: 0;
+  }
 }
 
 #rooms-area #rooms-content #rooms-prev:hover {
@@ -2375,10 +2509,24 @@ nav #menu {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  z-index: 3;
+  z-index: 8;
   position: absolute;
-  bottom: 50%;
+  bottom: 44%;
   right: -5%;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-area #rooms-content #rooms-next {
+    right: 30px;
+    background: #fff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #rooms-area #rooms-content #rooms-next {
+    right: 0;
+    bottom: 42%;
+  }
 }
 
 #rooms-area #rooms-content #rooms-next:hover {

@@ -13,6 +13,12 @@ $("#close").click(function () {
 });
 
 
+// 公告關閉按鈕設定
+$(".box-close").click(function () {
+    $("#news-box").hide();
+});
+
+
 // 首頁按鈕設定
 var index = 0;
 var prevBtn = document.querySelector(".prev-btn");
@@ -35,50 +41,6 @@ var r_content = document.getElementsByClassName("r-i-content");
 var r_title = document.getElementsByClassName("r-m-title");
 // console.log(r_title);
 
-function showTitle() {
-    for (let r = 0; r < r_title.length; r++) {
-        r_title[r].classList.remove("r-t-active");
-    }
-    r_title[index].classList.add("r-t-active");
-
-};
-
-function clickTitle(r) {
-    index = r;
-    show_r_content();
-    showTitle();
-}
-
-for (let r = 0; r < r_title.length; r++) {
-    r_title[r].onclick = function() {
-        clickTitle(r);
-    };
-}
-
-function r_next() {
-    index++;
-    // console.log(+index);
-    if (index == r_content.length) index = 0;
-    show_r_content();
-    showTitle();
-};
-
-function r_prev() {
-    index--;
-    if (index == -1) index = r_content.length -1;
-    show_r_content();
-    showTitle();
-}
-
-function show_r_content() {
-    for (let r = 0; r < r_content.length; r++) {
-        r_content[r].classList.remove("rooms-active");
-    }
-    r_content[index].classList.add("rooms-active");
-};
-
-r_nextBtn.onclick = r_next;
-r_prevBtn.onclick = r_prev;
 
 
 // 首頁按鈕設定
@@ -127,13 +89,56 @@ function showtext() {
     textarea[index].classList.add("text-active");
 };
 
+function showTitle() {
+    for (let r = 0; r < r_title.length; r++) {
+        r_title[r].classList.remove("r-t-active");
+    }
+    r_title[index].classList.add("r-t-active");
+
+};
+
+function clickTitle(r) {
+    index = r;
+    show_r_content();
+    showTitle();
+};
+
+for (let r = 0; r < r_title.length; r++) {
+    r_title[r].onclick = function() {
+        clickTitle(r);
+    };
+};
+
+function r_next() {
+    index++;
+    // console.log(+index);
+    if (index == r_content.length) index = 0;
+    show_r_content();
+    showTitle();
+};
+
+function r_prev() {
+    index--;
+    if (index == -1) index = r_content.length -1;
+    show_r_content();
+    showTitle();
+};
+
+function show_r_content() {
+    for (let r = 0; r < r_content.length; r++) {
+        r_content[r].classList.remove("rooms-active");
+    }
+    r_content[index].classList.add("rooms-active");
+};
+
+r_nextBtn.onclick = r_next;
+r_prevBtn.onclick = r_prev;
 
 
 
-// 公告關閉按鈕設定
-$(".box-close").click(function () {
-    $("#news-box").hide();
-});
+
+
+
 
 
 

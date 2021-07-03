@@ -1716,6 +1716,10 @@ nav {
 
     img {
         margin-top: 150px;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 80px;
+        }
     }
 }
 
@@ -1751,6 +1755,9 @@ nav {
             @media screen and (max-width: $tablet) {
                 width: 15%;
             }
+            @media screen and (max-width: $mobile) {
+                width: 30%;
+            }
             
         }
 
@@ -1763,6 +1770,11 @@ nav {
             @media screen and (max-width: $tablet) {
                 width: 50%;
             }
+
+            @media screen and (max-width: $mobile) {
+                width: 80%;
+                font-size: 14px;
+            }
         }
     }
 
@@ -1772,6 +1784,10 @@ nav {
         @media screen and (max-width: $tablet) {
             padding: 0 30px;
             box-sizing: border-box;
+        }
+
+        @media screen and (max-width: $mobile) {
+            display: none;
         }
 
         a {
@@ -1798,6 +1814,10 @@ nav {
             box-sizing: border-box;
         }
 
+        @media screen and (max-width: $mobile) {
+            padding: 0;
+        }
+
         @for $r from 1 through 5 {
             .rooms-item#{$r} {
                 background-image: url(./image/vila#{$r}.jpg);
@@ -1805,6 +1825,13 @@ nav {
                 height: 600px;
                 background-size: cover;
                 position: relative;
+
+                @media screen and (max-width: $tablet) {
+                    height: 500px;
+                }
+                @media screen and (max-width: $mobile) {
+                    height: 450px;
+                }
 
                 .r-name {
                     color: #fff;
@@ -1835,6 +1862,10 @@ nav {
                     color: #fff;
                     letter-spacing: 1.5px;
 
+                    @media screen and (max-width: $mobile) {
+                        display: none;
+                    }
+
                     span {
                         font-size: 14px;
                         display: block;
@@ -1864,10 +1895,18 @@ nav {
             padding: 6px 15px 10px;
             cursor: pointer;
             transition: 0.5s;
-            z-index: 3;
+            z-index: 8;
             position: absolute;
             top: 50%;
             left: -5%;
+
+            @media screen and (max-width: $tablet) {
+                left: 30px;
+                background: #fff;
+            }
+            @media screen and (max-width: $mobile) {
+                left: 0;
+            }
 
             &:hover {
                 background: $brandgold;
@@ -1893,10 +1932,19 @@ nav {
             padding: 6px 15px 10px;
             cursor: pointer;
             transition: 0.5s;
-            z-index: 3;
+            z-index: 8;
             position: absolute;
-            bottom: 50%;
+            bottom: 44%;
             right: -5%;
+
+            @media screen and (max-width: $tablet) {
+                right: 30px;
+                background: #fff;
+            }
+            @media screen and (max-width: $mobile) {
+                right: 0;
+                bottom: 42%;
+            }
 
             &:hover {
                 background: $brandgold;
