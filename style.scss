@@ -627,6 +627,241 @@ nav {
     }
 }
 
+// 關於日暉頁面
+#about-banner {
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    background-image: url(./image/about.jpg);
+    background-position: center;
+
+    @media screen and (max-width: $tablet) {
+        height: 30vh;
+    }
+
+    img {
+        margin-top: 150px;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 80px;
+        }
+    }
+}
+
+#about-area {
+    width: 1200px;
+    margin: 80px auto 0;
+
+    @media screen and (max-width: $tablet) {
+        margin-top: 50px;
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    #about-title {
+        text-align: center;
+
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: 2.5px;
+        }
+
+        hr {
+            width: 10%;
+            border: none;
+            height: 3px;
+            background-color: $brandgold;
+            margin: 10px auto 30px;
+
+            @media screen and (max-width: $tablet) {
+                width: 15%;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 30%;
+            }
+        }
+
+        p {
+            width: 35%;
+            margin: 0 auto;
+            font-size: 16px;
+            letter-spacing: 1.5px;
+
+            @media screen and (max-width: $tablet) {
+                width: 50%;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 80%;
+                font-size: 14px;
+            }
+        }
+    }
+
+    #about-content1 {
+        margin: 50px auto;
+        height: 600px;
+        position: relative;
+
+        @media screen and (max-width: $mobile) {
+            margin-bottom: 0;
+        }
+
+        .about-img {
+            width: 60%;
+            box-sizing: border-box;
+            border: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            @media screen and (max-width: $tablet) {
+                width: 100%;
+            }
+            @media screen and (max-width: $mobile) {
+                position: static;
+            }
+            
+
+            img {
+                width: 100%;
+                height: 450px;
+                object-fit: cover;
+
+                @media screen and (max-width: $tablet) {
+                    height: 300px;
+                    width: 100%;
+                }
+
+            }
+        }
+
+        .about-c-area {
+            width: 50%;
+            box-sizing: border-box;
+            background-color: #fff;
+            box-shadow: 5px 5px 8px #999;
+            padding: 30px 50px;
+            position: absolute;
+            right: 0;
+            bottom: 50px;
+
+            @media screen and (max-width: $tablet) {
+                width: 100%;
+            }
+            @media screen and (max-width: $mobile) {
+                position: static;
+                padding: 30px 0;
+                box-shadow: none;
+
+            }
+
+            h3 {
+                font-style: 18px;
+                letter-spacing: 2.5px;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 900;
+                color: $brandgold;
+                letter-spacing: 1.8px;
+                margin: 10px 0;
+                display: block;
+            }
+
+            p {
+                font-weight: 12;
+                letter-spacing: 1.5px;
+                line-height: 1.8;
+            }
+        }
+    }
+
+    #about-content2 {
+        margin: 50px auto;
+        height: 600px;
+        position: relative;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 0;
+        }
+        
+
+        .about-img {
+            width: 60%;
+            box-sizing: border-box;
+            border: none;
+            position: absolute;
+            right: 0;
+
+            @media screen and (max-width: $tablet) {
+                width: 100%;
+            }
+            @media screen and (max-width: $mobile) {
+                position: static;
+            }
+
+            img {
+                width: 100%;
+                height: 450px;
+                object-fit: cover;
+
+                @media screen and (max-width: $tablet) {
+                    height: 300px;
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .about-c-area {
+            width: 50%;
+            box-sizing: border-box;
+            background-color: #fff;
+            box-shadow: 5px 5px 8px #999;
+            padding: 30px 50px;
+            position: absolute;
+            left: 0;
+            top: 350px;
+
+            @media screen and (max-width: $tablet) {
+                width: 100%;
+            }
+            @media screen and (max-width: $mobile) {
+                position: static;
+                padding: 30px 0;
+                box-shadow: none;
+            }
+
+            h3 {
+                font-style: 18px;
+                letter-spacing: 2.5px;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 900;
+                color: $brandgold;
+                letter-spacing: 1.8px;
+                margin: 10px 0;
+                display: block;
+            }
+
+            p {
+                font-weight: 12;
+                letter-spacing: 1.5px;
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
 // 最新消息
 
 #news {
@@ -707,6 +942,7 @@ nav {
 
     @media screen and (max-width: $tablet) {
         height: 30vh;
+        
     }
 
     img {
@@ -1078,7 +1314,7 @@ nav {
     }
 }
 
-// 客房/婚宴
+// 房型介紹
 
 #room1 {
     height: 100vh;
@@ -1963,6 +2199,332 @@ nav {
             }
         }
     }
+}
+
+// 婚宴會議頁面
+#wed-banner {
+    background-image: url(./image/wed-banner.jpg);
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+
+    @media screen and (max-width: $tablet) {
+        height: 30vh;
+    }
+
+    img {
+        margin-top: 150px;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 80px;
+        }
+    }
+}
+
+#wed-area {
+    width: 1200px;
+    margin: 80px auto 0;
+
+    @media screen and (max-width: $tablet) {
+        margin-top: 50px;
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    #wed-title {
+        text-align: center;
+
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: 2.5px;
+        }
+
+        hr {
+            width: 10%;
+            border: none;
+            background-color: $brandgold;
+            height: 3px;
+            margin: 10px auto 30px;
+
+            @media screen and (max-width: $tablet) {
+                width: 15%;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 30%;
+            }
+            
+        }
+
+        p {
+            width: 50%;
+            font-size: 16px;
+            margin: 0 auto;
+            letter-spacing: 1.5px;
+
+            @media screen and (max-width: $tablet) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: $mobile) {
+                width: 80%;
+                font-size: 14px;
+            }
+        }
+    }
+
+    #wed-content1 {
+        margin: 50px auto;
+        height: 450px;
+        position: relative;
+
+        @media screen and (max-width: $mobile) {
+            height: auto;
+        }
+
+        .wed-img {
+            width: 80%;
+            box-sizing: border-box;
+            border: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+                display: block;
+                position: static;
+            }
+            
+            img {
+                width: 100%;
+                height: 450px;
+                object-fit: cover;
+                transition: 1s;
+
+                @media screen and (max-width: $mobile) {
+                    height: 300px;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+            }
+        }
+
+        .wed-c-area {
+            width: 50%;
+            box-sizing: border-box;
+            background-color: rgba(255, 254, 245, .9);
+            padding: 30px 50px;
+            position: absolute;
+            right: 0;
+            bottom: 50px;
+            text-decoration: none;
+
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+                display: block;
+                position: static;
+                bottom: 0;
+            }
+            
+
+            h3 {
+                font-style: 18px;
+                letter-spacing: 2.5px;
+                color: #000;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 900;
+                color: $brandgold;
+                letter-spacing: 1.8px;
+                margin: 10px 0;
+                display: block;
+            }
+
+            p {
+                font-weight: 12;
+                letter-spacing: 1.5px;
+                line-height: 1.8;
+                color: #999;
+            }
+        }
+    }
+
+    #wed-content2 {
+        margin: 50px auto;
+        height: 450px;
+        position: relative;
+
+        @media screen and (max-width: $mobile) {
+            height: auto;
+        }
+
+        .wed-img {
+            width: 80%;
+            box-sizing: border-box;
+            border: none;
+            position: absolute;
+            right: 0;
+
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+                display: block;
+                position: static;
+            }
+            
+
+            img {
+                width: 100%;
+                height: 450px;
+                object-fit: cover;
+                transition: 1s;
+
+                @media screen and (max-width: $mobile) {
+                    height: 300px;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                
+            }
+
+        }
+
+        .wed-c-area {
+            width: 50%;
+            box-sizing: border-box;
+            background-color: rgba(255, 254, 245, .9);
+            padding: 30px 50px;
+            position: absolute;
+            left: 0;
+            top: 150px;
+            text-decoration: none;
+
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+                display: block;
+                position: static;
+                bottom: 0;
+            }
+
+            h3 {
+                font-style: 18px;
+                letter-spacing: 2.5px;
+                color: #000;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 900;
+                color: $brandgold;
+                letter-spacing: 1.8px;
+                margin: 10px 0;
+                display: block;
+            }
+
+            p {
+                font-weight: 12;
+                letter-spacing: 1.5px;
+                line-height: 1.8;
+                color: #999;
+            }
+        }
+    }
+
+    #meet-content1 {
+        margin: 50px auto;
+        height: 450px;
+        position: relative;
+        
+        @media screen and (max-width: $mobile) {
+            height: auto;
+        }
+
+        .meet-img {
+            width: 80%;
+            box-sizing: border-box;
+            border: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+                display: block;
+                position: static;
+            }
+            
+            img {
+                width: 100%;
+                height: 450px;
+                object-fit: cover;
+                transition: 1s;
+
+                @media screen and (max-width: $mobile) {
+                    height: 300px;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+            }
+        }
+
+        .meet-c-area {
+            width: 50%;
+            box-sizing: border-box;
+            background-color: rgba(255, 254, 245, .9);
+            padding: 30px 50px;
+            position: absolute;
+            right: 0;
+            bottom: 50px;
+            text-decoration: none;
+
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+                display: block;
+                position: static;
+                bottom: 0;
+            }
+
+            h3 {
+                font-style: 18px;
+                letter-spacing: 2.5px;
+                color: #000;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 900;
+                color: $brandgold;
+                letter-spacing: 1.8px;
+                margin: 10px 0;
+                display: block;
+            }
+
+            p {
+                font-weight: 12;
+                letter-spacing: 1.5px;
+                line-height: 1.8;
+                color: #999;
+            }
+        }
+    }
+
 }
 
 // 飯店設施

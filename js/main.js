@@ -13,11 +13,6 @@ $("#close").click(function () {
 });
 
 
-// 公告關閉按鈕設定
-$(".box-close").click(function () {
-    $("#news-box").hide();
-});
-
 
 // 首頁按鈕設定
 var index = 0;
@@ -32,14 +27,7 @@ var smallimg = document.getElementsByClassName("simg");
 var textarea = document.getElementsByClassName("land-text");
 
 
-var r_nextBtn = document.querySelector("#rooms-next");
-// console.log(r_nextBtn);
-var r_prevBtn = document.querySelector("#rooms-prev");
-// console.log(r_prevBtn);
-var r_content = document.getElementsByClassName("r-i-content");
-// console.log(r_content.length);
-var r_title = document.getElementsByClassName("r-m-title");
-// console.log(r_title);
+
 
 
 
@@ -97,49 +85,11 @@ function showTitle() {
 
 };
 
-function clickTitle(r) {
-    index = r;
-    show_r_content();
-    showTitle();
-};
 
-for (let r = 0; r < r_title.length; r++) {
-    r_title[r].onclick = function() {
-        clickTitle(r);
-    };
-};
-
-function r_next() {
-    index++;
-    // console.log(+index);
-    if (index == r_content.length) index = 0;
-    show_r_content();
-    showTitle();
-};
-
-function r_prev() {
-    index--;
-    if (index == -1) index = r_content.length -1;
-    show_r_content();
-    showTitle();
-};
-
-function show_r_content() {
-    for (let r = 0; r < r_content.length; r++) {
-        r_content[r].classList.remove("rooms-active");
-    }
-    r_content[index].classList.add("rooms-active");
-};
-
-r_nextBtn.onclick = r_next;
-r_prevBtn.onclick = r_prev;
-
-
-
-
-
-
-
+// 公告關閉按鈕設定
+$(".box-close").click(function () {
+    $("#news-box").hide();
+});
 
 
 
@@ -165,5 +115,6 @@ r_prevBtn.onclick = r_prev;
   
     btnScrollDown.addEventListener('click', scrollDown);
   })();
+
 
 

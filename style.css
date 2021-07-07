@@ -678,6 +678,292 @@ nav #menu {
   }
 }
 
+#about-banner {
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+  background-image: url(./image/about.jpg);
+  background-position: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-banner {
+    height: 30vh;
+  }
+}
+
+#about-banner img {
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 767px) {
+  #about-banner img {
+    margin-top: 80px;
+  }
+}
+
+#about-area {
+  width: 1200px;
+  margin: 80px auto 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-area {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+#about-area #about-title {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-area #about-title {
+    width: 100%;
+  }
+}
+
+#about-area #about-title h1 {
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+
+#about-area #about-title hr {
+  width: 10%;
+  border: none;
+  height: 3px;
+  background-color: #be956a;
+  margin: 10px auto 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-area #about-title hr {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-area #about-title hr {
+    width: 30%;
+  }
+}
+
+#about-area #about-title p {
+  width: 35%;
+  margin: 0 auto;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-area #about-title p {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-area #about-title p {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
+#about-area #about-content1 {
+  margin: 50px auto;
+  height: 600px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  #about-area #about-content1 {
+    margin-bottom: 0;
+  }
+}
+
+#about-area #about-content1 .about-img {
+  width: 60%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-area #about-content1 .about-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-area #about-content1 .about-img {
+    position: static;
+  }
+}
+
+#about-area #about-content1 .about-img img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-area #about-content1 .about-img img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+#about-area #about-content1 .about-c-area {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 8px #999;
+          box-shadow: 5px 5px 8px #999;
+  padding: 30px 50px;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-area #about-content1 .about-c-area {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-area #about-content1 .about-c-area {
+    position: static;
+    padding: 30px 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+#about-area #about-content1 .about-c-area h3 {
+  font-style: 18px;
+  letter-spacing: 2.5px;
+}
+
+#about-area #about-content1 .about-c-area span {
+  font-size: 14px;
+  font-weight: 900;
+  color: #be956a;
+  letter-spacing: 1.8px;
+  margin: 10px 0;
+  display: block;
+}
+
+#about-area #about-content1 .about-c-area p {
+  font-weight: 12;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+}
+
+#about-area #about-content2 {
+  margin: 50px auto;
+  height: 600px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  #about-area #about-content2 {
+    margin-top: 0;
+  }
+}
+
+#about-area #about-content2 .about-img {
+  width: 60%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-area #about-content2 .about-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-area #about-content2 .about-img {
+    position: static;
+  }
+}
+
+#about-area #about-content2 .about-img img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-area #about-content2 .about-img img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+#about-area #about-content2 .about-c-area {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 8px #999;
+          box-shadow: 5px 5px 8px #999;
+  padding: 30px 50px;
+  position: absolute;
+  left: 0;
+  top: 350px;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-area #about-content2 .about-c-area {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-area #about-content2 .about-c-area {
+    position: static;
+    padding: 30px 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+#about-area #about-content2 .about-c-area h3 {
+  font-style: 18px;
+  letter-spacing: 2.5px;
+}
+
+#about-area #about-content2 .about-c-area span {
+  font-size: 14px;
+  font-weight: 900;
+  color: #be956a;
+  letter-spacing: 1.8px;
+  margin: 10px 0;
+  display: block;
+}
+
+#about-area #about-content2 .about-c-area p {
+  font-weight: 12;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+}
+
 #news {
   width: 1280px;
   margin: 0 auto;
@@ -2544,6 +2830,379 @@ nav #menu {
   padding: 3px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+#wed-banner {
+  background-image: url(./image/wed-banner.jpg);
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  #wed-banner {
+    height: 30vh;
+  }
+}
+
+#wed-banner img {
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 767px) {
+  #wed-banner img {
+    margin-top: 80px;
+  }
+}
+
+#wed-area {
+  width: 1200px;
+  margin: 80px auto 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #wed-area {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+#wed-area #wed-title {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #wed-area #wed-title {
+    width: 100%;
+  }
+}
+
+#wed-area #wed-title h1 {
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+
+#wed-area #wed-title hr {
+  width: 10%;
+  border: none;
+  background-color: #be956a;
+  height: 3px;
+  margin: 10px auto 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  #wed-area #wed-title hr {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #wed-title hr {
+    width: 30%;
+  }
+}
+
+#wed-area #wed-title p {
+  width: 50%;
+  font-size: 16px;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1024px) {
+  #wed-area #wed-title p {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #wed-title p {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
+#wed-area #wed-content1 {
+  margin: 50px auto;
+  height: 450px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #wed-content1 {
+    height: auto;
+  }
+}
+
+#wed-area #wed-content1 .wed-img {
+  width: 80%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #wed-content1 .wed-img {
+    width: 100%;
+    display: block;
+    position: static;
+  }
+}
+
+#wed-area #wed-content1 .wed-img img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #wed-content1 .wed-img img {
+    height: 300px;
+  }
+}
+
+#wed-area #wed-content1 .wed-img img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#wed-area #wed-content1 .wed-c-area {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(255, 254, 245, 0.9);
+  padding: 30px 50px;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #wed-content1 .wed-c-area {
+    width: 100%;
+    display: block;
+    position: static;
+    bottom: 0;
+  }
+}
+
+#wed-area #wed-content1 .wed-c-area h3 {
+  font-style: 18px;
+  letter-spacing: 2.5px;
+  color: #000;
+}
+
+#wed-area #wed-content1 .wed-c-area span {
+  font-size: 14px;
+  font-weight: 900;
+  color: #be956a;
+  letter-spacing: 1.8px;
+  margin: 10px 0;
+  display: block;
+}
+
+#wed-area #wed-content1 .wed-c-area p {
+  font-weight: 12;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  color: #999;
+}
+
+#wed-area #wed-content2 {
+  margin: 50px auto;
+  height: 450px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #wed-content2 {
+    height: auto;
+  }
+}
+
+#wed-area #wed-content2 .wed-img {
+  width: 80%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #wed-content2 .wed-img {
+    width: 100%;
+    display: block;
+    position: static;
+  }
+}
+
+#wed-area #wed-content2 .wed-img img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #wed-content2 .wed-img img {
+    height: 300px;
+  }
+}
+
+#wed-area #wed-content2 .wed-img img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#wed-area #wed-content2 .wed-c-area {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(255, 254, 245, 0.9);
+  padding: 30px 50px;
+  position: absolute;
+  left: 0;
+  top: 150px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #wed-content2 .wed-c-area {
+    width: 100%;
+    display: block;
+    position: static;
+    bottom: 0;
+  }
+}
+
+#wed-area #wed-content2 .wed-c-area h3 {
+  font-style: 18px;
+  letter-spacing: 2.5px;
+  color: #000;
+}
+
+#wed-area #wed-content2 .wed-c-area span {
+  font-size: 14px;
+  font-weight: 900;
+  color: #be956a;
+  letter-spacing: 1.8px;
+  margin: 10px 0;
+  display: block;
+}
+
+#wed-area #wed-content2 .wed-c-area p {
+  font-weight: 12;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  color: #999;
+}
+
+#wed-area #meet-content1 {
+  margin: 50px auto;
+  height: 450px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #meet-content1 {
+    height: auto;
+  }
+}
+
+#wed-area #meet-content1 .meet-img {
+  width: 80%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #meet-content1 .meet-img {
+    width: 100%;
+    display: block;
+    position: static;
+  }
+}
+
+#wed-area #meet-content1 .meet-img img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #meet-content1 .meet-img img {
+    height: 300px;
+  }
+}
+
+#wed-area #meet-content1 .meet-img img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#wed-area #meet-content1 .meet-c-area {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(255, 254, 245, 0.9);
+  padding: 30px 50px;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  #wed-area #meet-content1 .meet-c-area {
+    width: 100%;
+    display: block;
+    position: static;
+    bottom: 0;
+  }
+}
+
+#wed-area #meet-content1 .meet-c-area h3 {
+  font-style: 18px;
+  letter-spacing: 2.5px;
+  color: #000;
+}
+
+#wed-area #meet-content1 .meet-c-area span {
+  font-size: 14px;
+  font-weight: 900;
+  color: #be956a;
+  letter-spacing: 1.8px;
+  margin: 10px 0;
+  display: block;
+}
+
+#wed-area #meet-content1 .meet-c-area p {
+  font-weight: 12;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  color: #999;
 }
 
 #land {
