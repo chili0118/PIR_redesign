@@ -31,11 +31,11 @@ function clickTitle(r) {
   showTitle();
 };
 
-/* for (let r = 0; r < r_title.length; r++) {
+ for (let r = 0; r < r_title.length; r++) {
   r_title[r].onclick = function () {
     clickTitle(r);
   };
-}; */
+}; 
 
 function r_next() {
   jindex++;

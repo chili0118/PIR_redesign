@@ -2201,6 +2201,188 @@ nav {
     }
 }
 
+// 美饌饗宴頁面
+#food-banner {
+    background-image: url(./image/food-banner.jpg);
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+
+    @media screen and (max-width: $tablet) {
+        height: 30vh;
+    }
+
+    img {
+        margin-top: 150px;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 80px;
+        }
+    }
+}
+
+#food-area {
+    width: 1200px;
+    margin: 80px auto 0;
+
+    @media screen and (max-width: $tablet) {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #food-title {
+        text-align: center;
+
+        @media screen and (max-width: $tablet) {
+            width: 100vw;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: 2.5px;
+        }
+
+        hr {
+            width: 10%;
+            border: none;
+            background-color: $brandgold;
+            height: 3px;
+            margin: 10px auto 30px;
+
+            @media screen and (max-width: $tablet) {
+                width: 15%;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 30%;
+            }
+            
+        }
+
+        p {
+            width: 50%;
+            font-size: 16px;
+            margin: 0 auto;
+            letter-spacing: 1.5px;
+
+            @media screen and (max-width: $tablet) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: $mobile) {
+                width: 80%;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .food-img {
+        width: 70%;
+
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+
+    .food-c-area {
+
+        display: block;
+        text-decoration: none;
+        width: 30%;
+        
+
+        h3 {
+            color: #000;
+            letter-spacing: 2.5px;
+            margin-top: 50px;
+        }
+
+        span {
+            color: $brandgold;
+            font-size: 14px;
+            letter-spacing: 1.8px;
+            margin-top: 30px;
+            display: block;
+            
+        }
+
+        p {
+            font-size: 12px;
+            color: #999;
+            display: block;
+            margin-top: 20px;
+            letter-spacing: 1.8px;
+            line-height: 1.8;
+        }
+    }
+
+    #food-content1,#food-content3, {
+        display: flex;
+        margin-top: 80px;
+        position: relative;
+
+        .food-img {
+            margin-right: 30px;
+
+        }
+
+        .food-c-area {
+            align-self: flex-end;
+        }
+
+    }
+
+    #food-content2,#food-content4 {
+        display: flex;
+        margin-top: 80px;
+        position: relative;
+        
+
+        .food-img {
+            order: 2;
+            margin-left: 30px;
+
+        }
+
+        .food-c-area {
+            order: 1;
+        }
+    }
+
+    .f-more {
+        position: absolute;
+        font-size: 14px;
+        background-color: $brandgold;
+        color: #fff;
+        border: none;
+        letter-spacing: 1.8px;
+        padding-left: 1.8px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 100px;
+        box-shadow: 2px 2px 5px rgba(189, 189, 189, 0.5);
+
+        &:hover {
+
+        }
+    }
+
+    
+
+    
+
+    
+}
+
 // 婚宴會議頁面
 #wed-banner {
     background-image: url(./image/wed-banner.jpg);

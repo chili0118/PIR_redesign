@@ -2832,6 +2832,198 @@ nav #menu {
           transform: rotate(-45deg);
 }
 
+#food-banner {
+  background-image: url(./image/food-banner.jpg);
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  #food-banner {
+    height: 30vh;
+  }
+}
+
+#food-banner img {
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 767px) {
+  #food-banner img {
+    margin-top: 80px;
+  }
+}
+
+#food-area {
+  width: 1200px;
+  margin: 80px auto 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #food-area {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+
+#food-area #food-title {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #food-area #food-title {
+    width: 100vw;
+  }
+}
+
+#food-area #food-title h1 {
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+
+#food-area #food-title hr {
+  width: 10%;
+  border: none;
+  background-color: #be956a;
+  height: 3px;
+  margin: 10px auto 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  #food-area #food-title hr {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #food-area #food-title hr {
+    width: 30%;
+  }
+}
+
+#food-area #food-title p {
+  width: 50%;
+  font-size: 16px;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1024px) {
+  #food-area #food-title p {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #food-area #food-title p {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
+#food-area .food-img {
+  width: 70%;
+}
+
+#food-area .food-img img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#food-area .food-c-area {
+  display: block;
+  text-decoration: none;
+  width: 30%;
+}
+
+#food-area .food-c-area h3 {
+  color: #000;
+  letter-spacing: 2.5px;
+  margin-top: 50px;
+}
+
+#food-area .food-c-area span {
+  color: #be956a;
+  font-size: 14px;
+  letter-spacing: 1.8px;
+  margin-top: 30px;
+  display: block;
+}
+
+#food-area .food-c-area p {
+  font-size: 12px;
+  color: #999;
+  display: block;
+  margin-top: 20px;
+  letter-spacing: 1.8px;
+  line-height: 1.8;
+}
+
+#food-area #food-content1, #food-area #food-content3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+  position: relative;
+}
+
+#food-area #food-content1 .food-img, #food-area #food-content3 .food-img {
+  margin-right: 30px;
+}
+
+#food-area #food-content1 .food-c-area, #food-area #food-content3 .food-c-area {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#food-area #food-content2, #food-area #food-content4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+  position: relative;
+}
+
+#food-area #food-content2 .food-img, #food-area #food-content4 .food-img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 30px;
+}
+
+#food-area #food-content2 .food-c-area, #food-area #food-content4 .food-c-area {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#food-area .f-more {
+  position: absolute;
+  font-size: 14px;
+  background-color: #be956a;
+  color: #fff;
+  border: none;
+  letter-spacing: 1.8px;
+  padding-left: 1.8px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100px;
+  -webkit-box-shadow: 2px 2px 5px rgba(189, 189, 189, 0.5);
+          box-shadow: 2px 2px 5px rgba(189, 189, 189, 0.5);
+}
+
 #wed-banner {
   background-image: url(./image/wed-banner.jpg);
   height: 50vh;
