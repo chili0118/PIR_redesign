@@ -2977,8 +2977,15 @@ nav #menu {
 }
 
 #food-area #food-content1 .food-c-area, #food-area #food-content3 .food-c-area {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#food-area #food-content1 .f-more, #food-area #food-content3 .f-more {
+  position: absolute;
+  bottom: -25px;
+  right: 28%;
 }
 
 #food-area #food-content2, #food-area #food-content4 {
@@ -3000,6 +3007,15 @@ nav #menu {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#food-area #food-content2 .f-more, #food-area #food-content4 .f-more {
+  position: absolute;
+  bottom: -25px;
+  right: 64%;
 }
 
 #food-area .f-more {
@@ -3020,8 +3036,16 @@ nav #menu {
   text-transform: uppercase;
   text-align: center;
   line-height: 100px;
-  -webkit-box-shadow: 2px 2px 5px rgba(189, 189, 189, 0.5);
-          box-shadow: 2px 2px 5px rgba(189, 189, 189, 0.5);
+  -webkit-box-shadow: 0 0px 10px 10px rgba(190, 149, 106, 0.5);
+          box-shadow: 0 0px 10px 10px rgba(190, 149, 106, 0.5);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#food-area .f-more:hover {
+  background-color: #00303a;
+  -webkit-box-shadow: 0 0px 15px 10px rgba(0, 48, 58, 0.5);
+          box-shadow: 0 0px 15px 10px rgba(0, 48, 58, 0.5);
 }
 
 #wed-banner {

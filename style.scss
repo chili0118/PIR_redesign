@@ -2330,7 +2330,13 @@ nav {
         }
 
         .food-c-area {
-            align-self: flex-end;
+            align-self: center;
+        }
+
+        .f-more {
+            position: absolute;
+            bottom: -25px;
+            right: 28%;
         }
 
     }
@@ -2349,6 +2355,13 @@ nav {
 
         .food-c-area {
             order: 1;
+            align-self: center;
+        }
+
+        .f-more {
+            position: absolute;
+            bottom: -25px;
+            right: 64%;
         }
     }
 
@@ -2369,10 +2382,12 @@ nav {
         text-transform: uppercase;
         text-align: center;
         line-height: 100px;
-        box-shadow: 2px 2px 5px rgba(189, 189, 189, 0.5);
+        box-shadow: 0 0px 10px 10px rgba(190,149,106,.5);
+        transition: .5s;
 
         &:hover {
-
+            background-color: $brandblue;
+            box-shadow: 0 0px 15px 10px rgba(0,48,58,.5);
         }
     }
 
