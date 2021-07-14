@@ -726,7 +726,6 @@ nav {
             @media screen and (max-width: $mobile) {
                 position: static;
             }
-            
 
             img {
                 width: 100%;
@@ -737,7 +736,6 @@ nav {
                     height: 300px;
                     width: 100%;
                 }
-
             }
         }
 
@@ -758,7 +756,6 @@ nav {
                 position: static;
                 padding: 30px 0;
                 box-shadow: none;
-
             }
 
             h3 {
@@ -791,7 +788,6 @@ nav {
         @media screen and (max-width: $mobile) {
             margin-top: 0;
         }
-        
 
         .about-img {
             width: 60%;
@@ -817,7 +813,6 @@ nav {
                     width: 100%;
                 }
             }
-
         }
 
         .about-c-area {
@@ -942,7 +937,6 @@ nav {
 
     @media screen and (max-width: $tablet) {
         height: 30vh;
-        
     }
 
     img {
@@ -1972,7 +1966,7 @@ nav {
         text-align: center;
 
         @media screen and (max-width: $tablet) {
-            width: 100vw;
+            width: 100%;
         }
 
         h1 {
@@ -1994,7 +1988,6 @@ nav {
             @media screen and (max-width: $mobile) {
                 width: 30%;
             }
-            
         }
 
         p {
@@ -2229,13 +2222,15 @@ nav {
     @media screen and (max-width: $tablet) {
         margin-top: 50px;
         width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
     }
 
     #food-title {
         text-align: center;
 
         @media screen and (max-width: $tablet) {
-            width: 100vw;
+            width: 100%;
         }
 
         h1 {
@@ -2257,7 +2252,6 @@ nav {
             @media screen and (max-width: $mobile) {
                 width: 30%;
             }
-            
         }
 
         p {
@@ -2280,33 +2274,42 @@ nav {
     .food-img {
         width: 70%;
 
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+        }
+
         img {
             width: 100%;
             height: 400px;
             object-fit: cover;
+
+            @media screen and (max-width: $mobile) {
+                height: 250px;
+            }
         }
     }
 
     .food-c-area {
-
         display: block;
         text-decoration: none;
         width: 30%;
-        
+
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+            margin-top: 10px;
+        }
 
         h3 {
             color: #000;
             letter-spacing: 2.5px;
-            margin-top: 50px;
         }
 
         span {
             color: $brandgold;
             font-size: 14px;
             letter-spacing: 1.8px;
-            margin-top: 30px;
+            margin-top: 5px;
             display: block;
-            
         }
 
         p {
@@ -2319,14 +2322,18 @@ nav {
         }
     }
 
-    #food-content1,#food-content3, {
+    #food-content1,
+    #food-content3 {
         display: flex;
         margin-top: 80px;
         position: relative;
 
+        @media screen and (max-width: $mobile) {
+            display: block;
+        }
+
         .food-img {
             margin-right: 30px;
-
         }
 
         .food-c-area {
@@ -2337,20 +2344,31 @@ nav {
             position: absolute;
             bottom: -25px;
             right: 28%;
-        }
 
+            @media screen and (max-width: $mobile) {
+                bottom: 25%;
+                right: 0;
+            }
+        }
     }
 
-    #food-content2,#food-content4 {
+    #food-content2,
+    #food-content4 {
         display: flex;
         margin-top: 80px;
         position: relative;
-        
+
+        @media screen and (max-width: $mobile) {
+            display: block;
+        }
 
         .food-img {
             order: 2;
             margin-left: 30px;
 
+            @media screen and (max-width: $mobile) {
+                margin-left: 0;
+            }
         }
 
         .food-c-area {
@@ -2362,6 +2380,11 @@ nav {
             position: absolute;
             bottom: -25px;
             right: 64%;
+
+            @media screen and (max-width: $mobile) {
+                bottom: 25%;
+                right: 0;
+            }
         }
     }
 
@@ -2382,20 +2405,232 @@ nav {
         text-transform: uppercase;
         text-align: center;
         line-height: 100px;
-        box-shadow: 0 0px 10px 10px rgba(190,149,106,.5);
-        transition: .5s;
+        box-shadow: 0 0px 10px 10px rgba(190, 149, 106, 0.5);
+        transition: 0.5s;
 
         &:hover {
             background-color: $brandblue;
-            box-shadow: 0 0px 15px 10px rgba(0,48,58,.5);
+            box-shadow: 0 0px 15px 10px rgba(0, 48, 58, 0.5);
+        }
+    }
+}
+
+// 服務設施
+#public-banner {
+    background-image: url(./image//public-banner.jpg);
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+
+    @media screen and (max-width: $tablet) {
+        height: 30vh;
+    }
+
+    img {
+        margin-top: 150px;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 80px;
+        }
+    }
+}
+
+#public-area {
+    width: 1200px;
+    margin: 80px auto 0;
+
+    @media screen and (max-width: $tablet) {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #public-title {
+        text-align: center;
+
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: 2.5px;
+        }
+
+        hr {
+            width: 10%;
+            border: none;
+            background-color: $brandgold;
+            height: 3px;
+            margin: 10px auto 30px;
+
+            @media screen and (max-width: $tablet) {
+                width: 15%;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 30%;
+            }
+        }
+
+        p {
+            width: 50%;
+            font-size: 16px;
+            margin: 0 auto;
+            letter-spacing: 1.5px;
+
+            @media screen and (max-width: $tablet) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: $mobile) {
+                width: 80%;
+                font-size: 14px;
+            }
         }
     }
 
-    
+    #public-menu {
+        margin-top: 80px;
 
-    
+        @media screen and (max-width: $tablet) {
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
 
-    
+        @media screen and (max-width: $mobile) {
+            display: none;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #999;
+            margin-right: 50px;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                color: $brandgold;
+                font-weight: 900;
+            }
+        }
+    }
+
+    hr {
+        width: 100%;
+        height: 0.5px;
+        background-color: #999;
+        border: none;
+        margin-top: 30px;
+    }
+
+    #p-content {
+        width: 100%;
+        margin-top: 80px;
+
+        .p-c-text {
+            width: 30%;
+            align-self: center;
+            text-decoration: none;
+
+            h3 {
+                color: $brandgold;
+                letter-spacing: 2.5px;
+            }
+
+            p {
+                font-size: 14px;
+                color: #999;
+                letter-spacing: 1.5px;
+                line-height: 1.8;
+                margin-top: 20px;
+            }
+        }
+
+        .p-c-img {
+            width: 70%;
+
+            img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+        }
+
+        .p-c1,
+        .p-c3,
+        .p-c5 {
+            display: flex;
+            margin-top: 80px;
+            position: relative;
+
+            .p-c-img {
+                order: 1;
+                margin-right: 30px;
+            }
+
+            .p-c-text {
+                order: 2;
+            }
+
+            .p-more {
+                position: absolute;
+                bottom: -9%;
+                right: 28%;
+            }
+        }
+
+        .p-c2,
+        .p-c4 {
+            display: flex;
+            margin-top: 80px;
+            position: relative;
+
+            .p-c-img {
+                margin-left: 30px;
+            }
+
+            .p-more {
+                position: absolute;
+                bottom: -10%;
+                right: 64%;
+            }
+        }
+
+        .p-more {
+            font-size: 14px;
+            background-color: $brandgold;
+            color: #fff;
+            border: none;
+            letter-spacing: 1.8px;
+            padding-left: 1.8px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 100px;
+            box-shadow: 0 0px 10px 10px rgba(190, 149, 106, 0.5);
+            transition: 0.5s;
+
+            &:hover {
+                background-color: $brandblue;
+                box-shadow: 0 0px 15px 10px rgba(0, 48, 58, 0.5);
+            }
+        }
+
+        .public-content {
+            display: none;
+        }
+
+        .p-c-active {
+            display: block;
+        }
+    }
 }
 
 // 婚宴會議頁面
@@ -2456,7 +2691,6 @@ nav {
             @media screen and (max-width: $mobile) {
                 width: 30%;
             }
-            
         }
 
         p {
@@ -2498,7 +2732,7 @@ nav {
                 display: block;
                 position: static;
             }
-            
+
             img {
                 width: 100%;
                 height: 450px;
@@ -2512,14 +2746,13 @@ nav {
                 &:hover {
                     transform: scale(1.05);
                 }
-
             }
         }
 
         .wed-c-area {
             width: 50%;
             box-sizing: border-box;
-            background-color: rgba(255, 254, 245, .9);
+            background-color: rgba(255, 254, 245, 0.9);
             padding: 30px 50px;
             position: absolute;
             right: 0;
@@ -2532,7 +2765,6 @@ nav {
                 position: static;
                 bottom: 0;
             }
-            
 
             h3 {
                 font-style: 18px;
@@ -2579,7 +2811,6 @@ nav {
                 display: block;
                 position: static;
             }
-            
 
             img {
                 width: 100%;
@@ -2594,16 +2825,13 @@ nav {
                 &:hover {
                     transform: scale(1.05);
                 }
-
-                
             }
-
         }
 
         .wed-c-area {
             width: 50%;
             box-sizing: border-box;
-            background-color: rgba(255, 254, 245, .9);
+            background-color: rgba(255, 254, 245, 0.9);
             padding: 30px 50px;
             position: absolute;
             left: 0;
@@ -2645,7 +2873,7 @@ nav {
         margin: 50px auto;
         height: 450px;
         position: relative;
-        
+
         @media screen and (max-width: $mobile) {
             height: auto;
         }
@@ -2663,7 +2891,7 @@ nav {
                 display: block;
                 position: static;
             }
-            
+
             img {
                 width: 100%;
                 height: 450px;
@@ -2677,14 +2905,13 @@ nav {
                 &:hover {
                     transform: scale(1.05);
                 }
-
             }
         }
 
         .meet-c-area {
             width: 50%;
             box-sizing: border-box;
-            background-color: rgba(255, 254, 245, .9);
+            background-color: rgba(255, 254, 245, 0.9);
             padding: 30px 50px;
             position: absolute;
             right: 0;
@@ -2721,7 +2948,709 @@ nav {
             }
         }
     }
+}
 
+// 私房景點頁面
+
+#travel-banner {
+    background-image: url(./image/travel-banner.jpg);
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+
+    @media screen and (max-width: $tablet) {
+        height: 30vh;
+    }
+
+    img {
+        margin-top: 150px;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 80px;
+        }
+    }
+}
+
+#travel-area {
+    width: 1200px;
+    margin: 80px auto 0;
+
+    @media screen and (max-width: $tablet) {
+        margin-top: 50px;
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    #travel-title {
+        text-align: center;
+
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: 2.5px;
+        }
+
+        hr {
+            width: 10%;
+            border: none;
+            background-color: $brandgold;
+            height: 3px;
+            margin: 10px auto 30px;
+
+            @media screen and (max-width: $tablet) {
+                width: 15%;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 30%;
+            }
+        }
+
+        p {
+            width: 50%;
+            font-size: 16px;
+            margin: 0 auto;
+            letter-spacing: 1.5px;
+
+            @media screen and (max-width: $tablet) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: $mobile) {
+                width: 80%;
+                font-size: 14px;
+            }
+        }
+    }
+
+    #travel-menu {
+        margin-top: 80px;
+
+        @media screen and (max-width: $tablet) {
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width: $mobile) {
+            display: none;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #999;
+            margin-right: 50px;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                color: $brandgold;
+                font-weight: 900;
+            }
+        }
+    }
+
+    hr {
+        width: 100%;
+        height: 0.5px;
+        background-color: #999;
+        border: none;
+        margin-top: 30px;
+    }
+
+    #travel-content {
+        margin-top: 50px;
+
+        .t-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .t-c {
+                width: 25%;
+                margin-right: 15px;
+                flex-grow: 1;
+                margin-top: 30px;
+
+                @media screen and (max-width: $mobile) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+
+                .t-c-content {
+                    position: relative;
+                    width: 100%;
+                    height: 300px;
+
+                    &:hover .t-c-overlay {
+                        opacity: 1;
+                    }
+
+                    &:hover .t-c-detail {
+                        opacity: 1;
+                    }
+
+                    .t-c-overlay {
+                        background: rgba(0, 48, 58, 0.75);
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        opacity: 0;
+                        transition: all 0.4s ease-in-out 0s;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 300px;
+                        object-fit: cover;
+                    }
+
+                    .t-c-detail {
+                        text-align: center;
+                        position: absolute;
+                        padding: 0 15px;
+                        box-sizing: border-box;
+                        width: 100%;
+                        top: 45%;
+                        opacity: 0;
+                        transform: translate(2%, -25%);
+                        transition: all 0.3s ease-in-out 0s;
+                        transform: translateY(50%);
+
+                        h6 {
+                            font-size: 14px;
+                            font-weight: 900;
+                            letter-spacing: 1.5px;
+                            color: #fff;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            letter-spacing: 1.5px;
+                            line-height: 1.5;
+                            color: #fff;
+                            margin-top: 15px;
+                        }
+                    }
+
+                    .fadeIn-top {
+                        top: 30%;
+                    }
+                }
+
+                .t-c-title {
+                    text-align: center;
+                    font-size: 18px;
+                    margin-top: 15px;
+                    color: $brandblue;
+                    letter-spacing: 2.5px;
+                }
+            }
+        }
+    }
+}
+
+// 線上訂房頁面
+
+#book-banner {
+    background-image: url(./image/book-banner.jpg);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(3px);
+    background-position: center;
+
+    @media screen and (max-width: $tablet) {
+        height: 50vh;
+    }
+
+    @media screen and (max-width: $mobile) {
+        height: 30vh;
+    }
+}
+
+.book-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 2px 10px rgba(145, 145, 145, 0.8);
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+
+    @media screen and (max-width: $tablet) {
+        top: 30%;
+    }
+
+    @media screen and (max-width: $mobile) {
+        display: flex;
+        position: static;
+        transform: translate(0, 0);
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .book-img {
+        background-image: url(./image/bookimg.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 40%;
+        // height: 450px;
+        position: absolute;
+        top: -25px;
+        left: 40px;
+        bottom: -25px;
+        border-radius: 10px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+
+        @media screen and (max-width: $mobile) {
+            background-image: none;
+            width: 100%;
+            position: static;
+        }
+
+        
+
+        .b-text {
+            position: relative;
+            margin-top: 100px;
+            text-align: center;
+
+            @media screen and (max-width: $mobile) {
+                margin-top: 20px;
+            }
+
+            h2 {
+                font-size: 50px;
+                font-weight: 900;
+                color: #fff;
+                letter-spacing: 2.5px;
+
+                @media screen and (max-width: $tablet) {
+                    font-size: 40px;
+                    color: $brandgold;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                color: #fff;
+                margin-top: 30px;
+                letter-spacing: 1.5px;
+            }
+        }
+    }
+
+    .book-img::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(190, 149, 106, 0.8);
+        border-radius: 10px;
+        box-sizing: border-box;
+
+        @media screen and (max-width: $mobile) {
+            display: none;
+        }
+    }
+
+    form {
+        margin-left: 45%;
+        padding: 30px;
+
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+            margin-left: 0;
+            box-sizing: border-box;
+        }
+
+        .book-row {
+            width: 100%;
+            display: flex;
+            margin-bottom: 25px;
+            padding: 0 20px;
+            box-sizing: border-box;
+
+            .book-item {
+                width: 50%;
+                box-sizing: border-box;
+                margin-right: 10px;
+
+                label {
+                    font-size: 14px;
+                    color: $brandgold;
+                    letter-spacing: 1.5px;
+                    display: block;
+                    margin-bottom: 10px;
+                    font-weight: 900;
+                    padding-left: 10px;
+                }
+
+                input {
+                    padding: 5px;
+                    border-radius: 20px;
+                    border: 1px solid rgb(180, 180, 180);
+                    box-shadow: none;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: rgb(180, 180, 180);
+                    letter-spacing: 1px;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+
+                input:focus-visible {
+                    outline: none;
+                }
+
+                select {
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                    border: 1px solid rgb(180, 180, 180);
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: rgb(180, 180, 180);
+                    letter-spacing: 1px;
+                    width: 100%;
+                }
+                select:focus-visible {
+                    outline: none;
+                }
+
+                #s-r {
+                    width: 100%;
+                }
+            }
+
+            .b-i-rooms {
+                width: 100%;
+            }
+        }
+
+        .book-btn {
+            padding: 0 20px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            cursor: pointer;
+            margin-right: 10px;
+
+            input {
+                padding: 15px 10px;
+                border-radius: 20px;
+                border: none;
+                background: $brandgold;
+                font-size: 14px;
+                font-weight: 600;
+                color: #fff;
+                letter-spacing: 1px;
+                width: 100%;
+                box-sizing: border-box;
+                cursor: pointer;
+            }
+
+            input:focus-visible {
+                outline: none;
+            }
+        }
+    }
+}
+
+#book-area {
+    width: 1200px;
+    margin: 80px auto 0;
+
+    @media screen and (max-width: $tablet) {
+        margin-top: 50px;
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    #book-title {
+        text-align: center;
+
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: 2.5px;
+        }
+
+        hr {
+            width: 10%;
+            border: none;
+            background-color: $brandgold;
+            height: 3px;
+            margin: 10px auto 30px;
+
+            @media screen and (max-width: $tablet) {
+                width: 15%;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 30%;
+            }
+        }
+    }
+
+    #book-content {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+        .b-c {
+            width: 30%;
+            margin-bottom: 60px;
+            height: fit-content;
+            margin-left: 15px;
+            margin-right: 15px;
+            background-color: #fff;
+
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .b-c-img {
+                width: 100%;
+                height: 300px;
+                
+                
+
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    transition: .5s;
+                    filter: opacity(.5);
+
+                    &:hover {
+                        border-radius: 20px;
+                        filter: opacity(1);
+                    }
+                }
+            }
+
+            .book-c-area {
+                h3 {
+                    font-size: 18px;
+                    font-weight: 900;
+                    color: $brandgold;
+                    margin-top: 15px;
+                    text-align: center;
+                    letter-spacing: 1.5px;
+                    transition: .5s;
+
+                    &:hover {
+                        color: $brandblue;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    color: $brandgold;
+                    letter-spacing: 1.5px;
+                    margin-top: 10px;
+                }
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                    margin-bottom: -7px;
+                    margin-right: 5px;
+                }
+            }
+
+            .b-more {
+                margin-top: 25px;
+                font-size: 14px;
+                background-color: $brandgold;
+                color: #fff;
+                border: none;
+                letter-spacing: 1.8px;
+                padding: 10px 8px;
+                box-sizing: border-box;
+                text-decoration: none;
+                display: block;
+                text-transform: uppercase;
+                text-align: center;
+                transition: 0.5s;
+
+                &:hover {
+                    background-color: $brandblue;
+                   
+                }
+            }
+        }
+    }
+}
+
+// 交通資訊
+#traffic-banner {
+    background-image: url(./image/traffic-banner.jpg);
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+
+    @media screen and (max-width: $tablet) {
+        height: 30vh;
+    }
+
+    img {
+        margin-top: 150px;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 80px;
+        }
+    }
+}
+#traffic-area {
+    width: 1200px;
+    margin: 80px auto 0;
+
+    @media screen and (max-width: $tablet) {
+        margin-top: 50px;
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    #traffic-title {
+        text-align: center;
+
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: 2.5px;
+        }
+
+        hr {
+            width: 10%;
+            border: none;
+            background-color: $brandgold;
+            height: 3px;
+            margin: 10px auto 30px;
+
+            @media screen and (max-width: $tablet) {
+                width: 15%;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 30%;
+            }
+        }
+
+        p {
+            width: 50%;
+            font-size: 16px;
+            margin: 0 auto;
+            letter-spacing: 1.5px;
+
+            @media screen and (max-width: $tablet) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: $mobile) {
+                width: 80%;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .s-title {
+        width: 100%;
+        text-align: center;
+        margin-top: 80px;
+
+        h3 {
+            color: #000;
+            letter-spacing: 2.5px;
+            font-size: 16px;
+        }
+
+        hr {
+            height: 0.5px;
+            border: none;
+            background-color: #999;
+            margin-top: 10px;
+        }
+    }
+
+    #traffic-content {
+        margin: 30px 0;
+
+        .t-c {
+            width: 100%;
+            margin-top: 30px;
+
+            .t-c-title {
+                width: 100%;
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                    display: inline-block;
+                }
+
+                h5 {
+                    display: inline-block;
+                    font-size: 18px;
+                    vertical-align: super;
+                    color: $brandgold;
+                    margin-left: 5px;
+                }
+            }
+
+            .t-c-content {
+                margin-top: 15px;
+
+                p {
+                    font-size: 14px;
+                    letter-spacing: 1.5px;
+                    margin-left: 35px;
+                }
+
+                span {
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    color: #999;
+                    margin-left: 35px;
+                    display: block;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
 }
 
 // 飯店設施
