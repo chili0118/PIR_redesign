@@ -6,6 +6,7 @@ var p_title = document.getElementsByClassName("p-m-title");
 // console.log(p_title);
 
 
+
 function showTitle() {
   for (let p = 0; p < p_title.length; p++) {
     p_title[p].classList.remove("p-t-active");
@@ -32,4 +33,6 @@ function clickTitle(p) {
     clickTitle(p);
   };
 }; 
+
+
 

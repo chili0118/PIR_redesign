@@ -2998,6 +2998,7 @@ nav #menu {
   #food-area #food-content1,
   #food-area #food-content3 {
     display: block;
+    margin-top: 50px;
   }
 }
 
@@ -3041,6 +3042,7 @@ nav #menu {
   #food-area #food-content2,
   #food-area #food-content4 {
     display: block;
+    margin-top: 50px;
   }
 }
 
@@ -3147,6 +3149,9 @@ nav #menu {
   #public-area {
     margin-top: 50px;
     width: 100%;
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 
@@ -3220,7 +3225,7 @@ nav #menu {
 
 @media screen and (max-width: 767px) {
   #public-area #public-menu {
-    display: none;
+    padding: 0;
   }
 }
 
@@ -3233,8 +3238,18 @@ nav #menu {
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  #public-area #public-menu a {
+    margin-right: 25px;
+  }
+}
+
 #public-area #public-menu a:hover {
   color: #be956a;
+  font-weight: 900;
+}
+
+#public-area #public-menu .p-t-active {
   font-weight: 900;
 }
 
@@ -3259,6 +3274,13 @@ nav #menu {
   text-decoration: none;
 }
 
+@media screen and (max-width: 767px) {
+  #public-area #p-content .p-c-text {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
 #public-area #p-content .p-c-text h3 {
   color: #be956a;
   letter-spacing: 2.5px;
@@ -3276,11 +3298,23 @@ nav #menu {
   width: 70%;
 }
 
+@media screen and (max-width: 767px) {
+  #public-area #p-content .p-c-img {
+    width: 100%;
+  }
+}
+
 #public-area #p-content .p-c-img img {
   width: 100%;
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #public-area #p-content .p-c-img img {
+    height: 250px;
+  }
 }
 
 #public-area #p-content .p-c1,
@@ -3293,6 +3327,16 @@ nav #menu {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  #public-area #p-content .p-c1,
+  #public-area #p-content .p-c3,
+  #public-area #p-content .p-c5 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 50px;
+  }
+}
+
 #public-area #p-content .p-c1 .p-c-img,
 #public-area #p-content .p-c3 .p-c-img,
 #public-area #p-content .p-c5 .p-c-img {
@@ -3300,6 +3344,14 @@ nav #menu {
       -ms-flex-order: 1;
           order: 1;
   margin-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  #public-area #p-content .p-c1 .p-c-img,
+  #public-area #p-content .p-c3 .p-c-img,
+  #public-area #p-content .p-c5 .p-c-img {
+    margin-right: 0;
+  }
 }
 
 #public-area #p-content .p-c1 .p-c-text,
@@ -3318,6 +3370,15 @@ nav #menu {
   right: 28%;
 }
 
+@media screen and (max-width: 767px) {
+  #public-area #p-content .p-c1 .p-more,
+  #public-area #p-content .p-c3 .p-more,
+  #public-area #p-content .p-c5 .p-more {
+    top: 190px;
+    right: 0;
+  }
+}
+
 #public-area #p-content .p-c2,
 #public-area #p-content .p-c4 {
   display: -webkit-box;
@@ -3327,9 +3388,37 @@ nav #menu {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  #public-area #p-content .p-c2,
+  #public-area #p-content .p-c4 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 50px;
+  }
+}
+
 #public-area #p-content .p-c2 .p-c-img,
 #public-area #p-content .p-c4 .p-c-img {
   margin-left: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  #public-area #p-content .p-c2 .p-c-img,
+  #public-area #p-content .p-c4 .p-c-img {
+    margin-left: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #public-area #p-content .p-c2 .p-c-text,
+  #public-area #p-content .p-c4 .p-c-text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 #public-area #p-content .p-c2 .p-more,
@@ -3337,6 +3426,14 @@ nav #menu {
   position: absolute;
   bottom: -10%;
   right: 64%;
+}
+
+@media screen and (max-width: 767px) {
+  #public-area #p-content .p-c2 .p-more,
+  #public-area #p-content .p-c4 .p-more {
+    top: 190px;
+    right: 0;
+  }
 }
 
 #public-area #p-content .p-more {
@@ -3374,6 +3471,7 @@ nav #menu {
 
 #public-area #p-content .p-c-active {
   display: block;
+  font-weight: 900;
 }
 
 #wed-banner {
@@ -3539,6 +3637,9 @@ nav #menu {
     display: block;
     position: static;
     bottom: 0;
+    padding: 0;
+    margin-top: 10px;
+    background-color: #fff;
   }
 }
 
@@ -3631,6 +3732,9 @@ nav #menu {
     display: block;
     position: static;
     bottom: 0;
+    padding: 0;
+    margin-top: 10px;
+    background-color: #fff;
   }
 }
 
@@ -3724,6 +3828,9 @@ nav #menu {
     display: block;
     position: static;
     bottom: 0;
+    padding: 0;
+    margin-top: 10px;
+    background-color: #fff;
   }
 }
 
