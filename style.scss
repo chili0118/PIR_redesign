@@ -10,7 +10,7 @@ $mobile: 767px;
     font-family: 微軟正黑體;
 }
 
-// 浮動視窗
+// 公告浮動視窗
 // 20210530更新
 
 #news-box {
@@ -31,6 +31,8 @@ $mobile: 767px;
         box-sizing: border-box;
         padding: 10px;
     }
+
+
 
     .box-close::before {
         content: url(./image/close-2.png);
@@ -63,13 +65,44 @@ $mobile: 767px;
             font-size: 14px;
         }
 
+        .n-b-st {
+            line-height: 1.5;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .n-b-c {
+            line-height: 1.5;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            margin-top: 10px;
+        }
+
         .last {
             font-size: 14px;
             letter-spacing: 1.5px;
             text-align: right !important;
         }
+
+        .n-b-l {
+            margin-top: 10px;
+        }
+        
+    }
+
+    
+}
+
+.n-box {
+    @media screen and (max-width: $mobile) {
+        height: 475px !important;
     }
 }
+
+
+
+
+
 
 #arrow {
     background-image: url(./image/arrow.png);
@@ -267,6 +300,31 @@ nav {
         }
 
         #m-btn {
+
+            
+            .m-b-litem {
+                display: block;
+                width: 180px;
+                height: 30px;
+                letter-spacing: 2.5px;
+                padding-left: 2.5px;
+                padding-top: 6px;
+                font-size: 16px;
+                background-color: $brandblue;
+                color: #fff;
+                text-align: center;
+                border: none;
+                margin: 0 20px;
+                cursor: pointer;
+                transition: 0.5s;
+                margin: 10px auto;
+                text-decoration: none;
+
+                &:hover {
+                    font-weight: 900;
+                }
+            }
+
             span {
                 display: block;
                 width: 180px;
@@ -332,6 +390,33 @@ nav {
 
             @media screen and (max-width: $mobile) {
                 display: block;
+            }
+
+            .m-b-ritem {
+                display: inline-block;
+                width: 150px;
+                height: 30px;
+                letter-spacing: 2.5px;
+                padding-left: 2.5px;
+                padding-top: 6px;
+                font-size: 16px;
+                background-color: $brandblue;
+                color: #fff;
+                text-align: center;
+                border: none;
+                margin: 0 20px;
+                cursor: pointer;
+                transition: 0.5s;
+                margin: 10px auto;
+                text-decoration: none;
+
+                @media screen and (max-width: $mobile) {
+                    width: 130px;
+                }
+
+                &:hover {
+                    font-weight: 900;
+                }
             }
 
             span {
@@ -642,6 +727,10 @@ nav {
     img {
         margin-top: 150px;
 
+        @media screen and (max-width: $tablet) {
+            margin-top: 180px;
+        }
+
         @media screen and (max-width: $mobile) {
             margin-top: 80px;
         }
@@ -912,6 +1001,10 @@ nav {
         color: $brandblue;
     }
 
+    .n-t {
+        height: 50px;
+    }
+
     p {
         padding: 10px 0;
         letter-spacing: 1.5px;
@@ -919,6 +1012,14 @@ nav {
         margin-left: 20px;
         font-size: 14px;
         width: 90%;
+    }
+
+    .n-p {
+        height: 100px;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     .btn {
@@ -941,6 +1042,10 @@ nav {
 
     img {
         margin-top: 150px;
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 180px;
+        }
 
         @media screen and (max-width: $mobile) {
             margin-top: 80px;
@@ -1425,6 +1530,10 @@ nav {
                 letter-spacing: 1.5px;
             }
 
+            a {
+                text-decoration: none;
+            }
+
             .btn-more {
                 margin-top: 35px;
 
@@ -1548,6 +1657,10 @@ nav {
                 letter-spacing: 1.5px;
             }
 
+            a {
+                text-decoration: none;
+            }
+
             .btn-more {
                 margin-top: 35px;
 
@@ -1669,6 +1782,10 @@ nav {
                 font-size: 14px;
                 color: #fff;
                 letter-spacing: 1.5px;
+            }
+
+            a {
+                text-decoration: none;
             }
 
             .btn-more {
@@ -1796,6 +1913,10 @@ nav {
                 letter-spacing: 1.5px;
             }
 
+            a {
+                text-decoration: none;
+            }
+
             .btn-more {
                 margin-top: 35px;
 
@@ -1920,6 +2041,10 @@ nav {
                 letter-spacing: 1.5px;
             }
 
+            a {
+                text-decoration: none;
+            }
+
             .btn-more {
                 margin-top: 35px;
 
@@ -1946,6 +2071,10 @@ nav {
 
     img {
         margin-top: 150px;
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 180px;
+        }
 
         @media screen and (max-width: $mobile) {
             margin-top: 80px;
@@ -2209,6 +2338,10 @@ nav {
     img {
         margin-top: 150px;
 
+        @media screen and (max-width: $tablet) {
+            margin-top: 180px;
+        }
+
         @media screen and (max-width: $mobile) {
             margin-top: 80px;
         }
@@ -2417,7 +2550,7 @@ nav {
     }
 }
 
-// 服務設施
+// 服務設施頁面
 #public-banner {
     background-image: url(./image//public-banner.jpg);
     height: 50vh;
@@ -2431,6 +2564,10 @@ nav {
 
     img {
         margin-top: 150px;
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 180px;
+        }
 
         @media screen and (max-width: $mobile) {
             margin-top: 80px;
@@ -2562,6 +2699,10 @@ nav {
                 letter-spacing: 1.5px;
                 line-height: 1.8;
                 margin-top: 20px;
+
+                @media screen and (max-width: $mobile) {
+                    font-size: 12px;
+                }
             }
         }
 
@@ -2717,6 +2858,10 @@ nav {
     img {
         margin-top: 150px;
 
+        @media screen and (max-width: $tablet) {
+            margin-top: 180px;
+        }
+
         @media screen and (max-width: $mobile) {
             margin-top: 80px;
         }
@@ -2854,10 +2999,12 @@ nav {
             }
 
             p {
-                font-weight: 12;
+                font-size: 12px;;
                 letter-spacing: 1.5px;
                 line-height: 1.8;
                 color: #999;
+
+                
             }
         }
     }
@@ -2936,7 +3083,7 @@ nav {
             }
 
             p {
-                font-weight: 12;
+                font-size: 12px;;
                 letter-spacing: 1.5px;
                 line-height: 1.8;
                 color: #999;
@@ -3019,7 +3166,7 @@ nav {
             }
 
             p {
-                font-weight: 12;
+                font-size: 12px;;
                 letter-spacing: 1.5px;
                 line-height: 1.8;
                 color: #999;
@@ -3043,6 +3190,10 @@ nav {
 
     img {
         margin-top: 150px;
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 180px;
+        }
 
         @media screen and (max-width: $mobile) {
             margin-top: 80px;
@@ -3158,6 +3309,7 @@ nav {
                 @media screen and (max-width: $mobile) {
                     width: 100%;
                     margin-bottom: 10px;
+                    margin-right: 0;
                 }
 
                 .t-c-content {
@@ -3184,6 +3336,8 @@ nav {
                         right: 0;
                         opacity: 0;
                         transition: all 0.4s ease-in-out 0s;
+
+                        
                     }
 
                     img {
@@ -3203,6 +3357,9 @@ nav {
                         transform: translate(2%, -25%);
                         transition: all 0.3s ease-in-out 0s;
                         transform: translateY(50%);
+
+                        
+
 
                         h6 {
                             font-size: 14px;
@@ -3231,6 +3388,7 @@ nav {
                     margin-top: 15px;
                     color: $brandblue;
                     letter-spacing: 2.5px;
+                    cursor: pointer;
                 }
             }
         }
@@ -3604,6 +3762,10 @@ nav {
     img {
         margin-top: 150px;
 
+        @media screen and (max-width: $tablet) {
+            margin-top: 180px;
+        }
+
         @media screen and (max-width: $mobile) {
             margin-top: 80px;
         }
@@ -3742,6 +3904,8 @@ nav {
         height: 50vh;
     }
 
+    
+
     #land-text-area {
         width: 450px;
         height: 220px;
@@ -3765,6 +3929,9 @@ nav {
             box-sizing: border-box;
         }
 
+        a {
+            text-decoration: none;
+        }
         .land-text {
             display: none;
 

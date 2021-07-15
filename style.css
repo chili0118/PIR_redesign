@@ -62,10 +62,33 @@
   font-size: 14px;
 }
 
+#news-box .news-box-content .n-b-st {
+  line-height: 1.5;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+#news-box .news-box-content .n-b-c {
+  line-height: 1.5;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+}
+
 #news-box .news-box-content .last {
   font-size: 14px;
   letter-spacing: 1.5px;
   text-align: right !important;
+}
+
+#news-box .news-box-content .n-b-l {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .n-box {
+    height: 475px !important;
+  }
 }
 
 #arrow {
@@ -284,6 +307,30 @@ nav #menu {
   height: 300px;
 }
 
+.navbox #navbox-l #m-btn .m-b-litem {
+  display: block;
+  width: 180px;
+  height: 30px;
+  letter-spacing: 2.5px;
+  padding-left: 2.5px;
+  padding-top: 6px;
+  font-size: 16px;
+  background-color: #00303a;
+  color: #fff;
+  text-align: center;
+  border: none;
+  margin: 0 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 10px auto;
+  text-decoration: none;
+}
+
+.navbox #navbox-l #m-btn .m-b-litem:hover {
+  font-weight: 900;
+}
+
 .navbox #navbox-l #m-btn span {
   display: block;
   width: 180px;
@@ -352,6 +399,36 @@ nav #menu {
   .navbox #navbox-r .m-btn {
     display: block;
   }
+}
+
+.navbox #navbox-r .m-btn .m-b-ritem {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  letter-spacing: 2.5px;
+  padding-left: 2.5px;
+  padding-top: 6px;
+  font-size: 16px;
+  background-color: #00303a;
+  color: #fff;
+  text-align: center;
+  border: none;
+  margin: 0 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 10px auto;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navbox #navbox-r .m-btn .m-b-ritem {
+    width: 130px;
+  }
+}
+
+.navbox #navbox-r .m-btn .m-b-ritem:hover {
+  font-weight: 900;
 }
 
 .navbox #navbox-r .m-btn span {
@@ -696,6 +773,12 @@ nav #menu {
   margin-top: 150px;
 }
 
+@media screen and (max-width: 1024px) {
+  #about-banner img {
+    margin-top: 180px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #about-banner img {
     margin-top: 80px;
@@ -1031,6 +1114,10 @@ nav #menu {
   color: #00303a;
 }
 
+#news .n-t {
+  height: 50px;
+}
+
 #news p {
   padding: 10px 0;
   letter-spacing: 1.5px;
@@ -1038,6 +1125,14 @@ nav #menu {
   margin-left: 20px;
   font-size: 14px;
   width: 90%;
+}
+
+#news .n-p {
+  height: 100px;
+}
+
+#news a {
+  text-decoration: none;
 }
 
 #news .btn {
@@ -1060,6 +1155,12 @@ nav #menu {
 
 #news-banner img {
   margin-top: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  #news-banner img {
+    margin-top: 180px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1635,6 +1736,10 @@ nav #menu {
   letter-spacing: 1.5px;
 }
 
+#room1 .room-info .room-content a {
+  text-decoration: none;
+}
+
 #room1 .room-info .room-content .btn-more {
   margin-top: 35px;
 }
@@ -1777,6 +1882,10 @@ nav #menu {
   letter-spacing: 1.5px;
 }
 
+#room2 .room-info .room-content a {
+  text-decoration: none;
+}
+
 #room2 .room-info .room-content .btn-more {
   margin-top: 35px;
 }
@@ -1917,6 +2026,10 @@ nav #menu {
   font-size: 14px;
   color: #fff;
   letter-spacing: 1.5px;
+}
+
+#room3 .room-info .room-content a {
+  text-decoration: none;
 }
 
 #room3 .room-info .room-content .btn-more {
@@ -2062,6 +2175,10 @@ nav #menu {
   letter-spacing: 1.5px;
 }
 
+#room4 .room-info .room-content a {
+  text-decoration: none;
+}
+
 #room4 .room-info .room-content .btn-more {
   margin-top: 35px;
 }
@@ -2205,6 +2322,10 @@ nav #menu {
   letter-spacing: 1.5px;
 }
 
+#room5 .room-info .room-content a {
+  text-decoration: none;
+}
+
 #room5 .room-info .room-content .btn-more {
   margin-top: 35px;
 }
@@ -2231,6 +2352,12 @@ nav #menu {
 
 #rooms-banner img {
   margin-top: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  #rooms-banner img {
+    margin-top: 180px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2850,6 +2977,12 @@ nav #menu {
   margin-top: 150px;
 }
 
+@media screen and (max-width: 1024px) {
+  #food-banner img {
+    margin-top: 180px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #food-banner img {
     margin-top: 80px;
@@ -3134,6 +3267,12 @@ nav #menu {
   margin-top: 150px;
 }
 
+@media screen and (max-width: 1024px) {
+  #public-banner img {
+    margin-top: 180px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #public-banner img {
     margin-top: 80px;
@@ -3292,6 +3431,12 @@ nav #menu {
   letter-spacing: 1.5px;
   line-height: 1.8;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #public-area #p-content .p-c-text p {
+    font-size: 12px;
+  }
 }
 
 #public-area #p-content .p-c-img {
@@ -3492,6 +3637,12 @@ nav #menu {
   margin-top: 150px;
 }
 
+@media screen and (max-width: 1024px) {
+  #wed-banner img {
+    margin-top: 180px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #wed-banner img {
     margin-top: 80px;
@@ -3659,7 +3810,7 @@ nav #menu {
 }
 
 #wed-area #wed-content1 .wed-c-area p {
-  font-weight: 12;
+  font-size: 12px;
   letter-spacing: 1.5px;
   line-height: 1.8;
   color: #999;
@@ -3754,7 +3905,7 @@ nav #menu {
 }
 
 #wed-area #wed-content2 .wed-c-area p {
-  font-weight: 12;
+  font-size: 12px;
   letter-spacing: 1.5px;
   line-height: 1.8;
   color: #999;
@@ -3850,7 +4001,7 @@ nav #menu {
 }
 
 #wed-area #meet-content1 .meet-c-area p {
-  font-weight: 12;
+  font-size: 12px;
   letter-spacing: 1.5px;
   line-height: 1.8;
   color: #999;
@@ -3872,6 +4023,12 @@ nav #menu {
 
 #travel-banner img {
   margin-top: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  #travel-banner img {
+    margin-top: 180px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -4017,6 +4174,7 @@ nav #menu {
   #travel-area #travel-content .t-container .t-c {
     width: 100%;
     margin-bottom: 10px;
+    margin-right: 0;
   }
 }
 
@@ -4097,6 +4255,7 @@ nav #menu {
   margin-top: 15px;
   color: #00303a;
   letter-spacing: 2.5px;
+  cursor: pointer;
 }
 
 #book-banner {
@@ -4522,6 +4681,12 @@ nav #menu {
   margin-top: 150px;
 }
 
+@media screen and (max-width: 1024px) {
+  #traffic-banner img {
+    margin-top: 180px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #traffic-banner img {
     margin-top: 80px;
@@ -4704,6 +4869,10 @@ nav #menu {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
+}
+
+#land #land-text-area a {
+  text-decoration: none;
 }
 
 #land #land-text-area .land-text {
