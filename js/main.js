@@ -13,7 +13,7 @@ $("#close").click(function () {
     $(".navbox").fadeOut();
 });
 
-$("m-lang").click(function() {
+$(".m-lang").click(function() {
     $(".m-lang-box").slideToggle();
 })
 
