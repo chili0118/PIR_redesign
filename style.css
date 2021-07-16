@@ -4290,8 +4290,8 @@ nav #menu {
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: 2px 2px 10px rgba(145, 145, 145, 0.8);
           box-shadow: 2px 2px 10px rgba(145, 145, 145, 0.8);
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
   border-radius: 15px;
 }
 
@@ -4610,6 +4610,10 @@ nav #menu {
   border-radius: 20px;
   -webkit-filter: opacity(1);
           filter: opacity(1);
+}
+
+#book-area #book-content .b-c .book-c-area {
+  text-align: center;
 }
 
 #book-area #book-content .b-c .book-c-area h3 {

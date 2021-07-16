@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>日暉國際渡假村 | 最新消息</title>
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -119,18 +120,18 @@
     <div id="news-area">
         <!-- 標題 -->
         <div id="news-title">
-            <h1>最新消息</h1>
+            <h1 data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">最新消息</h1>
             <hr>
-            <p>飯店好康資訊不漏接!</p>
+            <p data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">飯店好康資訊不漏接!</p>
         </div>
         <!-- Top1 news -->
         <div id="top-news">
             <div id="top-content">
-                <div class="t-img">
+                <div class="t-img" data-aos="fade-right" data-aos-easing="ease-in-out-sine" data-aos-duration="1000">
                     <a href="./news_top.html"><img src="../image/topnews.jpg" alt=""></a>
                 </div>
                 <a href="./news_top.html">
-                    <div class="t-content">
+                    <div class="t-content" data-aos="fade-left" data-aos-duration="1000">
                         <h2>日暉防疫讓你我安心</h2>
                         <p>因應疫情升溫，配合中央流行疫情指揮中心政策調整，升級三級警戒防疫措施，渡假村將配合政府防疫規範共同護貴賓安全。</p>
                         <span>Jun 06.2021</span>
@@ -138,7 +139,7 @@
                 </a>
             </div>
         </div>
-        <div id="bottom-content">
+        <div id="bottom-content" data-aos="fade-down" data-aos-duration="1000">
             <div class="news-card">
                 <a href=""><img src="../image/news1.jpg" alt=""></a>
                 <div class="date">May 16.2021</div>
@@ -209,6 +210,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kid421.github.io/Web_HC_ZL_ScrollToElement/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="../js/main.js"></script>
 </body>
 

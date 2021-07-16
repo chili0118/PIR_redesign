@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>日暉國際渡假村 PAPAGO INTERNATIONNAL RESORT</title>
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -142,7 +143,7 @@
     <div id="banner">
         <div id="banner-content">
             <img src="../image/logo-cn-white.png" alt="">
-            <h2>日行東旅，星月相暉</h2>
+            <h2 data-aos="fade-down" data-aos-duration="2500" data-aos-delay="500">日行東旅，星月相暉</h2>
             <h6>Enjoy Your Vacation</h6>
         </div>
         <div class="wrapper">
@@ -153,7 +154,7 @@
     <!-- 飯店文案 -->
     <div id="text-info">
         <h1>ABOUT</h1>
-        <h2>The Resort•Dancing with the Heaven and Earth</h2>
+        <h2 data-aos="slide-right" data-aos-duration="1000">The Resort•Dancing with the Heaven and Earth</h2>
         <p>
             Papago International Resort, a cerulean islands encircled by the sea, stretching away to meet the sky,
             lining on white soft sands and surrounded mountains just like the fairyland.
@@ -163,7 +164,7 @@
     </div>
 
     <!-- 最新消息 -->
-    <div id="news">
+    <div id="news" data-aos="fade-up" data-aos-duration="1000">
         <!-- <h1>最新消息</h1> -->
         <div class="news-content">
             <div class="news-card">
@@ -198,7 +199,7 @@
     <div id="room1">
         <div id="room1bg"></div>
         <div class="bg"></div>
-        <div class="room-info">
+        <div class="room-info" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1000">
             <svg id="room-info-box">
                 <rect class="shape">
             </svg>
@@ -219,7 +220,7 @@
     <div id="room2">
         <div id="room2bg"></div>
         <div class="bg"></div>
-        <div class="room-info">
+        <div class="room-info" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
             <svg id="room-info-box">
                 <rect class="shape">
             </svg>
@@ -242,7 +243,7 @@
     <div id="room3">
         <div id="room3bg"></div>
         <div class="bg"></div>
-        <div class="room-info">
+        <div class="room-info" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1000">
             <svg id="room-info-box">
                 <rect class="shape">
             </svg>
@@ -264,7 +265,7 @@
     <div id="room4">
         <div id="room4bg"></div>
         <div class="bg"></div>
-        <div class="room-info">
+        <div class="room-info" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
             <svg id="room-info-box">
                 <rect class="shape">
             </svg>
@@ -286,7 +287,7 @@
     <div id="room5">
         <div id="room5bg"></div>
         <div class="bg"></div>
-        <div class="room-info">
+        <div class="room-info" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1000">
             <svg id="room-info-box">
                 <rect class="shape">
             </svg>
@@ -309,7 +310,7 @@
     <div id="land">
         <!-- 文字區域 -->
 
-        <div id="land-text-area">
+        <div id="land-text-area" data-aos="slide-down" data-aos-duration="1000">
             <div id="arrowbox">
                 <!-- 上一個按鈕樣式 -->
                 <div class="prev-btn">
@@ -379,7 +380,7 @@
                 width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <!-- 訂房小卡 -->
-        <div id="book-card">
+        <div id="book-card" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h3>BOOKING</h3>
             <form action="">
                 <span>Check-in date</span>
@@ -428,6 +429,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kid421.github.io/Web_HC_ZL_ScrollToElement/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="../js/main.js"></script>
 </body>
 

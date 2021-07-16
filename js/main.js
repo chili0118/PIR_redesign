@@ -2,6 +2,7 @@
 // document.querySelector("#today").value = today;
 
 // document.querySelector("#today2").valueAsDate = new Date();
+
 $(".navbox").hide();
 
 $("#menu").click(function () {
@@ -11,6 +12,10 @@ $("#menu").click(function () {
 $("#close").click(function () {
     $(".navbox").fadeOut();
 });
+
+$("m-lang").click(function() {
+    $(".m-lang-box").slideToggle();
+})
 
 
 
