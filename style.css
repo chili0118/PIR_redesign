@@ -733,7 +733,13 @@ nav #menu {
   #text-info h2 {
     padding-top: 20px;
     padding-left: 0;
+    letter-spacing: 1px;
   }
+}
+
+#text-info h2 .t-i-title {
+  font-size: 24px;
+  padding-top: 10px;
 }
 
 #text-info p {
@@ -753,6 +759,10 @@ nav #menu {
     width: 100%;
     text-align: center;
   }
+}
+
+#text-info p .t-i-p {
+  padding-top: 15px;
 }
 
 #about-banner {

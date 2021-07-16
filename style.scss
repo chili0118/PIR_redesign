@@ -691,6 +691,12 @@ nav {
         @media screen and (max-width: $mobile) {
             padding-top: 20px;
             padding-left: 0;
+            letter-spacing: 1px;
+        }
+
+        .t-i-title {
+            font-size: 24px;
+            padding-top: 10px;
         }
     }
 
@@ -708,6 +714,10 @@ nav {
             padding-left: 0;
             width: 100%;
             text-align: center;
+        }
+
+        .t-i-p {
+            padding-top: 15px;
         }
     }
 }
@@ -1421,6 +1431,7 @@ nav {
     background-size: cover;
     margin-top: 80px;
     position: relative;
+    
 
     @media screen and (max-width: $tablet) {
         margin-top: 30px;
@@ -1460,6 +1471,7 @@ nav {
         right: 10%;
         bottom: 30%;
         cursor: pointer;
+        
 
         @media screen and (max-width: $tablet) {
             width: 40%;
